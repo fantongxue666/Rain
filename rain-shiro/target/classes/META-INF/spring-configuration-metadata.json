@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "rain.shiro",
+      "type": "com.ftx.authentication.rainshiro.shiro.AuthenUrlConfig",
+      "sourceType": "com.ftx.authentication.rainshiro.shiro.AuthenUrlConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "rain.shiro.login-url",
+      "type": "java.lang.String",
+      "sourceType": "com.ftx.authentication.rainshiro.shiro.AuthenUrlConfig"
+    },
+    {
+      "name": "rain.shiro.logout-url",
+      "type": "java.lang.String",
+      "sourceType": "com.ftx.authentication.rainshiro.shiro.AuthenUrlConfig"
+    }
+  ],
+  "hints": []
+}

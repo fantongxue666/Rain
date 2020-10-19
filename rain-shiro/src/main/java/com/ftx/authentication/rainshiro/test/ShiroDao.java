@@ -19,7 +19,7 @@ import java.util.Map;
 @Repository
 @Mapper
 public interface ShiroDao {
-    @Select(value = "select * from user where account=#{account}")
+    @Select(value = "select * from tb_user where account=#{account}")
     List<AuthUser> getUser(@Param("account")String account);
 
     @Select(value = "select url from tb_power where id in(select powerid from tb_role_power where roleid=(SELECT b.id from tb_user a left join tb_role b on a.roleid=b.id where a.account=#{account}")

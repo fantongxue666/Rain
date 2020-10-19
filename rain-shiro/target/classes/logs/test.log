@@ -1,10 +1,15 @@
-17:44:56.960 [main] INFO  com.ftx.authentication.rainshiro.RainShiroApplication - Starting RainShiroApplication on LAPTOP-OI5LG6OU with PID 9668 (D:\IdeaProjects\Rain平台\rain-shiro\target\classes started by Administrator in D:\IdeaProjects\Rain平台\rain-shiro)
-17:44:56.970 [main] INFO  com.ftx.authentication.rainshiro.RainShiroApplication - No active profile set, falling back to default profiles: default
-17:44:58.357 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-17:44:58.357 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-17:44:58.357 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
-17:44:58.590 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-17:44:59.038 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-17:44:59.078 [main] INFO  com.ftx.authentication.rainshiro.RainShiroApplication - Started RainShiroApplication in 2.684 seconds (JVM running for 6.438)
-17:45:04.419 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-17:45:04.455 [http-nio-8080-exec-1] INFO  com.ftx.authentication.rainshiro.test.TestController - 访问了添加接口
+18:39:59.396 [main] INFO  com.ftx.authentication.rainshiro.RainShiroApplication - Starting RainShiroApplication on LAPTOP-OI5LG6OU with PID 11104 (D:\IdeaProjects\Rain平台\rain-shiro\target\classes started by Administrator in D:\IdeaProjects\Rain平台\rain-shiro)
+18:39:59.407 [main] INFO  com.ftx.authentication.rainshiro.RainShiroApplication - No active profile set, falling back to default profiles: default
+18:40:00.653 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:40:00.654 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+18:40:00.654 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+18:40:00.862 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:40:01.209 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:40:01.242 [main] INFO  com.ftx.authentication.rainshiro.RainShiroApplication - Started RainShiroApplication in 2.484 seconds (JVM running for 6.527)
+18:40:04.989 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:40:05.036 [http-nio-8080-exec-2] INFO  com.ftx.authentication.rainshiro.test.TestController - 到登录页面
+18:40:11.491 [http-nio-8080-exec-3] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - Shiro开始认证
+18:40:11.516 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+18:40:11.634 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+18:40:11.677 [http-nio-8080-exec-3] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - 认证成功
+18:40:16.943 [http-nio-8080-exec-4] INFO  com.ftx.authentication.rainshiro.test.TestController - 访问了添加接口

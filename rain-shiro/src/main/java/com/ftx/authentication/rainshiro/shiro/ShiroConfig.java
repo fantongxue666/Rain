@@ -3,6 +3,7 @@ package com.ftx.authentication.rainshiro.shiro;
 import org.apache.shiro.mgt.DefaultSecurityManager;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -19,16 +20,9 @@ import java.util.Map;
  */
 @Configuration
 public class ShiroConfig{
-    /**
-     *
-     *         Subject 用户
-     *         SecurityManager  管理所有用户
-     *         Realm  连接数据
-     *
-     * 第一步，创建Realm对象  ----连接数据
-     * 第二步，创建DefaultWebSecurityManager环境    ----关联Realm
-     * 第三步，创建ShiroFilterFactoryBean     ----将第二部的环境设置进去
-     */
+
+    @Autowired
+    AuthenUrlConfig authenUrlConfig;
 
     //创建Realm对象，自定义类
     @Bean
@@ -62,15 +56,15 @@ public class ShiroConfig{
          */
         Map<String,String> filterMap=new LinkedHashMap<>();
         //设置必须认证才能访问
-        filterMap.put("/add","authc");
-//        filterMap.put("/update","authc");
-//        filterMap.put("/update/*","authc");/*是通配符
+        filterMap.put(authenUrlConfig.getLoginUrl(),"anon");
+        filterMap.put(authenUrlConfig.getLogoutUrl(),"anon");
+        filterMap.put("/**", "authc");
         factoryBean.setFilterChainDefinitionMap(filterMap);
 
         //设置登录请求(必须认证才能访问，会自动跳转到下面的登录路径)
-        factoryBean.setLoginUrl("/login");
+        factoryBean.setLoginUrl("/toLoginPage");
         //未授权页面
-        factoryBean.setUnauthorizedUrl("/noAuthen");
+        factoryBean.setUnauthorizedUrl("/toNoAuthenPage");
 
         return factoryBean;
     }

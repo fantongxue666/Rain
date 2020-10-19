@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class TestController {
     Logger log= LoggerFactory.getLogger(TestController.class);
 
-    @RequestMapping("/test")
+    @RequestMapping("/login")
     @ResponseBody
     public  void main() {
         String username="18838030468";
@@ -42,9 +42,14 @@ public class TestController {
         log.info("访问了添加接口");
     }
 
-    @RequestMapping("/noAuthen")
+    @RequestMapping("/toLoginPage")
     @ResponseBody
-    public void noAuthen(){
+    public void toLoginPage(){
+        log.info("到登录页面");
+    }
+    @RequestMapping("/toNoAuthenPage")
+    @ResponseBody
+    public void toNoAuthenPage(){
         log.info("没有权限");
     }
 

@@ -1,7 +1,7 @@
 package com.ftx.authentication.rainshiro.shiro;
 
 import com.ftx.authentication.rainshiro.model.AuthUser;
-import com.ftx.authentication.rainshiro.test.ShiroDao;
+import com.ftx.authentication.rainshiro.login.ShiroDao;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
@@ -11,10 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
 /**
  * @author FanJiangFeng

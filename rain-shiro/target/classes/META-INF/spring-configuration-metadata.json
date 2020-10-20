@@ -8,14 +8,33 @@
   ],
   "properties": [
     {
+      "name": "rain.shiro.check-token",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.ftx.authentication.rainshiro.shiro.AuthenUrlConfig"
+    },
+    {
       "name": "rain.shiro.login-url",
       "type": "java.lang.String",
-      "sourceType": "com.ftx.authentication.rainshiro.shiro.AuthenUrlConfig"
+      "sourceType": "com.ftx.authentication.rainshiro.shiro.AuthenUrlConfig",
+      "defaultValue": "\/login"
     },
     {
       "name": "rain.shiro.logout-url",
       "type": "java.lang.String",
-      "sourceType": "com.ftx.authentication.rainshiro.shiro.AuthenUrlConfig"
+      "sourceType": "com.ftx.authentication.rainshiro.shiro.AuthenUrlConfig",
+      "defaultValue": "\/logout"
+    },
+    {
+      "name": "rain.shiro.token-live-time",
+      "type": "java.lang.Long",
+      "sourceType": "com.ftx.authentication.rainshiro.shiro.AuthenUrlConfig",
+      "defaultValue": 1800
+    },
+    {
+      "name": "rain.shiro.token-name",
+      "type": "java.lang.String",
+      "sourceType": "com.ftx.authentication.rainshiro.shiro.AuthenUrlConfig",
+      "defaultValue": "RAIN-TOKEN"
     }
   ],
   "hints": []

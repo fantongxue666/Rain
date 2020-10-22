@@ -49,7 +49,7 @@ public class LoginController {
         UsernamePasswordToken token=new UsernamePasswordToken(authUser.getAccount(),authUser.getPwd());
         try {
             subject.login(token);
-            String token1 = tokenUtil.setToken();
+            String token1 = tokenUtil.setToken(request);//设置token
             List<AuthUser> user = shiroDao.getUser(authUser.getAccount());
             AuthUser user1 = user.get(0);
             user1.setToken(token1);

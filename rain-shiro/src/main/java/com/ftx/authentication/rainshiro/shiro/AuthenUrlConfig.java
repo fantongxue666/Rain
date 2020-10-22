@@ -15,11 +15,11 @@ import org.springframework.stereotype.Component;
 @Component
 @ConfigurationProperties(prefix = "rain.shiro")
 public class AuthenUrlConfig {
-    private String loginUrl="/login";//放开登录路径
-    private String logoutUrl="/logout";//放开登出路径
-    private boolean isCheckToken=true;//是否校验token
-    private String tokenName="RAIN-TOKEN";//请求头token名字
-    private Long tokenLiveTime=1800L;//token存活时间
+    private String loginUrl;//放开登录路径
+    private String logoutUrl;//放开登出路径
+    private boolean isCheckToken;//是否校验token
+    private String tokenName;//请求头token名字
+    private Long tokenLiveTime;//token存活时间
 
     public Long getTokenLiveTime() {
         return tokenLiveTime;

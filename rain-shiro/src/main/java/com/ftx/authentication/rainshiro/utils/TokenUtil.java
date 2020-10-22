@@ -5,9 +5,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
+import org.springframework.web.context.WebApplicationContext;
+import org.springframework.web.context.support.WebApplicationContextUtils;
 
+import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import java.util.concurrent.TimeUnit;
 
@@ -35,11 +39,37 @@ public class TokenUtil {
         }
     }
 
+    public String getTokenBefore(HttpServletRequest request){
+        ServletContext servletContext = request.getSession().getServletContext();
+        WebApplicationContext webApplicationContext = WebApplicationContextUtils.getWebApplicationContext(servletContext);
+        String token_name="";
+        if(webApplicationContext!=null){
+            Environment environment = webApplicationContext.getBean(Environment.class);
+             token_name = environment.getProperty("rain.shiro.token-name");
+        }
+        return token_name;
+    }
+
+    public Long getTokenTime(HttpServletRequest request){
+        ServletContext servletContext = request.getSession().getServletContext();
+        WebApplicationContext webApplicationContext = WebApplicationContextUtils.getWebApplicationContext(servletContext);
+        String token_time="";
+        long parseLong;
+        if(webApplicationContext!=null){
+            Environment environment = webApplicationContext.getBean(Environment.class);
+            token_time = environment.getProperty("rain.shiro.tokenLiveTime");
+             parseLong = Long.parseLong(token_time);
+            return parseLong;
+        }else{
+            return null;
+        }
+    }
+
     //设置token
-    public String setToken(){
+    public String setToken(HttpServletRequest request){
        String token = UuidUtil.getUuid()+UuidUtil.getUuid();
        //键：RAIN-TOKEN/8asdfg096as90d-fg69asd-g6as-dg6asd
-        String key=authenUrlConfig.getTokenName()+"/"+token;
+        String key=this.getTokenBefore(request)+"/"+token;
         redisUtil.set(key,token,authenUrlConfig.getTokenLiveTime(), TimeUnit.MINUTES);
         logger.info("设置token有效时间------------"+authenUrlConfig.getTokenLiveTime()/60+"分钟");
         return token;

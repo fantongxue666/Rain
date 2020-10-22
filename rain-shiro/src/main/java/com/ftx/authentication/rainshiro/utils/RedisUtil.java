@@ -11,14 +11,17 @@ import org.springframework.data.redis.core.SetOperations;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.data.redis.core.ZSetOperations;
 import org.springframework.stereotype.Service;
+import org.springframework.web.context.ContextLoader;
+import org.springframework.web.context.WebApplicationContext;
+import org.springframework.web.context.support.WebApplicationContextUtils;
 
 import javax.annotation.Resource;
+import javax.servlet.ServletContext;
 
 @Service
 public class RedisUtil {
-    @Resource
+    @Autowired
     private RedisTemplate redisTemplate;
-
 
     /**
      * 写入缓存

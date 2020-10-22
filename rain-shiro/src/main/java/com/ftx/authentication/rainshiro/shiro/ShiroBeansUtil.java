@@ -1,5 +1,6 @@
 package com.ftx.authentication.rainshiro.shiro;
 
+import com.ftx.authentication.rainshiro.utils.RedisUtil;
 import com.ftx.authentication.rainshiro.utils.TokenUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -22,6 +23,10 @@ public class ShiroBeansUtil {
     @Autowired
     public static TokenUtil getTokenUtil(){
         return new TokenUtil();
+    }
+    @Autowired
+    public static RedisUtil getRedisUtil(){
+        return new RedisUtil();
     }
     @Autowired
     public static AuthenUrlConfig getAuthenUrlConfig(){

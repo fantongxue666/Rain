@@ -8,17 +8,24 @@ import org.apache.shiro.web.util.WebUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.env.Environment;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
+import org.springframework.web.context.WebApplicationContext;
+import org.springframework.web.context.support.WebApplicationContextUtils;
 
+import javax.servlet.ServletContext;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -31,10 +38,33 @@ import java.util.concurrent.TimeUnit;
 @Configuration
 public class ShiroLoginFilter extends FormAuthenticationFilter {
     Logger logger= LoggerFactory.getLogger(ShiroLoginFilter.class);
-
+    @Autowired
+    RedisTemplate redisTemplate;
+    @Autowired
+    AuthenUrlConfig authenUrlConfig;
+    //是否校验token
+    private boolean isCheckToken;
     @Override
     public boolean onPreHandle(ServletRequest request, ServletResponse response, Object mappedValue) throws Exception {
         logger.info("所有的请求经过过滤器都会来到此onPreHandle方法");
+        HttpServletRequest req=(HttpServletRequest)request;
+        //在filter中 依赖注入不生效了，因为加载顺序 listener>filter>servlet  因此需要用上下文对象来获取
+        //需要获取RedisTemplate和配置文件的一个属性配置（是否校验token）
+        ServletContext servletContext = req.getSession().getServletContext();
+        WebApplicationContext webApplicationContext = WebApplicationContextUtils.getWebApplicationContext(servletContext);
+        if(webApplicationContext!=null){
+            redisTemplate=(RedisTemplate)webApplicationContext.getBean("redisTemplate");
+            Environment environment = webApplicationContext.getBean(Environment.class);
+            String check = environment.getProperty("rain.shiro.check-token");
+            if("true".equals(check)){
+                isCheckToken=true;
+            }else if("false".equals(check)){
+                isCheckToken=false;
+            }else{
+                logger.error("配置文件属性----是否校验token----获取失败");
+            }
+
+        }
         return super.onPreHandle(request, response, mappedValue);
     }
 
@@ -56,11 +86,11 @@ public class ShiroLoginFilter extends FormAuthenticationFilter {
             }
         }else{
             //校验token是否有效
-            boolean isOk = ShiroBeansUtil.getTokenUtil().validateToken(token);
+            boolean isOk = this.validateToken(token);
             if(isOk){
                 logger.info("token有效，并更新延长token在redis中的存活时间【30分钟】");
                 //延长半小时
-                ShiroBeansUtil.getRedisTemplate().expire(ShiroBeansUtil.getAuthenUrlConfig().getTokenName()+"/"+token,ShiroBeansUtil.getAuthenUrlConfig().getTokenLiveTime(), TimeUnit.MINUTES);
+                redisTemplate.expire(ShiroBeansUtil.getAuthenUrlConfig().getTokenName()+"/"+token,ShiroBeansUtil.getAuthenUrlConfig().getTokenLiveTime(), TimeUnit.MINUTES);
                 return true;
             }else if(!ShiroBeansUtil.getAuthenUrlConfig().isCheckToken()){
                 logger.info("开发环境已经开启，不校验token有效");
@@ -99,5 +129,29 @@ public class ShiroLoginFilter extends FormAuthenticationFilter {
         httpResp.addHeader("Access-Control-Allow-Credentials", "true");
         this.redirectToLogin(request, response);
         return false;
+    }
+
+    //校验token
+    public boolean validateToken(String token){
+        String key=ShiroBeansUtil.getAuthenUrlConfig().getTokenName()+"/"+token;
+        Object old_token_object = this.get(key);
+        if(old_token_object!=null){
+            String old_token = old_token_object.toString();
+            if(token.equals(old_token)){
+                return true;
+            }else{
+                return false;
+            }
+        }else{
+            return false;
+        }
+
+    }
+
+    public Object get(final String key) {
+        Object result = null;
+        ValueOperations<Serializable, Object> operations = redisTemplate.opsForValue();
+        result = operations.get(key);
+        return result;
     }
 }

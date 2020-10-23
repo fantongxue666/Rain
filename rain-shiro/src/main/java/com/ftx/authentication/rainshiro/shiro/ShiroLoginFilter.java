@@ -44,9 +44,11 @@ public class ShiroLoginFilter extends FormAuthenticationFilter {
     AuthenUrlConfig authenUrlConfig;
     //是否校验token
     private boolean isCheckToken;
+    //token名字
+    private String tokenName;
     @Override
     public boolean onPreHandle(ServletRequest request, ServletResponse response, Object mappedValue) throws Exception {
-        logger.info("所有的请求经过过滤器都会来到此onPreHandle方法");
+//        logger.info("所有的请求经过过滤器都会来到此onPreHandle方法");
         HttpServletRequest req=(HttpServletRequest)request;
         //在filter中 依赖注入不生效了，因为加载顺序 listener>filter>servlet  因此需要用上下文对象来获取
         //需要获取RedisTemplate和配置文件的一个属性配置（是否校验token）
@@ -56,6 +58,8 @@ public class ShiroLoginFilter extends FormAuthenticationFilter {
             redisTemplate=(RedisTemplate)webApplicationContext.getBean("redisTemplate");
             Environment environment = webApplicationContext.getBean(Environment.class);
             String check = environment.getProperty("rain.shiro.check-token");
+            String token_name = environment.getProperty("rain.shiro.token-name");
+            tokenName=token_name;
             if("true".equals(check)){
                 isCheckToken=true;
             }else if("false".equals(check)){
@@ -77,8 +81,8 @@ public class ShiroLoginFilter extends FormAuthenticationFilter {
         HttpServletRequest req=(HttpServletRequest)request;
         String token = ShiroBeansUtil.getTokenUtil().getToken(req);
         if(StringUtils.isEmpty(token)){
-            if(!ShiroBeansUtil.getAuthenUrlConfig().isCheckToken()){
-                logger.info("开发环境已经开启，不校验token有效");
+            if(!isCheckToken){
+                logger.info("开发环境已经开启，不校验token有效，无须登录即可访问接口");
                 return true;
             }else{
                 logger.error("获取token失败");
@@ -90,10 +94,10 @@ public class ShiroLoginFilter extends FormAuthenticationFilter {
             if(isOk){
                 logger.info("token有效，并更新延长token在redis中的存活时间【30分钟】");
                 //延长半小时
-                redisTemplate.expire(ShiroBeansUtil.getAuthenUrlConfig().getTokenName()+"/"+token,ShiroBeansUtil.getAuthenUrlConfig().getTokenLiveTime(), TimeUnit.MINUTES);
+                redisTemplate.expire(this.tokenName+"/"+token,1800L, TimeUnit.MINUTES);
                 return true;
-            }else if(!ShiroBeansUtil.getAuthenUrlConfig().isCheckToken()){
-                logger.info("开发环境已经开启，不校验token有效");
+            }else if(!isCheckToken){
+                logger.info("开发环境已经开启，不校验token有效，无须登录即可访问接口");
                 return true;
             }else{
                 logger.error("获取token失败");
@@ -118,7 +122,7 @@ public class ShiroLoginFilter extends FormAuthenticationFilter {
     //没有登录的情况下会走此方法
     @Override
     protected boolean onAccessDenied(ServletRequest request, ServletResponse response) throws Exception {
-        logger.info("拒绝登录--没有登录会进入此方法");
+//        logger.info("拒绝登录--没有登录会进入此方法");
         HttpServletResponse httpResp = WebUtils.toHttp(response);
         HttpServletRequest httpReq = WebUtils.toHttp(request);
         httpResp.setContentType("application/json; charset=utf-8");
@@ -133,7 +137,7 @@ public class ShiroLoginFilter extends FormAuthenticationFilter {
 
     //校验token
     public boolean validateToken(String token){
-        String key=ShiroBeansUtil.getAuthenUrlConfig().getTokenName()+"/"+token;
+        String key=this.tokenName+"/"+token;
         Object old_token_object = this.get(key);
         if(old_token_object!=null){
             String old_token = old_token_object.toString();

@@ -3,6 +3,7 @@ package com.ftx.authentication.rainshiro.login;
 import com.ftx.authentication.rainshiro.constant.APPEnums;
 import com.ftx.authentication.rainshiro.constant.JsonObject;
 import com.ftx.authentication.rainshiro.model.AuthUser;
+import com.ftx.authentication.rainshiro.shiro.AuthenUrlConfig;
 import com.ftx.authentication.rainshiro.utils.IPUtil;
 import com.ftx.authentication.rainshiro.utils.RedisUtil;
 import com.ftx.authentication.rainshiro.utils.TokenUtil;
@@ -38,6 +39,9 @@ public class LoginController {
     TokenUtil tokenUtil;
     @Autowired
     ShiroDao shiroDao;
+    @Autowired
+    AuthenUrlConfig authenUrlConfig;
+
 
     /**
      * 登录
@@ -67,10 +71,15 @@ public class LoginController {
      */
     @RequestMapping("/logout")
     @ResponseBody
-    public String logout(){
+    public String logout(HttpServletRequest request){
         Subject subject = SecurityUtils.getSubject();
         if(subject.isAuthenticated()){
             subject.logout();
+            String token = tokenUtil.getToken(request);
+            log.info("token:"+token);
+            String tokenName = authenUrlConfig.getTokenName();
+            log.info("token_name:"+tokenName);
+            redisUtil.remove(tokenName+"/"+token);
         }
         log.info("已退出shiro登录状态");
         return "logout-success";

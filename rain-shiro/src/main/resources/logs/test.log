@@ -1,25 +1,8 @@
-09:33:06.358 [main] INFO  com.ftx.authentication.rainshiro.RainShiroApplication - Starting RainShiroApplication on LAPTOP-OI5LG6OU with PID 22564 (D:\IdeaProjects\Rain平台\rain-shiro\target\classes started by Administrator in D:\IdeaProjects\Rain平台\rain-shiro)
-09:33:06.369 [main] INFO  com.ftx.authentication.rainshiro.RainShiroApplication - No active profile set, falling back to default profiles: default
-09:33:09.382 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-09:33:09.383 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-09:33:09.383 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
-09:33:09.559 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-09:33:10.554 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-09:33:10.599 [main] INFO  com.ftx.authentication.rainshiro.RainShiroApplication - Started RainShiroApplication in 5.359 seconds (JVM running for 10.006)
-09:33:25.857 [http-nio-8080-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-09:33:25.906 [http-nio-8080-exec-2] INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager - Enabling session validation scheduler...
-09:33:25.920 [http-nio-8080-exec-2] INFO  com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 所有的请求经过过滤器都会来到此onPreHandle方法
-09:33:25.931 [http-nio-8080-exec-2] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 获取token失败
-09:33:25.932 [http-nio-8080-exec-2] INFO  com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 拒绝登录--没有登录会进入此方法
-09:33:25.933 [http-nio-8080-exec-2] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 用户认证失败
-09:34:06.578 [http-nio-8080-exec-3] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - Shiro开始认证
-09:34:06.637 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-09:34:07.236 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-09:34:07.500 [http-nio-8080-exec-3] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - 认证成功
-09:34:07.638 [http-nio-8080-exec-3] INFO  com.ftx.authentication.rainshiro.utils.TokenUtil - 设置token有效时间------------60分钟
-09:34:42.582 [http-nio-8080-exec-4] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 获取token失败
-09:34:42.582 [http-nio-8080-exec-4] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 用户认证失败
-09:34:48.069 [http-nio-8080-exec-5] INFO  com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - token有效，并更新延长token在redis中的存活时间【30分钟】
-09:36:13.940 [http-nio-8080-exec-8] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - Shiro开始认证
-09:36:13.942 [http-nio-8080-exec-8] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - 认证成功
-09:36:13.945 [http-nio-8080-exec-8] INFO  com.ftx.authentication.rainshiro.utils.TokenUtil - 设置token有效时间------------60分钟
+18:05:53.688 [main] INFO  com.ftx.authentication.rainshiro.RainShiroApplication - Starting RainShiroApplication on LAPTOP-OI5LG6OU with PID 23356 (D:\IdeaProjects\Rain平台\rain-shiro\target\classes started by Administrator in D:\IdeaProjects\Rain平台\rain-shiro)
+18:05:53.697 [main] INFO  com.ftx.authentication.rainshiro.RainShiroApplication - No active profile set, falling back to default profiles: default
+18:05:55.432 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:05:55.432 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+18:05:55.433 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+18:05:55.531 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:05:56.186 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:05:56.221 [main] INFO  com.ftx.authentication.rainshiro.RainShiroApplication - Started RainShiroApplication in 3.087 seconds (JVM running for 7.408)

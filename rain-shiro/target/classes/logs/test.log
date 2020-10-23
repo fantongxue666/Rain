@@ -1,73 +1,36 @@
-21:43:57.105 [main] INFO  com.ftx.authentication.rainshiro.RainShiroApplication - Starting RainShiroApplication on LAPTOP-OI5LG6OU with PID 9368 (D:\IdeaProjects\Rain平台\rain-shiro\target\classes started by Administrator in D:\IdeaProjects\Rain平台\rain-shiro)
-21:43:57.114 [main] INFO  com.ftx.authentication.rainshiro.RainShiroApplication - No active profile set, falling back to default profiles: default
-21:43:58.774 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-21:43:58.775 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-21:43:58.775 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
-21:43:58.848 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-21:43:59.463 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-21:43:59.497 [main] INFO  com.ftx.authentication.rainshiro.RainShiroApplication - Started RainShiroApplication in 2.937 seconds (JVM running for 7.204)
-21:44:03.537 [http-nio-8080-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-21:44:03.563 [http-nio-8080-exec-2] INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager - Enabling session validation scheduler...
-21:44:03.570 [http-nio-8080-exec-2] INFO  com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 所有的请求经过过滤器都会来到此onPreHandle方法
-21:44:37.110 [http-nio-8080-exec-2] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [java.lang.NullPointerException] with root cause
-java.lang.NullPointerException: null
-	at org.apache.tomcat.util.buf.ByteChunk.equalsIgnoreCase(ByteChunk.java:652) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
-	at org.apache.tomcat.util.buf.MessageBytes.equalsIgnoreCase(MessageBytes.java:334) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
-	at org.apache.tomcat.util.http.MimeHeaders.getValue(MimeHeaders.java:341) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
-	at org.apache.tomcat.util.http.MimeHeaders.getHeader(MimeHeaders.java:373) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
-	at org.apache.coyote.Request.getHeader(Request.java:398) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
-	at org.apache.catalina.connector.Request.getHeader(Request.java:2258) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
-	at org.apache.catalina.connector.RequestFacade.getHeader(RequestFacade.java:690) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
-	at javax.servlet.http.HttpServletRequestWrapper.getHeader(HttpServletRequestWrapper.java:88) ~[tomcat-embed-core-9.0.38.jar:4.0.FR]
-	at com.ftx.authentication.rainshiro.utils.TokenUtil.getToken(TokenUtil.java:50) ~[classes/:?]
-	at com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter.isAccessAllowed(ShiroLoginFilter.java:78) ~[classes/:?]
-	at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162) ~[shiro-web-1.4.1.jar:1.4.1]
-	at com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter.onPreHandle(ShiroLoginFilter.java:68) ~[classes/:?]
-	at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:203) ~[shiro-web-1.4.1.jar:1.4.1]
-	at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:178) ~[shiro-web-1.4.1.jar:1.4.1]
-	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131) ~[shiro-web-1.4.1.jar:1.4.1]
-	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.4.1.jar:1.4.1]
-	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.4.1.jar:1.4.1]
-	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) ~[shiro-web-1.4.1.jar:1.4.1]
-	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.4.1.jar:1.4.1]
-	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.4.1.jar:1.4.1]
-	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.4.1.jar:1.4.1]
-	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387) ~[shiro-core-1.4.1.jar:1.4.1]
-	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.4.1.jar:1.4.1]
-	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.4.1.jar:1.4.1]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
-	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) ~[shiro-web-1.4.1.jar:1.4.1]
-	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) ~[shiro-web-1.4.1.jar:1.4.1]
-	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.4.1.jar:1.4.1]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.38.jar:9.0.38]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.38.jar:9.0.38]
-	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.38.jar:9.0.38]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002) [tomcat-embed-core-9.0.38.jar:9.0.38]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.38.jar:9.0.38]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.38.jar:9.0.38]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.38.jar:9.0.38]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.38.jar:9.0.38]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.38.jar:9.0.38]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.38.jar:9.0.38]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.38.jar:9.0.38]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.38.jar:9.0.38]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.38.jar:9.0.38]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.38.jar:9.0.38]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_191]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.38.jar:9.0.38]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+18:00:21.265 [main] INFO  com.ftx.RainApplication - Starting RainApplication on LAPTOP-OI5LG6OU with PID 23432 (D:\IdeaProjects\Rain平台\Rain\target\classes started by Administrator in D:\IdeaProjects\Rain平台\Rain)
+18:00:21.274 [main] INFO  com.ftx.RainApplication - No active profile set, falling back to default profiles: default
+18:00:22.991 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:00:22.991 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+18:00:22.991 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+18:00:23.074 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:00:23.676 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:00:23.709 [main] INFO  com.ftx.RainApplication - Started RainApplication in 3.005 seconds (JVM running for 7.186)
+18:00:27.668 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:00:27.698 [http-nio-8080-exec-1] INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager - Enabling session validation scheduler...
+18:00:43.911 [http-nio-8080-exec-1] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 获取token失败
+18:00:43.914 [http-nio-8080-exec-1] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 用户认证失败
+18:01:05.882 [http-nio-8080-exec-3] INFO  com.ftx.authentication.rainshiro.login.LoginController - 已退出shiro登录状态
+18:01:59.476 [http-nio-8080-exec-4] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 获取token失败
+18:01:59.477 [http-nio-8080-exec-4] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 用户认证失败
+18:02:06.576 [http-nio-8080-exec-5] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - Shiro开始认证
+18:02:06.609 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+18:02:06.758 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+18:02:06.834 [http-nio-8080-exec-5] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - 认证成功
+18:02:06.880 [http-nio-8080-exec-5] INFO  com.ftx.authentication.rainshiro.utils.TokenUtil - 设置token有效时间------------60分钟
+18:02:15.739 [http-nio-8080-exec-6] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 获取token失败
+18:02:15.739 [http-nio-8080-exec-6] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 用户认证失败
+18:02:20.265 [http-nio-8080-exec-7] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 获取token失败
+18:02:20.265 [http-nio-8080-exec-7] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 用户认证失败
+18:02:23.455 [http-nio-8080-exec-8] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 获取token失败
+18:02:23.455 [http-nio-8080-exec-8] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 用户认证失败
+18:02:29.337 [http-nio-8080-exec-10] INFO  com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - token有效，并更新延长token在redis中的存活时间【30分钟】
+18:02:34.844 [http-nio-8080-exec-9] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 获取token失败
+18:02:34.844 [http-nio-8080-exec-9] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 用户认证失败
+18:02:37.750 [http-nio-8080-exec-2] INFO  com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - token有效，并更新延长token在redis中的存活时间【30分钟】
+18:02:40.722 [http-nio-8080-exec-1] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 获取token失败
+18:02:40.723 [http-nio-8080-exec-1] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 用户认证失败
+18:02:42.999 [http-nio-8080-exec-3] INFO  com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - token有效，并更新延长token在redis中的存活时间【30分钟】
+18:03:09.140 [http-nio-8080-exec-4] INFO  com.ftx.authentication.rainshiro.login.LoginController - token:bf87ee184f6845fba58578847249807084cfec47bc53407e9d40012321410ea9
+18:03:09.140 [http-nio-8080-exec-4] INFO  com.ftx.authentication.rainshiro.login.LoginController - token_name:MY-TOKEN
+18:03:09.142 [http-nio-8080-exec-4] INFO  com.ftx.authentication.rainshiro.login.LoginController - 已退出shiro登录状态

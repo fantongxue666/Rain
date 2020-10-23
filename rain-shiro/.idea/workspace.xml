@@ -2,24 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0f275a4-bc7b-448c-8fc3-cbe965018ab2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logs/rain-shiro-INFO-2020-10-19_1.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/RainShiroApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/RainShiroApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/login/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/shiro/AuthenUrlConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/shiro/AuthenUrlConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/shiro/ShiroBeansUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/shiro/ShiroBeansUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/shiro/ShiroLoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/shiro/ShiroLoginFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/utils/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/utils/RedisUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/utils/TokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/utils/TokenUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logs/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logs/info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logs/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logs/test.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logs/warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logs/warn.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/RainShiroApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/RainShiroApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logs/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logs/info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logs/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logs/test.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logs/warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logs/warn.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/constant/APPEnums.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/constant/APPEnums.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/constant/JsonObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/constant/JsonObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/login/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/login/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/login/ShiroDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/login/ShiroDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/model/AuthUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/model/AuthUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/redis/RedisConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/redis/RedisConfig$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/redis/RedisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/redis/RedisConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/shiro/AuthenUrlConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/shiro/AuthenUrlConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/shiro/ShiroConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/shiro/ShiroConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/shiro/ShiroLoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/shiro/ShiroLoginFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/shiro/ShiroSessionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/shiro/ShiroSessionListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/shiro/UserRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/shiro/UserRealm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/utils/IPUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/utils/IPUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/utils/RedisUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/utils/RedisUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/utils/TokenUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ftx/authentication/rainshiro/utils/TokenUtil.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,33 +35,35 @@
     <session id="1290261810">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="36" />
+          <entry key="class" value="38" />
+          <entry key="gz" value="1" />
           <entry key="html" value="1" />
           <entry key="java" value="50" />
-          <entry key="log" value="2" />
+          <entry key="log" value="3" />
           <entry key="properties" value="1" />
           <entry key="txt" value="1" />
-          <entry key="xml" value="6" />
+          <entry key="xml" value="7" />
           <entry key="yml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="36" />
+          <entry key="CLASS" value="38" />
           <entry key="HTML" value="1" />
           <entry key="JAVA" value="50" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="PLAIN_TEXT" value="5" />
           <entry key="Properties" value="1" />
-          <entry key="XML" value="6" />
+          <entry key="XML" value="7" />
           <entry key="YAML" value="4" />
         </counts>
       </usages-collector>
@@ -70,19 +71,19 @@
         <counts>
           <entry key="dummy" value="23" />
           <entry key="html" value="9" />
-          <entry key="java" value="5088" />
-          <entry key="txt" value="87" />
-          <entry key="xml" value="56" />
-          <entry key="yml" value="312" />
+          <entry key="java" value="5261" />
+          <entry key="txt" value="110" />
+          <entry key="xml" value="59" />
+          <entry key="yml" value="332" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="9" />
-          <entry key="JAVA" value="5088" />
-          <entry key="PLAIN_TEXT" value="110" />
-          <entry key="XML" value="56" />
-          <entry key="YAML" value="312" />
+          <entry key="JAVA" value="5261" />
+          <entry key="PLAIN_TEXT" value="133" />
+          <entry key="XML" value="59" />
+          <entry key="YAML" value="332" />
         </counts>
       </usages-collector>
     </session>
@@ -92,8 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/shiro/ShiroConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="144" column="5" lean-forward="true" selection-start-line="144" selection-start-column="5" selection-end-line="144" selection-end-column="5" />
+            <state relative-caret-position="1064">
+              <caret line="144" column="5" selection-start-line="144" selection-start-column="5" selection-end-line="144" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#6523#6524#0" expanded="true" />
@@ -106,8 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/shiro/AuthenUrlConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+            <state relative-caret-position="317">
+              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,8 +119,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/login/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="51" column="65" lean-forward="true" selection-start-line="51" selection-start-column="65" selection-end-line="51" selection-end-column="65" />
+            <state relative-caret-position="367">
+              <caret line="51" column="65" selection-start-line="51" selection-start-column="65" selection-end-line="51" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,8 +131,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/shiro/ShiroLoginFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="57" column="77" lean-forward="true" selection-start-line="57" selection-start-column="77" selection-end-line="57" selection-end-column="77" />
+            <state relative-caret-position="1636">
+              <caret line="125" column="19" selection-start-line="125" selection-start-column="19" selection-end-line="125" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,10 +141,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="84" column="18" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/utils/TokenUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1408">
-              <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+            <state relative-caret-position="106">
+              <caret line="81" selection-start-line="81" selection-end-line="81" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -154,8 +164,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="352">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -193,7 +203,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/success.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/test/ShiroDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/shiro/ShiroSessionListener.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/redis/RedisConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/redis/RedisUtils.java" />
         <option value="$PROJECT_DIR$/src/main/resources/banner.txt" />
@@ -209,12 +218,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/utils/SpringUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/RainShiroApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/shiro/ShiroBeansUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/utils/RedisUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/shiro/AuthenUrlConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/shiro/ShiroLoginFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/login/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/utils/TokenUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/shiro/ShiroLoginFilter.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -235,6 +245,22 @@
         <option name="userSettingsFile" value="D:\apache-maven-3.3.9\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="rain-shiro" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="rain-shiro" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
@@ -269,7 +295,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -369,6 +394,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -380,7 +406,7 @@
     <property name="SearchEverywhereHistoryKey" value="Filter&#9;FILE&#9;jar://D:/maven-repository/org/apache/shiro/shiro-web/1.4.1/shiro-web-1.4.1.jar!/org/apache/shiro/web/servlet/AbstractFilter.class" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603374840433" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603418611168" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -422,6 +448,8 @@
       <workItem from="1603092976076" duration="10945000" />
       <workItem from="1603156151885" duration="21062000" />
       <workItem from="1603368575635" duration="6242000" />
+      <workItem from="1603414261197" duration="71000" />
+      <workItem from="1603415508041" duration="3100000" />
     </task>
     <task id="LOCAL-00001" summary="集成log4j2日志框架，shiro过滤器，token工具类">
       <created>1603184011458</created>
@@ -430,16 +458,23 @@
       <option name="project" value="LOCAL" />
       <updated>1603184011458</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="shiro模块完成，准备集成到Rain平台">
+      <created>1603417338912</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603417338912</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38249000" />
+    <option name="totallyTimeSpent" value="41420000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22654155" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23257373" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -450,19 +485,19 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3069307" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932975" weight="0.45184135" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.305949" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932975" weight="0.3838527" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.25212464" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Statistic" order="10" />
       <window_info anchor="bottom" id="Problems" order="11" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.16005665" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="14" visible="true" weight="0.3895184" />
       <window_info anchor="bottom" id="JRebel Executor" order="15" />
       <window_info anchor="bottom" id="JRebel Console" order="16" sideWeight="0.50067025" side_tool="true" weight="0.39886847" />
       <window_info anchor="bottom" id="Messages" order="17" weight="0.3286119" />
@@ -473,7 +508,7 @@
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="BPMNPalette" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.3297587" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
@@ -512,7 +547,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="集成log4j2日志框架，shiro过滤器，token工具类" />
-    <option name="LAST_COMMIT_MESSAGE" value="集成log4j2日志框架，shiro过滤器，token工具类" />
+    <MESSAGE value="shiro模块完成，准备集成到Rain平台" />
+    <option name="LAST_COMMIT_MESSAGE" value="shiro模块完成，准备集成到Rain平台" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -554,9 +590,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/logs/error.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/logs/info.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2706" />
@@ -574,13 +607,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="119" selection-start-line="119" selection-end-line="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
         </state>
       </provider>
     </entry>
@@ -602,21 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-          <folding>
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#481#482#0" expanded="true" />
-            <element signature="e#509#510#0" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
-            <element signature="e#569#570#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#735#736#0" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -723,27 +734,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/utils/SpringUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#805#806#0" expanded="true" />
-            <element signature="e#943#944#0" expanded="true" />
-            <element signature="e#1012#1013#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/utils/SpringUtil.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/RainShiroApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#792#793#0" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -751,13 +746,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
           <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#693#694#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#790#791#0" expanded="true" />
-            <element signature="e#828#829#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -765,9 +753,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -782,9 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -792,16 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/shiro/AuthenUrlConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -815,10 +787,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://D:/maven-repository/org/apache/shiro/shiro-web/1.4.1/shiro-web-1.4.1.jar!/org/apache/shiro/web/servlet/AdviceFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/login/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="51" column="65" selection-start-line="51" selection-start-column="65" selection-end-line="51" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/shiro/AuthenUrlConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/shiro/ShiroConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="144" column="5" lean-forward="true" selection-start-line="144" selection-start-column="5" selection-end-line="144" selection-end-column="5" />
+        <state relative-caret-position="1064">
+          <caret line="144" column="5" selection-start-line="144" selection-start-column="5" selection-end-line="144" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#6523#6524#0" expanded="true" />
@@ -827,47 +833,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/maven-repository/org/apache/shiro/shiro-web/1.4.1/shiro-web-1.4.1.jar!/org/apache/shiro/web/servlet/AdviceFilter.class">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logs/rain-shiro-ERROR-2020-10-20_1.log.gz">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logs/error.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/utils/TokenUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="106">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/shiro/ShiroLoginFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="57" column="77" lean-forward="true" selection-start-line="57" selection-start-column="77" selection-end-line="57" selection-end-column="77" />
+        <state relative-caret-position="1636">
+          <caret line="125" column="19" selection-start-line="125" selection-start-column="19" selection-end-line="125" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/login/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="51" column="65" lean-forward="true" selection-start-line="51" selection-start-column="65" selection-end-line="51" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ftx/authentication/rainshiro/utils/TokenUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1408">
-          <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="345">
+          <caret line="84" column="18" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="18" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Rain平台.iml" filepath="$PROJECT_DIR$/.idea/Rain平台.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Rain/rain.iml" filepath="$PROJECT_DIR$/Rain/rain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rain-shiro/rain-shiro.iml" filepath="$PROJECT_DIR$/rain-shiro/rain-shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rain-excel/rainexcel.iml" filepath="$PROJECT_DIR$/rain-excel/rainexcel.iml" />
+    </modules>
+  </component>
+</project>

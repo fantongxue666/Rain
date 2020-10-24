@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="978cf0c6-61f8-4d6e-a253-0fc8a45d3e06" name="Default Changelist" comment="" />
+    <list default="true" id="978cf0c6-61f8-4d6e-a253-0fc8a45d3e06" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/target/classes/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rain-shiro/src/main/resources/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/../rain-shiro/src/main/resources/logs/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rain-shiro/src/main/resources/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/../rain-shiro/src/main/resources/logs/info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rain-shiro/src/main/resources/logs/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/../rain-shiro/src/main/resources/logs/test.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rain-shiro/src/main/resources/logs/warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/../rain-shiro/src/main/resources/logs/warn.log" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,36 +23,37 @@
     <session id="1181473337">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="MF" value="1" />
-          <entry key="class" value="18" />
+          <entry key="class" value="22" />
           <entry key="factories" value="1" />
           <entry key="java" value="6" />
           <entry key="json" value="1" />
           <entry key="log" value="4" />
           <entry key="properties" value="1" />
-          <entry key="txt" value="3" />
-          <entry key="xml" value="8" />
-          <entry key="yml" value="4" />
+          <entry key="txt" value="6" />
+          <entry key="xml" value="10" />
+          <entry key="yml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="18" />
+          <entry key="CLASS" value="22" />
           <entry key="JAVA" value="6" />
           <entry key="JSON" value="1" />
           <entry key="Manifest" value="1" />
-          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="PLAIN_TEXT" value="10" />
           <entry key="Properties" value="1" />
-          <entry key="XML" value="8" />
-          <entry key="YAML" value="4" />
+          <entry key="XML" value="10" />
+          <entry key="YAML" value="5" />
           <entry key="spring.factories" value="1" />
         </counts>
       </usages-collector>
@@ -55,17 +62,17 @@
           <entry key="dummy" value="2" />
           <entry key="factories" value="16" />
           <entry key="java" value="254" />
-          <entry key="txt" value="7" />
-          <entry key="xml" value="61" />
-          <entry key="yml" value="11" />
+          <entry key="txt" value="33" />
+          <entry key="xml" value="62" />
+          <entry key="yml" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="254" />
-          <entry key="PLAIN_TEXT" value="9" />
-          <entry key="XML" value="61" />
-          <entry key="YAML" value="11" />
+          <entry key="PLAIN_TEXT" value="35" />
+          <entry key="XML" value="62" />
+          <entry key="YAML" value="15" />
           <entry key="spring.factories" value="16" />
         </counts>
       </usages-collector>
@@ -76,8 +83,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/config/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            <state relative-caret-position="440">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -190,6 +197,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -242,8 +251,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -254,7 +261,7 @@
     <property name="SearchEverywhereHistoryKey" value="spring.fa&#9;FILE&#9;file://D:/IdeaProjects/Rain平台/Rain/src/main/resources/META-INF/spring.factories" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603447737522" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603507701177" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -263,6 +270,9 @@
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\Rain平台\Rain\src\main\resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -314,17 +324,26 @@
       <updated>1603418876773</updated>
       <workItem from="1603418882630" duration="9529000" />
       <workItem from="1603441204299" duration="5514000" />
+      <workItem from="1603506918008" duration="861000" />
     </task>
+    <task id="LOCAL-00001" summary="集成最新版本的rain-shiro模块到rain平台">
+      <created>1603507498686</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603507498686</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15043000" />
+    <option name="totallyTimeSpent" value="15904000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.230563" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23391421" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -336,7 +355,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.22521247" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.25212464" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4220963" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -369,119 +388,29 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="集成最新版本的rain-shiro模块到rain平台" />
+    <option name="LAST_COMMIT_MESSAGE" value="集成最新版本的rain-shiro模块到rain平台" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/log4j2-spring.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/com/ftx/authentication/rainshiro/RainShiroApplication.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/com/ftx/authentication/rainshiro/constant/APPEnums.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/com/ftx/authentication/rainshiro/constant/JsonObject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/logs/error.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3894" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/logs/test.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1103" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/logs/info.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15588" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/com/ftx/authentication/rainshiro/login/LoginController.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-242">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/log4j2-spring.xml" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/com/ftx/authentication/rainshiro/RainShiroApplication.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/com/ftx/authentication/rainshiro/constant/APPEnums.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/com/ftx/authentication/rainshiro/constant/JsonObject.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/logs/error.log" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/logs/test.log" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/logs/info.log" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/com/ftx/authentication/rainshiro/login/LoginController.class" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ftx/config/JarConfig.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/com/ftx/authentication/rainshiro/shiro/ShiroSessionListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/META-INF/spring-configuration-metadata.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/META-INF/maven/com.ftx.authentication/rain-shiro/pom.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/META-INF/maven/com.ftx.authentication/rain-shiro/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/com/ftx/authentication/rainshiro/shiro/AuthenUrlConfig.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/com/ftx/authentication/rainshiro/shiro/ShiroBeansUtil.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/com/ftx/authentication/rainshiro/shiro/ShiroConfig.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/banner.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring.factories">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/log4j2-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="93" selection-start-line="12" selection-start-column="93" selection-end-line="12" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/com/ftx/authentication/rainshiro/shiro/ShiroSessionListener.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/META-INF/MANIFEST.MF" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/META-INF/spring-configuration-metadata.json" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/META-INF/maven/com.ftx.authentication/rain-shiro/pom.properties" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/META-INF/maven/com.ftx.authentication/rain-shiro/pom.xml" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/com/ftx/authentication/rainshiro/shiro/AuthenUrlConfig.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/com/ftx/authentication/rainshiro/shiro/ShiroBeansUtil.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/com/ftx/authentication/rainshiro/shiro/ShiroConfig.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring.factories" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.4.1/shiro-web-1.4.1.jar!/org/apache/shiro/web/filter/PathMatchingFilter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
@@ -496,54 +425,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ftx/config/ShiroJarConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/com/ftx/authentication/rainshiro/shiro/ShiroLoginFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1757">
-          <caret line="118" selection-start-line="118" selection-end-line="118" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/com/ftx/authentication/rainshiro/utils/TokenUtil.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-841">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.1/rain-shiro-1.1.jar!/com/ftx/authentication/rainshiro/login/LoginController.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.1/rain-shiro-1.1.jar!/com/ftx/authentication/rainshiro/shiro/ShiroLoginFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ftx/config/ShiroJarConfig.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/com/ftx/authentication/rainshiro/shiro/ShiroLoginFilter.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/com/ftx/authentication/rainshiro/utils/TokenUtil.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/application.yml" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.1/rain-shiro-1.1.jar!/com/ftx/authentication/rainshiro/login/LoginController.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.1/rain-shiro-1.1.jar!/com/ftx/authentication/rainshiro/shiro/ShiroLoginFilter.class" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ftx/RainApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -554,10 +441,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.2/rain-shiro-1.2.jar!/banner.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.2/rain-shiro-1.2.jar!/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.2/rain-shiro-1.2.jar!/com/ftx/authentication/rainshiro/shiro/ShiroLoginFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/banner.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.2/rain-shiro-1.2.jar!/com/ftx/authentication/rainshiro/login/LoginController.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-409">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.2/rain-shiro-1.2.jar!/com/ftx/authentication/rainshiro/redis/RedisConfig.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-849">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.2/rain-shiro-1.2.jar!/com/ftx/authentication/rainshiro/utils/TokenUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/log4j2-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="93" selection-start-line="12" selection-start-column="93" selection-end-line="12" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        <state relative-caret-position="440">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>

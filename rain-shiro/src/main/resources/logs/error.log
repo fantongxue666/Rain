@@ -139,3 +139,17 @@ java.sql.SQLIntegrityConstraintViolationException: Column 'id' cannot be null
 10:29:47.354 [http-nio-8080-exec-4] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 用户认证失败
 10:29:53.119 [http-nio-8080-exec-8] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 获取token失败
 10:29:53.120 [http-nio-8080-exec-8] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 用户认证失败
+10:37:24.993 [http-nio-8080-exec-1] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 获取token失败
+10:37:24.995 [http-nio-8080-exec-1] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 用户认证失败
+10:38:22.670 [http-nio-8080-exec-7] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 获取token失败
+10:38:22.671 [http-nio-8080-exec-7] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 用户认证失败
+10:38:48.486 [http-nio-8080-exec-10] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 获取token失败
+10:38:48.486 [http-nio-8080-exec-10] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 用户认证失败
+11:02:03.480 [http-nio-8080-exec-1] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 获取token失败
+11:02:03.480 [http-nio-8080-exec-1] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 用户认证失败
+11:02:21.459 [http-nio-8080-exec-4] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 获取token失败
+11:02:21.459 [http-nio-8080-exec-4] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 用户认证失败
+11:02:44.207 [http-nio-8080-exec-6] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 获取token失败
+11:02:44.208 [http-nio-8080-exec-6] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 用户认证失败
+11:02:58.899 [http-nio-8080-exec-8] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 获取token失败
+11:02:58.900 [http-nio-8080-exec-8] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 用户认证失败

@@ -1,0 +1,23 @@
+<querySql>
+    <sql id="one">
+        SELECT
+        username AS username,
+        account AS account,
+        pwd AS pwd,
+        roleid AS roleid
+        FROM
+        tb_user
+        WHERE
+        id = ${id}
+        AND USERNAME = ${username}
+    </sql>
+    <sql id="two">
+        SELECT
+        username AS username,
+        account AS account,
+        pwd AS pwd,
+        roleid AS roleid
+        FROM
+        tb_user
+    </sql>
+</querySql>

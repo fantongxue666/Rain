@@ -14,7 +14,7 @@ rain:
   shiro:
     login-url: /login # 放开登录路径
     logout-url: /logout # 放开登出路径
-    check-token: true # 是否校验token    true：正常返回token和登录校验token   false：无需携带和校验token，用于方便开发环境
+    check-token: false # 是否校验token    true：正常返回token和登录校验token   false：无需携带和校验token，用于方便开发环境
     token-name: MY-TOKEN # 请求头token名字
-    tokenLiveTime: 3600 # token过期时间
+    tokenLiveTime: 1800 # token过期时间
 

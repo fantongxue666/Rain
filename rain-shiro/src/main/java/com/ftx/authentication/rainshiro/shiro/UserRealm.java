@@ -5,6 +5,7 @@ import com.ftx.authentication.rainshiro.login.ShiroDao;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
+import org.apache.shiro.crypto.hash.Md5Hash;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.slf4j.Logger;
@@ -50,22 +51,22 @@ public class UserRealm extends AuthorizingRealm {
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
         log.info("Shiro开始认证");
-
+        //3，得到传来的账号密码主体
+        UsernamePasswordToken userToken=(UsernamePasswordToken)token;
         //1，从主体传过来的认证信息中，获得用户名
         String username= (String) token.getPrincipal();
         //2，通过用户名到数据库中获取密码
         List<AuthUser> user = shiroDao.getUser(username);
         String password=null;
+        Md5Hash md5Hash=null;
         if(user.size()>0){
              password = user.get(0).getPwd();
+             md5Hash=new Md5Hash(new String(userToken.getPassword()));
         }else{
             log.info("认证失败！该账号不存在");
             return null; //抛出异常 UnknownAccountException
         }
-
-        //3，得到传来的账号密码主体
-        UsernamePasswordToken userToken=(UsernamePasswordToken)token;
-       if(!new String(userToken.getPassword()).equals(password)){
+       if(!md5Hash.toString().equals(password)){
             log.info("认证失败！密码错误");
             return null;
         }

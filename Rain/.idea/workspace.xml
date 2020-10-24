@@ -1,55 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="978cf0c6-61f8-4d6e-a253-0fc8a45d3e06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ftx/RainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/src/main/java/com/ftx/authentication/rainshiro/login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rain-shiro/src/main/java/com/ftx/authentication/rainshiro/login/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/src/main/resources/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/../rain-shiro/src/main/resources/logs/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/src/main/resources/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/../rain-shiro/src/main/resources/logs/info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/src/main/resources/logs/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/../rain-shiro/src/main/resources/logs/test.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/src/main/resources/logs/warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/../rain-shiro/src/main/resources/logs/warn.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/banner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/com/ftx/authentication/rainshiro/RainShiroApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/com/ftx/authentication/rainshiro/constant/APPEnums.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/com/ftx/authentication/rainshiro/constant/JsonObject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/com/ftx/authentication/rainshiro/login/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/com/ftx/authentication/rainshiro/login/ShiroDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/com/ftx/authentication/rainshiro/model/AuthUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/com/ftx/authentication/rainshiro/redis/RedisConfig$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/com/ftx/authentication/rainshiro/redis/RedisConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/com/ftx/authentication/rainshiro/shiro/AuthenUrlConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/com/ftx/authentication/rainshiro/shiro/ShiroBeansUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/com/ftx/authentication/rainshiro/shiro/ShiroConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/com/ftx/authentication/rainshiro/shiro/ShiroLoginFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/com/ftx/authentication/rainshiro/shiro/ShiroSessionListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/com/ftx/authentication/rainshiro/shiro/UserRealm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/com/ftx/authentication/rainshiro/utils/IPUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/com/ftx/authentication/rainshiro/utils/RedisUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/com/ftx/authentication/rainshiro/utils/TokenUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/com/ftx/authentication/rainshiro/utils/UuidUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/log4j2-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/log4j2-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/logs/error.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/logs/info.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/logs/rain-shiro-ERROR-2020-10-20_1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/logs/rain-shiro-ERROR-2020-10-22_1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/logs/rain-shiro-INFO-2020-10-19_1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/logs/rain-shiro-INFO-2020-10-20_1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/logs/rain-shiro-INFO-2020-10-22_1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/logs/rain-shiro-WARN-2020-10-20_1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/logs/rain-shiro-WARN-2020-10-22_1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/logs/test.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/classes/logs/warn.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rain-shiro/target/rain-shiro-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-    </list>
+    <list default="true" id="978cf0c6-61f8-4d6e-a253-0fc8a45d3e06" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,7 +17,7 @@
     <session id="1181473337">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.opened" value="2" />
@@ -76,24 +28,24 @@
           <entry key="MF" value="1" />
           <entry key="class" value="18" />
           <entry key="factories" value="1" />
-          <entry key="java" value="5" />
+          <entry key="java" value="6" />
           <entry key="json" value="1" />
           <entry key="log" value="4" />
           <entry key="properties" value="1" />
           <entry key="txt" value="3" />
-          <entry key="xml" value="7" />
+          <entry key="xml" value="8" />
           <entry key="yml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="18" />
-          <entry key="JAVA" value="5" />
+          <entry key="JAVA" value="6" />
           <entry key="JSON" value="1" />
           <entry key="Manifest" value="1" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="Properties" value="1" />
-          <entry key="XML" value="7" />
+          <entry key="XML" value="8" />
           <entry key="YAML" value="4" />
           <entry key="spring.factories" value="1" />
         </counts>
@@ -121,20 +73,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/config/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
+            <state relative-caret-position="352">
               <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.1/rain-shiro-1.1.jar!/com/ftx/authentication/rainshiro/shiro/ShiroLoginFilter.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="924">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
             </state>
           </provider>
         </entry>
@@ -295,10 +238,6 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Rain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -315,7 +254,7 @@
     <property name="SearchEverywhereHistoryKey" value="spring.fa&#9;FILE&#9;file://D:/IdeaProjects/Rain平台/Rain/src/main/resources/META-INF/spring.factories" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603447591449" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603447737522" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -374,12 +313,12 @@
       <option name="presentableId" value="Default" />
       <updated>1603418876773</updated>
       <workItem from="1603418882630" duration="9529000" />
-      <workItem from="1603441204299" duration="4708000" />
+      <workItem from="1603441204299" duration="5514000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14237000" />
+    <option name="totallyTimeSpent" value="15043000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -567,18 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ftx/RainApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.0/rain-shiro-1.0.jar!/com/ftx/authentication/rainshiro/shiro/ShiroLoginFilter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1757">
@@ -603,24 +530,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.1/rain-shiro-1.1.jar!/com/ftx/authentication/rainshiro/shiro/ShiroLoginFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
+        <state relative-caret-position="550">
           <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ftx/RainApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
+        <state relative-caret-position="352">
           <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/1.1/rain-shiro-1.1.jar!/com/ftx/authentication/rainshiro/shiro/ShiroLoginFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
         </state>
       </provider>
     </entry>

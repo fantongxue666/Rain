@@ -17,6 +17,13 @@ public class JsonObject<T> {
     private String message;//提示信息
     private Long timeStamp;//当前数据返回的时间戳
 
+    public static JsonObject Success(){
+        return new JsonObject("操作成功",APPEnums.OK);
+    }
+    public static JsonObject Error(){
+        return new JsonObject("操作失败",APPEnums.ERROR);
+    }
+
     public JsonObject(T data) {
         this(data, APPEnums.OK);
     }

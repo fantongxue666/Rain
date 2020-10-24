@@ -23,6 +23,11 @@
       "sourceType": "com.ftx.authentication.rainshiro.shiro.AuthenUrlConfig"
     },
     {
+      "name": "rain.shiro.register-url",
+      "type": "java.lang.String",
+      "sourceType": "com.ftx.authentication.rainshiro.shiro.AuthenUrlConfig"
+    },
+    {
       "name": "rain.shiro.token-live-time",
       "type": "java.lang.Long",
       "sourceType": "com.ftx.authentication.rainshiro.shiro.AuthenUrlConfig"

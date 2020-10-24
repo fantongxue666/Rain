@@ -1,5 +1,6 @@
 package com.ftx.authentication.rainshiro.shiro;
 
+import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.mgt.DefaultSecurityManager;
 import org.apache.shiro.session.SessionListener;
 import org.apache.shiro.session.mgt.SessionManager;
@@ -138,6 +139,14 @@ public class ShiroConfig{
     public DefaultSecurityManager getDefaultSecurityManager(@Qualifier("userRealm") UserRealm userRealm){
         DefaultSecurityManager securityManager=new DefaultWebSecurityManager();
         //关联Realm对象
+        //shiro加密
+        HashedCredentialsMatcher hashedCredentialsMatcher=new HashedCredentialsMatcher();
+        //设置加密算法
+        hashedCredentialsMatcher.setHashAlgorithmName("md5");
+        //设置加密次数
+        hashedCredentialsMatcher.setHashIterations(1);
+        //把shiro加密设置到Realm中
+        userRealm.setCredentialsMatcher(hashedCredentialsMatcher);
         securityManager.setRealm(userRealm);
         //配置自定义session管理，使用ehcache 或redis
         securityManager.setSessionManager(sessionManager());
@@ -163,6 +172,7 @@ public class ShiroConfig{
         //设置必须认证才能访问
         filterMap.put(authenUrlConfig.getLoginUrl(),"anon");
         filterMap.put(authenUrlConfig.getLogoutUrl(),"anon");
+        filterMap.put(authenUrlConfig.getRegisterUrl(),"anon");
         filterMap.put("/**", "authc");
         factoryBean.setFilterChainDefinitionMap(filterMap);
 

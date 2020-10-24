@@ -7,6 +7,7 @@ import com.ftx.authentication.rainshiro.shiro.AuthenUrlConfig;
 import com.ftx.authentication.rainshiro.utils.IPUtil;
 import com.ftx.authentication.rainshiro.utils.RedisUtil;
 import com.ftx.authentication.rainshiro.utils.TokenUtil;
+import com.ftx.authentication.rainshiro.utils.UuidUtil;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.IncorrectCredentialsException;
 import org.apache.shiro.authc.UnknownAccountException;
@@ -19,7 +20,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import java.math.BigInteger;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.List;
+import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -71,7 +76,7 @@ public class LoginController {
      */
     @RequestMapping("/logout")
     @ResponseBody
-    public String logout(HttpServletRequest request){
+    public JsonObject<Object> logout(HttpServletRequest request){
         Subject subject = SecurityUtils.getSubject();
         if(subject.isAuthenticated()){
             subject.logout();
@@ -82,7 +87,26 @@ public class LoginController {
             redisUtil.remove(tokenName+"/"+token);
         }
         log.info("已退出shiro登录状态");
-        return "logout-success";
+
+        return new JsonObject<>("已退出系统");
+    }
+
+    /**
+     * 注册
+     */
+    @RequestMapping("/register")
+    @ResponseBody
+    public JsonObject<Object> register(@RequestBody AuthUser authUser) throws NoSuchAlgorithmException {
+        MessageDigest md5 = MessageDigest.getInstance("MD5");
+        md5.update(authUser.getPwd().getBytes());
+        byte[] digest = md5.digest();
+        String md5_pwd = String.format("%032x", new BigInteger(1, digest));
+        log.info("加密后的密码："+md5_pwd);
+        authUser.setPwd(md5_pwd);
+        authUser.setId(UuidUtil.getUuid());
+        int i = shiroDao.registerUser(authUser);
+        return i>0?JsonObject.Success():JsonObject.Error();
+
     }
 
     /**

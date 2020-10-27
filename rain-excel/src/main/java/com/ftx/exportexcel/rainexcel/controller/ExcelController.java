@@ -8,6 +8,7 @@ import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.poifs.filesystem.POIFSFileSystem;
 import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,10 +17,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import javax.servlet.http.HttpServletResponse;
+import java.io.*;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -34,7 +34,7 @@ import java.util.Map;
  */
 
 /**
- * 说明：该版本暂不支持其他格式参数，只支持字符串，另外也只支持excel模板导出第一个sheet页的内容，待后期升级完善
+ * 说明：该版本暂不支持其他格式参数，只支持导出字符串，只支持xlsx格式，另外也只支持excel模板导出第一个sheet页的内容，待后期升级完善
  */
 @Controller
 public class ExcelController {
@@ -58,7 +58,7 @@ public class ExcelController {
     * @History
     */
     //http://localhost:8080/exportExcel?fileUrl=test/测试Excel导出模板.xlsx&exportName=测试导出&id=4977fdafa7654baaa6fc200493ea2b5b&username=test
-    public void exportExcel(String fileUrl, String exportName, HttpServletRequest request) throws IOException{
+    public void exportExcel(String fileUrl, String exportName, HttpServletRequest request,HttpServletResponse response) throws Exception {
 
         //存放xml和xlsx的文件夹的路径
         String xmlPackageUrl=excelConfig.getResource();
@@ -109,12 +109,12 @@ public class ExcelController {
         }
 
         //导出excel  查询结果集   xlsx全路径
-        writeExcel(sqlResultMap,fileAllUrl);
+        writeExcel(sqlResultMap,fileAllUrl,response,exportName);
 
 
     }
 
-    private void writeExcel(Map sqlResultMap, String fileAllUrl) throws IOException {
+    private void writeExcel(Map sqlResultMap, String fileAllUrl,HttpServletResponse response,String exportName) throws Exception {
         String suffix = fileAllUrl.substring(fileAllUrl.lastIndexOf(".")+1);
         InputStream is=new FileInputStream(new File(fileAllUrl));
         HSSFWorkbook wb=null;
@@ -130,15 +130,9 @@ public class ExcelController {
                 if(row==null){
                     continue;
                 }
-                //遍历行中的每一列
-                for(int cellNum = 0; cellNum<=row.getLastCellNum();cellNum++){
-                    HSSFCell cell = row.getCell(cellNum);
-                    if(cell==null){
-                        continue;
-                    }
-                    System.out.println(cell.getStringCellValue());
-                }
+
             }
+            this.exportExcelByDownload(null,wb,response,exportName);
 
 
         }else if("xlsx".equals(suffix)){
@@ -164,15 +158,99 @@ public class ExcelController {
                         int beginCell_Row = cell.getRowIndex();
                         int beginCell_column = cell.getColumnIndex();
                         int endCell_column=beginCell_column+row.getLastCellNum();
-                        //从这继续写
+                        String sql_key = stringCellValue.substring(1, stringCellValue.indexOf("_"));
+                        List<Map> result=(List<Map>) sqlResultMap.get(sql_key);
+                        int m=0;
+                        for(int i=beginCell_Row;i<(beginCell_Row+result.size());i++){
+                            Row row1 = sheet.createRow(i + 1);
+                            for(int j=beginCell_column;j<(beginCell_column+result.get(0).size());j++){
+                                Cell cell1 = sheet.getRow(beginCell_Row).getCell(j);
+                                String stringCellValue1 = cell1.getStringCellValue();
+                                if(stringCellValue1.contains("{")){
+                                   stringCellValue1= stringCellValue1.replace("{","");
+                                }
+                                if(stringCellValue1.contains("}")){
+                                    stringCellValue1= stringCellValue1.replace("}","");
+                                }
+                                if(stringCellValue1.contains("{"+sql_key+"_end:")){
+                                    stringCellValue1= stringCellValue1.replace("{"+sql_key+"_end:","");
+                                }
+                                if(stringCellValue1.contains("{"+sql_key+"_begin:")){
+                                    stringCellValue1= stringCellValue1.replace("{"+sql_key+"_begin:","");
+                                }
+                                if(stringCellValue1.contains(sql_key+"_end:")){
+                                    stringCellValue1= stringCellValue1.replace(sql_key+"_end:","");
+                                }
+                                if(stringCellValue1.contains(sql_key+"_begin:")){
+                                    stringCellValue1= stringCellValue1.replace(sql_key+"_begin:","");
+                                }
+
+                                Cell cell2 = row1.createCell(j);
+                                cell2.setCellValue((String) result.get(m).get(stringCellValue1));
+                            }
+                            m++;
+                            if(i==((beginCell_Row+result.size())-1)){
+                                //删除占位符所在的行
+//                                deleteRow(sheet,beginCell_Row,-1);
+                            }
+                        }
                     }
 
 
                 }
             }
 
+            this.exportExcelByDownload(wbs,null,response,exportName);
+
         }
     }
+
+    //excel表格直接浏览器下载
+    public void exportExcelByDownload(Workbook wbs,HSSFWorkbook wb, HttpServletResponse httpServletResponse, String fileName) throws Exception {
+        //响应类型为application/octet- stream情况下使用了这个头信息的话，那就意味着不想直接显示内容
+        //httpServletResponse.setContentType(MediaType.APPLICATION_OCTET_STREAM_VALUE);
+        //attachment为以附件方式下载
+        String suffix="";
+        if(wbs!=null){
+            suffix=".xlsx";
+        }else if(wb!=null){
+            suffix=".xls";
+        }
+        httpServletResponse.setHeader("Content-Disposition","attachment;filename=" + URLEncoder.encode(
+                fileName + suffix,
+                "utf-8"));
+        /**
+         * 代码里面使用Content-Disposition来确保浏览器弹出下载对话框的时候。
+         * response.addHeader("Content-Disposition","attachment");一定要确保没有做过关于禁止浏览器缓存的操作
+         */
+        httpServletResponse.setHeader("Cache-Control", "No-cache");
+        httpServletResponse.flushBuffer();
+        if(wbs!=null){
+            wbs.write(httpServletResponse.getOutputStream());
+            wbs.close();
+        }else if(wb!=null){
+            wb.write(httpServletResponse.getOutputStream());
+            wb.close();
+        }
+
+    }
+
+    /**
+     * 从某行开始，清除固定行（彻底删除）,上移
+     * @param sheet
+     * @param startRow
+     * @param endRow
+     */
+    public static void deleteRow(Sheet sheet, int startRow, int rowIndex) {
+        int lastRowNum = sheet.getLastRowNum();
+        if(startRow <lastRowNum){
+
+            sheet.shiftRows(startRow, lastRowNum, -rowIndex,true,false);
+
+
+        }
+    }
+
 
 
 

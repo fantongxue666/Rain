@@ -14,7 +14,12 @@ rain:
   shiro:
     login-url: /login # 放开登录路径
     logout-url: /logout # 放开登出路径
-    check-token: true # 是否校验token    true：正常返回token和登录校验token   false：无需携带和校验token，用于方便开发环境
+    check-token: false # 是否校验token    true：正常返回token和登录校验token   false：无需携带和校验token，用于方便开发环境
     token-name: MY-TOKEN # 请求头token名字
     tokenLiveTime: 900 # token过期时间
-
+  excel:
+#    导出地址
+#    http://localhost:8080/exportExcel
+#    ?fileUrl=test/测试Excel导出模板.xlsx&exportName=导出excel的名字
+#    &参数键1=参数值2&参数键2=参数值2
+    resource: D:\IdeaProjects\Rain平台\Resource # 存储excel模板和excel查询xml文件的文件夹位置 导出excel使用

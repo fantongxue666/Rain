@@ -2,8 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5ad688f-d2fe-481c-ac95-5cc7b464682a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Resource/test/测试Excel导出模板.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/test/测试Excel导出模板.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rain/src/main/java/com/ftx/config/GlobalSwagger2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/role/导出权限信息表.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resource/role/导出权限信息表.xlsx.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Rain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rain/src/main/java/com/ftx/RainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rain/src/main/java/com/ftx/RainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rain/src/main/resources/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Rain/src/main/resources/config/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rain/target/classes/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Rain/target/classes/config/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rain-excel/src/main/java/com/ftx/exportexcel/rainexcel/controller/ExcelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rain-excel/src/main/java/com/ftx/exportexcel/rainexcel/controller/ExcelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rain-excel/target/classes/com/ftx/exportexcel/rainexcel/controller/ExcelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/rain-excel/target/classes/com/ftx/exportexcel/rainexcel/controller/ExcelController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rain-excel/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/rain-excel/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rain-excel/target/rainexcel-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/rain-excel/target/rainexcel-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rain-shiro/src/main/resources/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/src/main/resources/logs/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rain-shiro/src/main/resources/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/src/main/resources/logs/info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rain-shiro/src/main/resources/logs/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/src/main/resources/logs/test.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rain-shiro/src/main/resources/logs/warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/src/main/resources/logs/warn.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rain-shiro/target/classes/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/target/classes/logs/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rain-shiro/target/classes/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/target/classes/logs/info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rain-shiro/target/classes/logs/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/target/classes/logs/test.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rain-shiro/target/classes/logs/warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/target/classes/logs/warn.log" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/rain-excel/target/" />
     <ignored path="$PROJECT_DIR$/Rain/target/" />
@@ -21,42 +38,44 @@
     <session id="119916686">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.0" value="2" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="6" />
-          <entry key="java" value="15" />
+          <entry key="class" value="13" />
+          <entry key="java" value="20" />
+          <entry key="pom" value="1" />
           <entry key="tld" value="1" />
           <entry key="txt" value="2" />
-          <entry key="xml" value="10" />
-          <entry key="yml" value="4" />
+          <entry key="xml" value="18" />
+          <entry key="yml" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="6" />
-          <entry key="JAVA" value="15" />
+          <entry key="CLASS" value="13" />
+          <entry key="JAVA" value="20" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="XML" value="11" />
-          <entry key="YAML" value="4" />
+          <entry key="XML" value="20" />
+          <entry key="YAML" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3075" />
-          <entry key="xml" value="214" />
-          <entry key="yml" value="46" />
+          <entry key="java" value="3401" />
+          <entry key="xml" value="288" />
+          <entry key="yml" value="112" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3075" />
-          <entry key="XML" value="214" />
-          <entry key="YAML" value="46" />
+          <entry key="JAVA" value="3401" />
+          <entry key="XML" value="288" />
+          <entry key="YAML" value="112" />
         </counts>
       </usages-collector>
     </session>
@@ -64,43 +83,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rain-excel/src/main/java/com/ftx/exportexcel/rainexcel/controller/ExcelController.java">
+        <entry file="file://$PROJECT_DIR$/Rain/src/main/resources/config/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="252" selection-start-line="252" selection-end-line="252" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rain-excel/src/main/java/com/ftx/exportexcel/rainexcel/controller/ResoveXmlUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resource/test/测试Excel导出模板.xlsx.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rain-excel/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="323">
+              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -112,8 +98,8 @@
       <list>
         <option value="Tag Library Descriptor" />
         <option value="spring-beans.schema" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -124,7 +110,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Rain/src/main/resources/banner.txt" />
-        <option value="$PROJECT_DIR$/Rain/src/main/resources/config/application.yml" />
         <option value="$PROJECT_DIR$/Resource/Test.xml.tld" />
         <option value="$PROJECT_DIR$/Resource/测试Excel导出模板.xml" />
         <option value="$PROJECT_DIR$/rain-excel/src/main/java/com/ftx/exportexcel/rainexcel/ExcelConfig.java" />
@@ -138,7 +123,12 @@
         <option value="$PROJECT_DIR$/rain-excel/pom.xml" />
         <option value="$PROJECT_DIR$/rain-excel/src/main/java/com/ftx/exportexcel/rainexcel/mapper/ExportMapper.java" />
         <option value="$PROJECT_DIR$/Resource/test/测试Excel导出模板.xlsx.xml" />
+        <option value="$PROJECT_DIR$/Resource/role/导出权限信息表.xlsx.xml" />
         <option value="$PROJECT_DIR$/rain-excel/src/main/java/com/ftx/exportexcel/rainexcel/controller/ExcelController.java" />
+        <option value="$PROJECT_DIR$/Rain/pom.xml" />
+        <option value="$PROJECT_DIR$/Rain/src/main/java/com/ftx/RainApplication.java" />
+        <option value="$PROJECT_DIR$/Rain/src/main/java/com/ftx/config/GlobalSwagger2.java" />
+        <option value="$PROJECT_DIR$/Rain/src/main/resources/config/application.yml" />
       </list>
     </option>
   </component>
@@ -154,6 +144,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="localRepository" value="D:\maven-repository" />
         <option name="mavenHome" value="D:/apache-maven-3.3.9" />
       </MavenGeneralSettings>
     </option>
@@ -163,12 +154,12 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="rainexcel" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="rain" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="rainexcel" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+          <item name="rain" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
       <select />
@@ -187,6 +178,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -194,68 +187,10 @@
               <item name="Rain平台" type="b2602c69:ProjectViewProjectNode" />
               <item name="Rain平台" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Rain平台" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rain平台" type="462c0819:PsiDirectoryNode" />
-              <item name="rain-excel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Rain平台" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rain平台" type="462c0819:PsiDirectoryNode" />
-              <item name="rain-excel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Rain平台" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rain平台" type="462c0819:PsiDirectoryNode" />
-              <item name="rain-excel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Rain平台" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rain平台" type="462c0819:PsiDirectoryNode" />
-              <item name="rain-excel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Rain平台" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rain平台" type="462c0819:PsiDirectoryNode" />
-              <item name="rain-excel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rainexcel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Rain平台" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rain平台" type="462c0819:PsiDirectoryNode" />
-              <item name="rain-excel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rainexcel" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Rain平台" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rain平台" type="462c0819:PsiDirectoryNode" />
-              <item name="Resource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Rain平台" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rain平台" type="462c0819:PsiDirectoryNode" />
-              <item name="Resource" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -265,7 +200,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603806469444" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603880707076" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -278,6 +213,9 @@
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\Rain平台\Resource\role" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IdeaProjects\Rain平台\Resource\test" />
     </key>
@@ -294,7 +232,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.RainexcelApplication">
+  <component name="RunManager" selected="Spring Boot.RainApplication">
     <configuration name="RainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="rain" />
       <extension name="coverage">
@@ -327,8 +265,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.RainexcelApplication" />
         <item itemvalue="Spring Boot.RainApplication" />
+        <item itemvalue="Spring Boot.RainexcelApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -343,17 +281,19 @@
       <option name="presentableId" value="Default" />
       <updated>1603508357058</updated>
       <workItem from="1603508358164" duration="14404000" />
-      <workItem from="1603799679582" duration="6784000" />
+      <workItem from="1603799679582" duration="6985000" />
+      <workItem from="1603846115994" duration="300000" />
+      <workItem from="1603873620840" duration="7177000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21188000" />
+    <option name="totallyTimeSpent" value="28866000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23592493" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22922252" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -365,18 +305,18 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.32152975" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.40934843" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.37818697" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Statistic" order="10" />
       <window_info anchor="bottom" id="Problems" order="11" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3286119" />
       <window_info anchor="bottom" id="JRebel Executor" order="15" />
       <window_info anchor="bottom" id="JRebel Console" order="16" sideWeight="0.50067025" side_tool="true" weight="0.32152975" />
       <window_info anchor="bottom" id="Messages" order="17" />
@@ -387,7 +327,7 @@
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="BPMNPalette" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" weight="0.3297587" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.2533512" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
@@ -445,20 +385,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rain/src/main/java/com/ftx/RainApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rain/src/main/resources/config/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/shiro/AuthenUrlConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
@@ -488,13 +414,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rain/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="36" column="21" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rain-excel/src/main/resources/log4j2-spring.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -515,20 +434,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rain-excel/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rain-excel/src/main/java/com/ftx/exportexcel/rainexcel/config/ExcelConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -536,30 +445,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rain-excel/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resource/test/测试Excel导出模板.xlsx.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rain-excel/src/main/java/com/ftx/exportexcel/rainexcel/controller/ResoveXmlUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -577,13 +462,124 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/rain-excel/src/main/java/com/ftx/exportexcel/rainexcel/controller/ResoveXmlUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rain-excel/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/maven-repository/org/apache/poi/poi-ooxml/4.1.2/poi-ooxml-4.1.2.pom">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rain-excel/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="37" column="21" selection-start-line="21" selection-start-column="7" selection-end-line="37" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven-repository/com/rain/excel/rain-excel/1.0/rain-excel-1.0.jar!/com/ftx/exportexcel/rainexcel/controller/ResoveXmlUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven-repository/com/rain/excel/rain-excel/1.0/rain-excel-1.0.jar!/com/ftx/exportexcel/rainexcel/config/ExcelConfig.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven-repository/com/rain/excel/rain-excel/1.0/rain-excel-1.0.jar!/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven-repository/com/rain/excel/rain-excel/1.0/rain-excel-1.0.jar!/com/ftx/exportexcel/rainexcel/controller/ExcelController.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resource/test/测试Excel导出模板.xlsx.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven-repository/com/rain/excel/rain-excel/1.1/rain-excel-1.1.jar!/com/ftx/exportexcel/rainexcel/controller/ExcelController.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2662">
+          <caret line="156" selection-start-line="156" selection-end-line="156" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resource/role/导出权限信息表.xlsx.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/rain-excel/src/main/java/com/ftx/exportexcel/rainexcel/controller/ExcelController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="252" selection-start-line="252" selection-end-line="252" />
+        <state relative-caret-position="261">
+          <caret line="193" column="51" selection-start-line="193" selection-start-column="51" selection-end-line="193" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rain/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="110" column="21" selection-start-line="110" selection-start-column="21" selection-end-line="110" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rain/src/main/java/com/ftx/RainApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven-repository/io/springfox/springfox-spi/2.9.2/springfox-spi-2.9.2.jar!/springfox/documentation/spi/DocumentationType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rain/src/main/java/com/ftx/config/GlobalSwagger2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="25" column="45" lean-forward="true" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rain/src/main/resources/config/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
         </state>
       </provider>
     </entry>

@@ -18,9 +18,18 @@ public class AuthenUrlConfig {
     private String loginUrl;//放开登录路径
     private String registerUrl;//放开注册路径
     private String logoutUrl;//放开登出路径
+    private String swaggerUrl;//放开接口文档地址
     private boolean isCheckToken;//是否校验token
     private String tokenName;//请求头token名字
     private Long tokenLiveTime;//token存活时间
+
+    public String getSwaggerUrl() {
+        return swaggerUrl;
+    }
+
+    public void setSwaggerUrl(String swaggerUrl) {
+        this.swaggerUrl = swaggerUrl;
+    }
 
     public String getRegisterUrl() {
         return registerUrl;

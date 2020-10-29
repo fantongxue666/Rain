@@ -79,6 +79,11 @@ public class ShiroLoginFilter extends FormAuthenticationFilter {
     @Override
     protected boolean isAccessAllowed(ServletRequest request, ServletResponse response, Object mappedValue) {
         HttpServletRequest req=(HttpServletRequest)request;
+        String requestURI = req.getRequestURI();
+        //放开接口文档请求地址
+        if(requestURI.contains("swagger")||requestURI.contains("v2")||"/".equals(requestURI)||"/csrf".equals(requestURI)){
+            return true;
+        }
         String token = ShiroBeansUtil.getTokenUtil().getToken(req);
         if(StringUtils.isEmpty(token)){
             if(!isCheckToken){

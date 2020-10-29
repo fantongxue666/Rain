@@ -173,6 +173,7 @@ public class ShiroConfig{
         filterMap.put(authenUrlConfig.getLoginUrl(),"anon");
         filterMap.put(authenUrlConfig.getLogoutUrl(),"anon");
         filterMap.put(authenUrlConfig.getRegisterUrl(),"anon");
+        filterMap.put(authenUrlConfig.getSwaggerUrl(),"anon");
         filterMap.put("/**", "authc");
         factoryBean.setFilterChainDefinitionMap(filterMap);
 

@@ -1,12 +1,14 @@
-18:24:12.385 [main] INFO  com.ftx.RainApplication - Starting RainApplication on LAPTOP-OI5LG6OU with PID 16016 (D:\IdeaProjects\Rain平台\Rain\target\classes started by Administrator in D:\IdeaProjects\Rain平台)
-18:24:12.402 [main] INFO  com.ftx.RainApplication - No active profile set, falling back to default profiles: default
-18:24:14.242 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-18:24:14.242 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-18:24:14.243 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
-18:24:14.344 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-18:24:14.891 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-18:24:15.194 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-18:24:15.220 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-18:24:15.237 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-18:24:15.281 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-18:24:15.302 [main] INFO  com.ftx.RainApplication - Started RainApplication in 3.473 seconds (JVM running for 8.068)
+21:33:58.854 [main] INFO  com.ftx.authentication.rainshiro.RainShiroApplication - Starting RainShiroApplication on LAPTOP-OI5LG6OU with PID 17324 (D:\IdeaProjects\Rain平台\rain-shiro\target\classes started by Administrator in D:\IdeaProjects\Rain平台)
+21:33:58.863 [main] INFO  com.ftx.authentication.rainshiro.RainShiroApplication - No active profile set, falling back to default profiles: default
+21:34:00.693 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+21:34:00.694 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+21:34:00.694 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+21:34:00.795 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21:34:01.349 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+21:34:01.673 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+21:34:01.698 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+21:34:01.715 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+21:34:01.744 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+21:34:01.899 [main] INFO  com.ftx.authentication.rainshiro.RainShiroApplication - Started RainShiroApplication in 3.611 seconds (JVM running for 8.421)
+21:34:07.731 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21:34:07.752 [http-nio-8080-exec-1] INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager - Enabling session validation scheduler...

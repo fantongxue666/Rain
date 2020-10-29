@@ -1,5 +1,8 @@
 package com.ftx.authentication.rainshiro.model;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 /**
  * @author FanJiangFeng
  * @version 1.0.0
@@ -7,12 +10,19 @@ package com.ftx.authentication.rainshiro.model;
  * @Description TODO
  * @createTime 2020年10月19日 17:19:00
  */
+@ApiModel("用户类")
 public class AuthUser {
+    @ApiModelProperty(name = "account",value = "账号")
     private String account;//账号
+    @ApiModelProperty(name = "pwd",value = "密码")
     private String pwd;//密码
+    @ApiModelProperty(name = "id",value = "ID")
     private String id;//id
+    @ApiModelProperty(name = "username",value = "昵称")
     private String username;//昵称
+    @ApiModelProperty(name = "ip",value = "登录人ip地址")
     private String ip;//登录人IP地址
+    @ApiModelProperty(name = "token",value = "token")
     private String token;//token
 
     public String getIp() {

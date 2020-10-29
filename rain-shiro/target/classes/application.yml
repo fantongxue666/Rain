@@ -14,6 +14,7 @@ rain:
   shiro:
     login-url: /login # 放开登录路径
     register-url: /register # 放开注册路径
+    swagger-url: /swagger-ui.html  # 放开接口文档地址
     logout-url: /logout # 放开登出路径
     check-token: true # 是否校验token    true：正常返回token和登录校验token   false：无需携带和校验token，用于方便开发环境
     token-name: TEST-TOKEN # 请求头token名字

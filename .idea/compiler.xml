@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="generation" />
         <module name="rain" />
         <module name="rain-shiro" />
         <module name="rainexcel" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="generation" target="1.8" />
       <module name="rain" target="1.8" />
       <module name="rain-shiro" target="1.8" />
       <module name="rainexcel" target="1.8" />

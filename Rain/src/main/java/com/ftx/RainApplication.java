@@ -7,15 +7,17 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
+@EnableSwagger2
 @ComponentScan(basePackages = {"com.ftx.**","com.ftx.authentication.rainshiro.**"})
 public class RainApplication{
     public static void main(String[] args) {
         SpringApplication.run(RainApplication.class, args);
-        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>" +
-                ">>>>>> 接口文档地址：http://localhost:8080/swagger-ui.html >>>>>>>" +
-                ">>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>" +
+                ">>>>>> bootstrap美化后的接口文档地址：http://localhost:8080/doc.html >>>>>>>" +
+                ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
     }
 
 }

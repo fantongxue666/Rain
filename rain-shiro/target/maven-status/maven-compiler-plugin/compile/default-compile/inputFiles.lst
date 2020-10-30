@@ -11,7 +11,9 @@ D:\IdeaProjects\Rain平台\rain-shiro\src\main\java\com\ftx\authentication\rains
 D:\IdeaProjects\Rain平台\rain-shiro\src\main\java\com\ftx\authentication\rainshiro\shiro\ShiroLoginFilter.java
 D:\IdeaProjects\Rain平台\rain-shiro\src\main\java\com\ftx\authentication\rainshiro\login\ShiroDao.java
 D:\IdeaProjects\Rain平台\rain-shiro\src\main\java\com\ftx\authentication\rainshiro\constant\JsonObject.java
-D:\IdeaProjects\Rain平台\rain-shiro\src\main\java\com\ftx\authentication\rainshiro\login\LoginController.java
 D:\IdeaProjects\Rain平台\rain-shiro\src\main\java\com\ftx\authentication\rainshiro\RainShiroApplication.java
 D:\IdeaProjects\Rain平台\rain-shiro\src\main\java\com\ftx\authentication\rainshiro\model\AuthUser.java
+D:\IdeaProjects\Rain平台\rain-shiro\src\main\java\com\ftx\authentication\rainshiro\login\LoginsController.java
+D:\IdeaProjects\Rain平台\rain-shiro\src\main\java\com\ftx\authentication\rainshiro\redis\GlobalExceptionHandler.java
+D:\IdeaProjects\Rain平台\rain-shiro\src\main\java\com\ftx\authentication\rainshiro\utils\TokenException.java
 D:\IdeaProjects\Rain平台\rain-shiro\src\main\java\com\ftx\authentication\rainshiro\utils\RedisUtil.java

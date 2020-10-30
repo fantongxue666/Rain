@@ -22,9 +22,12 @@ public interface ShiroDao {
     @Select(value = "select * from tb_user where account=#{account}")
     List<AuthUser> getUser(@Param("account")String account);
 
-    @Select(value = "select url from tb_power where id in(select powerid from tb_role_power where roleid=(SELECT b.id from tb_user a left join tb_role b on a.roleid=b.id where a.account=#{account}")
+    @Select(value = "select url from tb_power where id in(select powerid from tb_role_power where roleid=(SELECT b.id from tb_user a left join tb_role b on a.roleid=b.id where a.account=#{account}))")
     List<String> getRolesByUsername(@Param("account")String account);
 
     @Insert(value = "insert into tb_user values(#{id},#{account},#{username},#{pwd},'df8s90g78sdf90gsdf09g67')")
     int registerUser(AuthUser authUser);
+
+    @Select(value = "SELECT url from tb_power where id in (select powerid from tb_role_power where roleid=(SELECT roleid from tb_user WHERE account=#{account}))")
+    List<String> getPowersByAccount(@Param("account")String account);
 }

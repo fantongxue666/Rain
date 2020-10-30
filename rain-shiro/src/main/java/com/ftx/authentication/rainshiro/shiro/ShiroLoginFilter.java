@@ -2,6 +2,7 @@ package com.ftx.authentication.rainshiro.shiro;
 
 import com.alibaba.fastjson.JSON;
 import com.ftx.authentication.rainshiro.utils.RedisUtil;
+import com.ftx.authentication.rainshiro.utils.TokenException;
 import com.ftx.authentication.rainshiro.utils.TokenUtil;
 import org.apache.shiro.web.filter.authc.FormAuthenticationFilter;
 import org.apache.shiro.web.util.WebUtils;
@@ -77,11 +78,14 @@ public class ShiroLoginFilter extends FormAuthenticationFilter {
     //如果isAccessAllowed方法返回True，则不会再调用onAccessDenied方法
     // 如果isAccessAllowed方法返回Flase,则会继续调用onAccessDenied方法
     @Override
-    protected boolean isAccessAllowed(ServletRequest request, ServletResponse response, Object mappedValue) {
+    protected boolean isAccessAllowed(ServletRequest request, ServletResponse response, Object mappedValue)  {
         HttpServletRequest req=(HttpServletRequest)request;
         String requestURI = req.getRequestURI();
         //放开接口文档请求地址
         if(requestURI.contains("swagger")||requestURI.contains("v2")||"/".equals(requestURI)||"/csrf".equals(requestURI)){
+            return true;
+        }
+        if(requestURI.contains(".html")||requestURI.contains(".css")||requestURI.contains(".js")||requestURI.contains(".ico")){
             return true;
         }
         String token = ShiroBeansUtil.getTokenUtil().getToken(req);
@@ -91,7 +95,7 @@ public class ShiroLoginFilter extends FormAuthenticationFilter {
                 return true;
             }else{
                 logger.error("获取token失败");
-                return false;
+                throw new TokenException("token失效，请重新登录");
             }
         }else{
             //校验token是否有效
@@ -106,7 +110,7 @@ public class ShiroLoginFilter extends FormAuthenticationFilter {
                 return true;
             }else{
                 logger.error("获取token失败");
-                return false;
+                throw new TokenException("token失效，请重新登录");
             }
         }
     }
@@ -114,7 +118,8 @@ public class ShiroLoginFilter extends FormAuthenticationFilter {
     @Override
     protected void redirectToLogin(ServletRequest request, ServletResponse response) throws IOException {
         logger.error("用户认证失败");
-        this.printJsonMsg((HttpServletResponse)response);
+//        this.printJsonMsg((HttpServletResponse)response);
+        throw new TokenException("token失效，请重新登录");
     }
 
     private void printJsonMsg(HttpServletResponse response) throws IOException {

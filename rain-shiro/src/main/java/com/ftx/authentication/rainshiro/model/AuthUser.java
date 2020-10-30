@@ -3,6 +3,8 @@ package com.ftx.authentication.rainshiro.model;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
+import java.util.List;
+
 /**
  * @author FanJiangFeng
  * @version 1.0.0
@@ -24,6 +26,16 @@ public class AuthUser {
     private String ip;//登录人IP地址
     @ApiModelProperty(name = "token",value = "token")
     private String token;//token
+    @ApiModelProperty(name = "powers",value = "权限列表")
+    private List<String> powerList;
+
+    public List<String> getPowerList() {
+        return powerList;
+    }
+
+    public void setPowerList(List<String> powerList) {
+        this.powerList = powerList;
+    }
 
     public String getIp() {
         return ip;

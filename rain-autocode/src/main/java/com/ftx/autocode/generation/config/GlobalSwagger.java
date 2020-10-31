@@ -24,6 +24,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class GlobalSwagger {
     @Bean
     public Docket createRestApi() {
+        System.out.println("======  SWAGGER CONFIG  ======");
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo()).select()
                 .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))

@@ -6,6 +6,7 @@ import freemarker.template.Configuration;
 import freemarker.template.Template;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.util.ClassUtils;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -34,7 +35,7 @@ public class Generator {
         //指定模板加载器
         //在代码中动态加载jar、资源文件的时候，首先应该是使用Thread.currentThread().getContextClassLoader()。
         // 如果你使用Test.class.getClassLoader()，可能会导致和当前线程所运行的类加载器不一致（因为Java天生的多线程）
-        String templates = Thread.currentThread().getContextClassLoader().getResource("").getPath()+"代码自动生成模板\\";
+        String templates=ClassUtils.getDefaultClassLoader().getResource("").getPath()+"代码自动生成模板\\";
         if(templates.contains("%e5%b9%b3%e5%8f%b0")){
             templates=templates.replace("%e5%b9%b3%e5%8f%b0","平台");
         }

@@ -19,6 +19,12 @@
     </properties>
 
     <dependencies>
+        <!--集成rain-autocode代码自动生成模块-->
+        <dependency>
+            <groupId>com.rain.autocode</groupId>
+            <artifactId>rain-autocode</artifactId>
+            <version>1.5</version>
+        </dependency>
         <!--集成rain-shiro模块-->
         <dependency>
             <groupId>com.rain.shiro</groupId>
@@ -40,6 +46,11 @@
                     <artifactId>spring-boot-starter-logging</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>2.3.28</version>
         </dependency>
         <!-- 集成shiro -->
         <dependency>

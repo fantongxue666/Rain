@@ -14,6 +14,8 @@ rain:
   shiro:
     login-url: /login # 放开登录路径
     logout-url: /logout # 放开登出路径
+    register-url: /register
+    swagger-url: /doc.html
     check-token: true # 是否校验token    true：正常返回token和登录校验token   false：无需携带和校验token，用于方便开发环境
     token-name: MY-TOKEN # 请求头token名字
     tokenLiveTime: 900 # token过期时间
@@ -23,3 +25,9 @@ rain:
 #    ?fileUrl=test/测试Excel导出模板.xlsx&exportName=导出excel的名字
 #    &参数键1=参数值2&参数键2=参数值2
     resource: D:\IdeaProjects\Rain平台\Resource # 存储excel模板和excel查询xml文件的文件夹位置 导出excel使用
+  autocode:
+    # 代码生成路径 例如：D:\IdeaProjects\rain-autocode\src\main\java\com\ftx\autocode\generation\
+    # 直到当前包名 com.ftx.autocode.generation
+    out-path: D:\IdeaProjects\Rain平台\Rain\src\main\java\com\ftx\
+    # 该包名为当前项目的全包名，且须保证该包下包含四个文件夹 dao  model  service  controller
+    package-name: com.ftx  # 所在包名 例如：com.ftx.autocode.generation

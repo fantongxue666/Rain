@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
+import org.springframework.util.ClassUtils;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.WebApplicationContext;
@@ -42,8 +43,11 @@ public class AutoCodeController {
         System.out.println(">>>>>>>>>>>>>>>>>>>>>" +
                 ">>>>>>>>>>>>>>>>> 加载sql类型和java类型的替换规则的properties文件 >>>>>>>" +
                 ">>>>>>>>>>>>>>>>>>>>>>>>>");
-        String path = Thread.currentThread().getContextClassLoader().getResource("javakind.properties").getPath();
-        File file=new File("D:\\IdeaProjects\\Rain平台\\rain-autocode\\target\\classes\\javakind.properties");
+        String path = ClassUtils.getDefaultClassLoader().getResource("javakind.properties").getPath();
+        if(path.contains("%e5%b9%b3%e5%8f%b0")){
+            path=path.replace("%e5%b9%b3%e5%8f%b0","平台");
+        }
+        File file=new File(path);
         Properties properties=new Properties();
         try {
             properties.load(new FileInputStream(file));
@@ -65,9 +69,10 @@ public class AutoCodeController {
     @ApiOperation(value = "代码自动生成接口")
     @PostMapping("/autoCreateCode")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "tableName",value = "数据库表 例如：content表",required = true)
+            @ApiImplicitParam(name = "tableName",value = "数据库表 例如：content表",required = true),
+            @ApiImplicitParam(name = "description",value = "接口描述",required = true)
     })
-    public JsonObject<Object> autoCreateCode(String tableName, HttpServletRequest request) throws Exception {
+    public JsonObject<Object> autoCreateCode(String tableName,String description, HttpServletRequest request) throws Exception {
     logger.info("--------- 开始自动生成代码----------");
         //获取连接
         Class.forName(driverClassName);
@@ -106,7 +111,7 @@ public class AutoCodeController {
 
         columns.close();
         //对table进行代码生成
-        Map<String, Object> dataModel = getDataModel(columnList,tableName,request);
+        Map<String, Object> dataModel = getDataModel(columnList,tableName,description,request);
         Map config = getConfig(request);
         String outPath = config.get("outPath").toString();
         Generator generator=new Generator(outPath);
@@ -144,7 +149,7 @@ public class AutoCodeController {
 
 
 
-    private Map<String, Object> getDataModel(List<Column> columnList,String tableName,HttpServletRequest request) {
+    private Map<String, Object> getDataModel(List<Column> columnList,String tableName,String description,HttpServletRequest request) {
         Map config = getConfig(request);
         String packageName = config.get("packageName").toString();
         Map<String,Object> map=new HashMap<>();
@@ -154,6 +159,7 @@ public class AutoCodeController {
         map.put("table",columnList);
         map.put("pPackage",packageName);
         map.put("tableName",tableName);
+        map.put("description",description);
         return map;
 
     }

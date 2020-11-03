@@ -86,11 +86,11 @@
         </plugins>
         <!--<resources>-->
             <!--<resource>-->
-            <!--<directory>src/main/resources</directory>-->
-            <!--<excludes>-->
-                <!--<exclude>**/*.yml</exclude>-->
-                <!--<exclude>**/*.xml</exclude>-->
-            <!--</excludes>-->
+                <!--<directory>src/main/resources</directory>-->
+                <!--<includes>-->
+                    <!--<include>**/*.properties</include>-->
+                <!--</includes>-->
+                <!--<filtering>false</filtering>-->
             <!--</resource>-->
         <!--</resources>-->
     </build>

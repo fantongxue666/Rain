@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Rain平台.iml" filepath="$PROJECT_DIR$/.idea/Rain平台.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Rain-Platform.iml" filepath="$PROJECT_DIR$/.idea/Rain-Platform.iml" />
       <module fileurl="file://$PROJECT_DIR$/rain-autocode/generation.iml" filepath="$PROJECT_DIR$/rain-autocode/generation.iml" />
       <module fileurl="file://$PROJECT_DIR$/Rain/rain.iml" filepath="$PROJECT_DIR$/Rain/rain.iml" />
       <module fileurl="file://$PROJECT_DIR$/rain-shiro/rain-shiro.iml" filepath="$PROJECT_DIR$/rain-shiro/rain-shiro.iml" />

@@ -1,7 +1,7 @@
 com\ftx\autocode\generation\constant\JsonObject.class
-com\ftx\autocode\generation\config\Generator.class
-com\ftx\autocode\generation\GenerationApplication.class
 com\ftx\autocode\generation\config\Column.class
 com\ftx\autocode\generation\config\JavaKind.class
 com\ftx\autocode\generation\constant\APPEnums.class
+com\ftx\autocode\generation\config\Generator.class
+com\ftx\autocode\generation\GenerationApplication.class
 com\ftx\autocode\generation\config\AutoCodeController.class

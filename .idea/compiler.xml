@@ -8,7 +8,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="generation" />
         <module name="rain" />
-        <module name="rain-license" />
         <module name="rain-shiro" />
         <module name="rainexcel" />
       </profile>

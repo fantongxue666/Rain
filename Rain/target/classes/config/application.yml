@@ -31,3 +31,5 @@ rain:
     out-path: D:\IdeaProjects\Rain平台\Rain\src\main\java\com\ftx\
     # 该包名为当前项目的全包名，且须保证该包下包含四个文件夹 dao  model  service  controller
     package-name: com.ftx  # 所在包名 例如：com.ftx.autocode.generation
+server:
+  port: 8080

@@ -1,23 +1,26 @@
-20:40:14.133 [main] INFO  com.ftx.RainApplication - Starting RainApplication on LAPTOP-OI5LG6OU with PID 22376 (D:\IdeaProjects\Rain平台\Rain\target\classes started by Administrator in D:\IdeaProjects\Rain平台)
-20:40:14.142 [main] INFO  com.ftx.RainApplication - No active profile set, falling back to default profiles: default
-20:40:16.318 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-20:40:16.319 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-20:40:16.319 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
-20:40:16.433 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-20:40:17.396 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-20:40:18.238 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-20:40:18.274 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-20:40:18.302 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-20:40:18.342 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-20:40:18.561 [main] INFO  com.ftx.RainApplication - Started RainApplication in 4.995 seconds (JVM running for 9.204)
-20:40:31.560 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-20:40:31.584 [http-nio-8080-exec-1] INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager - Enabling session validation scheduler...
-20:40:42.476 [http-nio-8080-exec-4] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 获取token失败
-20:40:42.477 [http-nio-8080-exec-4] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [com.ftx.authentication.rainshiro.utils.TokenException: token失效，请重新登录] with root cause
+18:51:43.817 [main] INFO  com.ftx.RainApplication - Starting RainApplication on LAPTOP-OI5LG6OU with PID 2176 (D:\IdeaProjects\Rain平台\Rain\target\classes started by Administrator in D:\IdeaProjects\Rain平台)
+18:51:43.836 [main] INFO  com.ftx.RainApplication - The following profiles are active: dev
+18:51:46.347 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:51:46.348 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+18:51:46.348 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+18:51:46.468 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:51:47.124 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+18:51:47.534 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:51:47.560 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+18:51:47.578 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+18:51:47.610 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+18:51:47.815 [main] INFO  cn.zifangsky.license.LicenseCheckListener - ++++++++ 开始安装证书 ++++++++
+18:51:49.453 [main] INFO  cn.zifangsky.license.LicenseVerify - 证书安装成功，证书有效期：2018-07-10 00:00:01 - 2020-12-04 18:36:00
+18:51:49.453 [main] INFO  cn.zifangsky.license.LicenseCheckListener - ++++++++ 证书安装结束 ++++++++
+18:51:49.457 [main] INFO  com.ftx.RainApplication - Started RainApplication in 6.448 seconds (JVM running for 10.933)
+18:51:52.625 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:51:52.653 [http-nio-8080-exec-1] INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager - Enabling session validation scheduler...
+18:52:00.352 [http-nio-8080-exec-5] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 获取token失败
+18:52:00.356 [http-nio-8080-exec-5] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [com.ftx.authentication.rainshiro.utils.TokenException: token失效，请重新登录] with root cause
 com.ftx.authentication.rainshiro.utils.TokenException: token失效，请重新登录
-	at com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter.isAccessAllowed(ShiroLoginFilter.java:113) ~[rain-shiro-1.6.jar:0.0.1-SNAPSHOT]
+	at com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter.isAccessAllowed(ShiroLoginFilter.java:113) ~[rain-shiro-2.1.jar:0.0.1-SNAPSHOT]
 	at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162) ~[shiro-web-1.4.1.jar:1.4.1]
-	at com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter.onPreHandle(ShiroLoginFilter.java:73) ~[rain-shiro-1.6.jar:0.0.1-SNAPSHOT]
+	at com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter.onPreHandle(ShiroLoginFilter.java:73) ~[rain-shiro-2.1.jar:0.0.1-SNAPSHOT]
 	at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:203) ~[shiro-web-1.4.1.jar:1.4.1]
 	at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:178) ~[shiro-web-1.4.1.jar:1.4.1]
 	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131) ~[shiro-web-1.4.1.jar:1.4.1]
@@ -66,23 +69,15 @@ com.ftx.authentication.rainshiro.utils.TokenException: token失效，请重新�
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.38.jar:9.0.38]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
-20:40:59.126 [http-nio-8080-exec-6] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - Shiro开始认证
-20:40:59.152 [http-nio-8080-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-20:40:59.326 [http-nio-8080-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-20:40:59.391 [http-nio-8080-exec-6] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - 认证成功
-20:40:59.402 [http-nio-8080-exec-6] INFO  com.ftx.authentication.rainshiro.utils.TokenUtil - 设置token有效时间------------15分钟
-20:41:17.574 [http-nio-8080-exec-7] INFO  com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - token有效，并更新延长token在redis中的存活时间【30分钟】
-20:41:26.555 [http-nio-8080-exec-8] INFO  com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - token有效，并更新延长token在redis中的存活时间【30分钟】
-20:41:40.763 [http-nio-8080-exec-9] INFO  com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - token有效，并更新延长token在redis中的存活时间【30分钟】
-20:42:00.583 [http-nio-8080-exec-10] INFO  com.ftx.authentication.rainshiro.login.LoginsController - token:bb94cbf254584baf90f4eeb4eb86b9c659658e12d2ee4498b04a550e422ff4a4
-20:42:00.583 [http-nio-8080-exec-10] INFO  com.ftx.authentication.rainshiro.login.LoginsController - token_name:MY-TOKEN
-20:42:00.584 [http-nio-8080-exec-10] INFO  com.ftx.authentication.rainshiro.login.LoginsController - 已退出shiro登录状态
-20:42:04.201 [http-nio-8080-exec-1] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 获取token失败
-20:42:04.202 [http-nio-8080-exec-1] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [com.ftx.authentication.rainshiro.utils.TokenException: token失效，请重新登录] with root cause
+18:52:04.662 [http-nio-8080-exec-6] INFO  com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - token有效，并更新延长token在redis中的存活时间【30分钟】
+18:52:04.692 [http-nio-8080-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+18:52:04.863 [http-nio-8080-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+18:52:17.094 [http-nio-8080-exec-7] ERROR com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - 获取token失败
+18:52:17.095 [http-nio-8080-exec-7] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [com.ftx.authentication.rainshiro.utils.TokenException: token失效，请重新登录] with root cause
 com.ftx.authentication.rainshiro.utils.TokenException: token失效，请重新登录
-	at com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter.isAccessAllowed(ShiroLoginFilter.java:113) ~[rain-shiro-1.6.jar:0.0.1-SNAPSHOT]
+	at com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter.isAccessAllowed(ShiroLoginFilter.java:113) ~[rain-shiro-2.1.jar:0.0.1-SNAPSHOT]
 	at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162) ~[shiro-web-1.4.1.jar:1.4.1]
-	at com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter.onPreHandle(ShiroLoginFilter.java:73) ~[rain-shiro-1.6.jar:0.0.1-SNAPSHOT]
+	at com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter.onPreHandle(ShiroLoginFilter.java:73) ~[rain-shiro-2.1.jar:0.0.1-SNAPSHOT]
 	at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:203) ~[shiro-web-1.4.1.jar:1.4.1]
 	at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:178) ~[shiro-web-1.4.1.jar:1.4.1]
 	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131) ~[shiro-web-1.4.1.jar:1.4.1]
@@ -131,3 +126,4 @@ com.ftx.authentication.rainshiro.utils.TokenException: token失效，请重新�
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.38.jar:9.0.38]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+18:52:37.303 [http-nio-8080-exec-8] INFO  com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - token有效，并更新延长token在redis中的存活时间【30分钟】

@@ -20,8 +20,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: com.rain.shiro:rain-shiro:2.1" level="project" />
-    <orderEntry type="library" name="Maven: com.rain.license:rain-license:1.2" level="project" />
+    <orderEntry type="library" name="Maven: com.rain.shiro:rain-shiro:2.3" level="project" />
     <orderEntry type="library" name="Maven: com.rain.excel:rain-excel:1.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:2.3.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:2.3.4.RELEASE" level="project" />

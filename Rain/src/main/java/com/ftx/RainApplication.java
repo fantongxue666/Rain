@@ -13,7 +13,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication
 @EnableSwagger2
 @ComponentScan(basePackages = {"com.ftx.**","com.ftx.authentication.rainshiro.**"})
-@PropertySource({"license-config.properties"}) //加载额外的配置
 public class RainApplication{
     public static void main(String[] args) {
         SpringApplication.run(RainApplication.class, args);

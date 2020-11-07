@@ -1,3 +1,5 @@
+server:
+  port: 8080
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -31,5 +33,11 @@ rain:
     out-path: D:\IdeaProjects\Rain平台\Rain\src\main\java\com\ftx\
     # 该包名为当前项目的全包名，且须保证该包下包含四个文件夹 dao  model  service  controller
     package-name: com.ftx  # 所在包名 例如：com.ftx.autocode.generation
-server:
-  port: 8080
+  #  证书配置
+  license:
+    subject: license_demo
+    publicAlias: publicCert
+    storePass: public_password1234
+    licensePath: D:/license_demo/license.lic
+    publicKeysStorePath: D:/license_demo/publicCerts.keystore
+

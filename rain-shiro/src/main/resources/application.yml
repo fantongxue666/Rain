@@ -1,4 +1,3 @@
-
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -20,5 +19,10 @@ rain:
     check-token: true # 是否校验token    true：正常返回token和登录校验token   false：无需携带和校验token，用于方便开发环境
     token-name: RAINSHIRO-TOKEN # 请求头token名字
     tokenLiveTime: 3600 # token过期时间
-server:
-  port: 8080
+#  证书配置
+  license:
+    subject: license_demo
+    publicAlias: publicCert
+    storePass: public_password1234
+    licensePath: D:/license_demo/license.lic
+    publicKeysStorePath: D:/license_demo/publicCerts.keystore

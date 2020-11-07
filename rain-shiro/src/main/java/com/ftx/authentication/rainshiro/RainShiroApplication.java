@@ -20,14 +20,16 @@ import javax.servlet.ServletContext;
 @SpringBootApplication
 @ServletComponentScan
 @EnableSwagger2
-@ComponentScan(basePackages = {"cn.zifangsky","com.ftx.authentication.rainshiro"})
-@PropertySource({"license-config.properties"}) //加载额外的配置
+@ComponentScan(basePackages = {"com.ftx.authentication.rainshiro.**","cn.zifangsky.license.**"})
 public class RainShiroApplication {
 
     public static void main(String[] args) {
         SpringApplication application = new SpringApplication(RainShiroApplication.class);
         application.setBannerMode(Banner.Mode.CONSOLE);
         application.run(args);
+//            SpringApplication.run(RainShiroApplication.class, args);
+
+
     }
 
 

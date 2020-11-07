@@ -37,6 +37,7 @@
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -46,12 +47,6 @@
                     <artifactId>spring-boot-starter-logging</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
-        <!--truelicense验证-->
-        <dependency>
-            <groupId>com.rain.license</groupId>
-            <artifactId>rain-license</artifactId>
-            <version>1.2</version>
         </dependency>
         <!-- 集成shiro -->
         <dependency>
@@ -140,12 +135,6 @@
             <version>${httpclient}</version>
         </dependency>
 
-        <!-- Fastjson -->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>${fastjson}</version>
-        </dependency>
 
         <!-- Java Servlet API -->
         <dependency>
@@ -169,12 +158,6 @@
             <groupId>de.schlichtherle.truelicense</groupId>
             <artifactId>truelicense-core</artifactId>
             <version>${truelicense}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>net.sourceforge.nekohtml</groupId>
-            <artifactId>nekohtml</artifactId>
-            <version>1.9.22</version>
         </dependency>
     </dependencies>
 

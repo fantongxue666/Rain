@@ -1,6 +1,6 @@
-<h1 align="center">Rain</h1>
-<p align="center">Rain平台更新日志~</p>
-<p align="center">
+<h1>Rain</h1>
+<p>Rain平台更新日志~</p>
+<p>
     <a href="https://img.shields.io/badge/version-V1.0.1-brightgreen">
         <img src="https://img.shields.io/badge/version-V1.0.1-brightgreen" alt="V1.0.1" />
     </a>

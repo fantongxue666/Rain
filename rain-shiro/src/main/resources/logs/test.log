@@ -1,22 +1,48 @@
-13:23:51.732 [main] INFO  com.ftx.RainApplication - Starting RainApplication on LAPTOP-OI5LG6OU with PID 7796 (D:\IdeaProjects\Rain平台\Rain\target\classes started by Administrator in D:\IdeaProjects\Rain平台)
-13:23:51.742 [main] INFO  com.ftx.RainApplication - No active profile set, falling back to default profiles: default
-13:23:53.742 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-13:23:53.743 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-13:23:53.744 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
-13:23:53.854 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-13:23:54.495 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-13:23:54.887 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-13:23:54.914 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-13:23:54.932 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-13:23:54.963 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-13:23:55.115 [main] INFO  cn.zifangsky.license.LicenseCheckListener - ++++++++ 开始安装证书 ++++++++
-13:23:56.740 [main] INFO  cn.zifangsky.license.LicenseVerify - 证书安装成功，证书有效期：2018-07-10 00:00:01 - 2020-12-04 18:36:00
-13:23:56.741 [main] INFO  cn.zifangsky.license.LicenseCheckListener - ++++++++ 证书安装结束 ++++++++
-13:23:56.745 [main] INFO  com.ftx.RainApplication - Started RainApplication in 5.719 seconds (JVM running for 10.393)
-13:24:07.800 [http-nio-8080-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-13:24:07.826 [http-nio-8080-exec-1] INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager - Enabling session validation scheduler...
-13:24:14.149 [http-nio-8080-exec-4] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - Shiro开始认证
-13:24:14.194 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-13:24:14.317 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-13:24:14.365 [http-nio-8080-exec-4] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - 认证成功
-13:24:14.400 [http-nio-8080-exec-4] INFO  com.ftx.authentication.rainshiro.utils.TokenUtil - 设置token有效时间------------15分钟
+15:17:38.006 [main] INFO  com.ftx.authentication.rainshiro.RainShiroApplication - Starting RainShiroApplication on LAPTOP-OI5LG6OU with PID 18600 (D:\IdeaProjects\Rain平台\rain-shiro\target\classes started by Administrator in D:\IdeaProjects\Rain平台)
+15:17:38.017 [main] INFO  com.ftx.authentication.rainshiro.RainShiroApplication - No active profile set, falling back to default profiles: default
+15:17:40.084 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+15:17:40.084 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+15:17:40.084 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+15:17:40.192 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:17:40.777 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+15:17:41.120 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+15:17:41.146 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+15:17:41.165 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+15:17:41.196 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+15:17:41.360 [main] INFO  cn.zifangsky.license.LicenseCheckListener - ++++++++ 开始安装证书 ++++++++
+15:17:42.984 [main] INFO  cn.zifangsky.license.LicenseVerify - 证书安装成功，证书有效期：2020-11-20 00:00:01 - 2021-06-06 23:59:59
+15:17:42.984 [main] INFO  cn.zifangsky.license.LicenseCheckListener - ++++++++ 证书安装结束 ++++++++
+15:17:42.990 [main] INFO  com.ftx.authentication.rainshiro.RainShiroApplication - Started RainShiroApplication in 5.593 seconds (JVM running for 11.102)
+15:17:46.050 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:17:46.082 [http-nio-8080-exec-1] INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager - Enabling session validation scheduler...
+15:18:59.449 [http-nio-8080-exec-9] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - Shiro开始认证
+15:18:59.478 [http-nio-8080-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:18:59.634 [http-nio-8080-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:18:59.695 [http-nio-8080-exec-9] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - 认证成功
+15:18:59.736 [http-nio-8080-exec-9] INFO  com.ftx.authentication.rainshiro.utils.TokenUtil - 设置token有效时间------------60分钟
+15:19:16.302 [http-nio-8080-exec-1] INFO  com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - token有效，并更新延长token在redis中的存活时间【30分钟】
+15:20:29.840 [http-nio-8080-exec-4] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - Shiro开始认证
+15:20:29.842 [http-nio-8080-exec-4] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - 认证成功
+15:20:29.843 [http-nio-8080-exec-4] INFO  com.ftx.authentication.rainshiro.utils.TokenUtil - 设置token有效时间------------60分钟
+15:44:04.137 [http-nio-8080-exec-7] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - Shiro开始认证
+15:44:04.139 [http-nio-8080-exec-7] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - 认证成功
+15:44:04.141 [http-nio-8080-exec-7] INFO  com.ftx.authentication.rainshiro.utils.TokenUtil - 设置token有效时间------------60分钟
+15:45:29.948 [http-nio-8080-exec-10] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - Shiro开始认证
+15:45:29.950 [http-nio-8080-exec-10] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - 认证成功
+15:45:29.953 [http-nio-8080-exec-10] INFO  com.ftx.authentication.rainshiro.utils.TokenUtil - 设置token有效时间------------60分钟
+15:58:47.849 [http-nio-8080-exec-3] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - Shiro开始认证
+15:58:47.865 [http-nio-8080-exec-3] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - 认证成功
+15:58:47.868 [http-nio-8080-exec-3] INFO  com.ftx.authentication.rainshiro.utils.TokenUtil - 设置token有效时间------------60分钟
+15:59:42.265 [http-nio-8080-exec-5] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - Shiro开始认证
+15:59:42.267 [http-nio-8080-exec-5] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - 认证成功
+15:59:42.268 [http-nio-8080-exec-5] INFO  com.ftx.authentication.rainshiro.utils.TokenUtil - 设置token有效时间------------60分钟
+16:17:46.083 [SessionValidationThread-1] INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager - Validating all active sessions...
+16:17:46.093 [SessionValidationThread-1] INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager - Finished session validation.  [4] sessions were stopped.
+16:53:19.670 [http-nio-8080-exec-8] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - Shiro开始认证
+16:53:19.688 [http-nio-8080-exec-8] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - 认证成功
+16:53:19.694 [http-nio-8080-exec-8] INFO  com.ftx.authentication.rainshiro.utils.TokenUtil - 设置token有效时间------------60分钟
+16:54:29.609 [http-nio-8080-exec-1] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - Shiro开始认证
+16:54:29.619 [http-nio-8080-exec-1] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - 认证成功
+16:54:29.621 [http-nio-8080-exec-1] INFO  com.ftx.authentication.rainshiro.utils.TokenUtil - 设置token有效时间------------60分钟
+17:17:46.085 [SessionValidationThread-1] INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager - Validating all active sessions...
+17:17:46.086 [SessionValidationThread-1] INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager - Finished session validation.  [2] sessions were stopped.

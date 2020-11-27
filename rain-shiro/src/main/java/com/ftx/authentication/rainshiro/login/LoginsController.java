@@ -50,16 +50,28 @@ public class LoginsController {
     AuthenUrlConfig authenUrlConfig;
 
 
-    /**
-     * 登录
-     */
+    @GetMapping(value = "/getPersonInfo")
+    @ApiOperation(value = "获取用户信息")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "account",value = "账号",required = true)
+    })
+    public JsonObject<AuthUser> getPersonInfo(String account,HttpServletRequest request){
+        List<AuthUser> user = shiroDao.getUser(account);
+        AuthUser authUser = user.get(0);
+        List<String> roles = shiroDao.getRolesByUsername(account);
+        authUser.setPowerList(roles);
+        String token = tokenUtil.getToken(request);
+        authUser.setToken(token);
+        return new JsonObject(authUser,APPEnums.OK);
+    }
+
     @PostMapping(value = "/login")
     @ApiOperation(value = "登录")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "account",value = "用户名",required = true),
             @ApiImplicitParam(name = "pwd",value = "密码",required = true)
     })
-    public JsonObject<AuthUser> mains(@ApiIgnore AuthUser authUser, HttpServletRequest request) {
+    public JsonObject<AuthUser> mains(@ApiIgnore @RequestBody AuthUser authUser, HttpServletRequest request) {
         Subject subject = SecurityUtils.getSubject();
         UsernamePasswordToken token=new UsernamePasswordToken(authUser.getAccount(),authUser.getPwd());
         try {

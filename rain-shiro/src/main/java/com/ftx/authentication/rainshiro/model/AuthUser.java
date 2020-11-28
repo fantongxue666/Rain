@@ -24,10 +24,20 @@ public class AuthUser {
     private String username;//昵称
     @ApiModelProperty(name = "ip",value = "登录人ip地址")
     private String ip;//登录人IP地址
-    @ApiModelProperty(name = "token",value = "token")
+    @ApiModelProperty(name = "token",value = "令牌")
     private String token;//token
     @ApiModelProperty(name = "powers",value = "权限列表")
     private List<String> powerList;
+    @ApiModelProperty(name = "rolename",value = "角色")
+    private String rolename;
+
+    public String getRolename() {
+        return rolename;
+    }
+
+    public void setRolename(String rolename) {
+        this.rolename = rolename;
+    }
 
     public List<String> getPowerList() {
         return powerList;

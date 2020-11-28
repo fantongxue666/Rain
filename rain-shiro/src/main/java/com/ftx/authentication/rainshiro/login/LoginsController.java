@@ -56,7 +56,7 @@ public class LoginsController {
             @ApiImplicitParam(name = "account",value = "账号",required = true)
     })
     public JsonObject<AuthUser> getPersonInfo(String account,HttpServletRequest request){
-        List<AuthUser> user = shiroDao.getUser(account);
+        List<AuthUser> user = shiroDao.getUserInfo(account);
         AuthUser authUser = user.get(0);
         List<String> roles = shiroDao.getRolesByUsername(account);
         authUser.setPowerList(roles);
@@ -77,7 +77,7 @@ public class LoginsController {
         try {
             subject.login(token);
             String token1 = tokenUtil.setToken(request);//设置token
-            List<AuthUser> user = shiroDao.getUser(authUser.getAccount());
+            List<AuthUser> user = shiroDao.getUserInfo(authUser.getAccount());
             AuthUser user1 = user.get(0);
             user1.setToken(token1);
             user1.setIp(IPUtil.getIp(request));

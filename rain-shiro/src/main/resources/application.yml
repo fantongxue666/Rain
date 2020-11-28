@@ -17,7 +17,7 @@ rain:
     swagger-url: /swagger-ui.html  # 放开接口文档地址
     logout-url: /logout # 放开登出路径
     check-token: true # 是否校验token    true：正常返回token和登录校验token   false：无需携带和校验token，用于方便开发环境
-    token-name: MY-TOKEN # 请求头token名字
+    token-name: RAINSHIRO-TOKEN # 请求头token名字
     tokenLiveTime: 3600 # token过期时间
 #  证书配置
   license:

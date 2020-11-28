@@ -1,22 +1,15 @@
-13:23:51.732 [main] INFO  com.ftx.RainApplication - Starting RainApplication on LAPTOP-OI5LG6OU with PID 7796 (D:\IdeaProjects\Rain平台\Rain\target\classes started by Administrator in D:\IdeaProjects\Rain平台)
-13:23:51.742 [main] INFO  com.ftx.RainApplication - No active profile set, falling back to default profiles: default
-13:23:53.742 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-13:23:53.743 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-13:23:53.744 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
-13:23:53.854 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-13:23:54.495 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-13:23:54.887 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-13:23:54.914 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-13:23:54.932 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-13:23:54.963 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-13:23:55.115 [main] INFO  cn.zifangsky.license.LicenseCheckListener - ++++++++ 开始安装证书 ++++++++
-13:23:56.740 [main] INFO  cn.zifangsky.license.LicenseVerify - 证书安装成功，证书有效期：2018-07-10 00:00:01 - 2020-12-04 18:36:00
-13:23:56.741 [main] INFO  cn.zifangsky.license.LicenseCheckListener - ++++++++ 证书安装结束 ++++++++
-13:23:56.745 [main] INFO  com.ftx.RainApplication - Started RainApplication in 5.719 seconds (JVM running for 10.393)
-13:24:07.800 [http-nio-8080-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-13:24:07.826 [http-nio-8080-exec-1] INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager - Enabling session validation scheduler...
-13:24:14.149 [http-nio-8080-exec-4] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - Shiro开始认证
-13:24:14.194 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-13:24:14.317 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-13:24:14.365 [http-nio-8080-exec-4] INFO  com.ftx.authentication.rainshiro.shiro.UserRealm - 认证成功
-13:24:14.400 [http-nio-8080-exec-4] INFO  com.ftx.authentication.rainshiro.utils.TokenUtil - 设置token有效时间------------15分钟
+14:31:56.523 [main] INFO  com.ftx.authentication.rainshiro.RainShiroApplication - Starting RainShiroApplication on LAPTOP-OI5LG6OU with PID 1072 (D:\IdeaProjects\Rain平台\rain-shiro\target\classes started by Administrator in D:\IdeaProjects\Rain平台)
+14:31:56.533 [main] INFO  com.ftx.authentication.rainshiro.RainShiroApplication - No active profile set, falling back to default profiles: default
+14:31:58.493 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+14:31:58.493 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+14:31:58.494 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+14:31:58.601 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:31:59.309 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+14:31:59.629 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+14:31:59.654 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+14:31:59.671 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+14:31:59.716 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+14:31:59.873 [main] INFO  cn.zifangsky.license.LicenseCheckListener - ++++++++ 开始安装证书 ++++++++
+14:32:01.554 [main] INFO  cn.zifangsky.license.LicenseVerify - 证书安装成功，证书有效期：2020-11-20 00:00:01 - 2021-06-06 23:59:59
+14:32:01.554 [main] INFO  cn.zifangsky.license.LicenseCheckListener - ++++++++ 证书安装结束 ++++++++
+14:32:01.560 [main] INFO  com.ftx.authentication.rainshiro.RainShiroApplication - Started RainShiroApplication in 5.638 seconds (JVM running for 11.138)

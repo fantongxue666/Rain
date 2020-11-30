@@ -3,6 +3,7 @@ package com.ftx.authentication.rainshiro.login;
 import com.ftx.authentication.rainshiro.constant.APPEnums;
 import com.ftx.authentication.rainshiro.constant.JsonObject;
 import com.ftx.authentication.rainshiro.model.AuthUser;
+import com.ftx.authentication.rainshiro.model.TreeNode;
 import com.ftx.authentication.rainshiro.shiro.AuthenUrlConfig;
 import com.ftx.authentication.rainshiro.utils.*;
 import io.swagger.annotations.Api;
@@ -36,7 +37,7 @@ import java.util.concurrent.TimeUnit;
  * @createTime 2020年10月19日 15:53:00
  */
 @RestController
-@Api(tags = "权限认证接口")
+@Api(tags = "认证接口")
 public class LoginsController {
     Logger log= LoggerFactory.getLogger(LoginsController.class);
 
@@ -50,6 +51,15 @@ public class LoginsController {
     AuthenUrlConfig authenUrlConfig;
 
 
+    @GetMapping("/getTreeList")
+    @ApiOperation("获取路由权限Tree")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "account",value = "账号",required = true)
+    })
+    public JsonObject<List<TreeNode>> getTreeList(String account){
+        List<TreeNode> treeList = shiroDao.getTreeListByAccount(account);
+        return new JsonObject(treeList,APPEnums.OK);
+    }
     @GetMapping(value = "/getPersonInfo")
     @ApiOperation(value = "获取用户信息")
     @ApiImplicitParams({
@@ -161,16 +171,5 @@ public class LoginsController {
             return list;
         }
     }
-//
-//    @GetMapping("/toLoginPage")
-//    @ResponseBody
-//    public void toLoginPages(){
-//        log.info("到登录页面");
-//    }
-//    @GetMapping("/toNoAuthenPage")
-//    @ResponseBody
-//    public void toNoAuthenPages(){
-//        log.info("没有权限");
-//    }
 
 }

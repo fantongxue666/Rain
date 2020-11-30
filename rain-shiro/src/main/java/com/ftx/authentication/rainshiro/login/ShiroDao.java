@@ -1,6 +1,7 @@
 package com.ftx.authentication.rainshiro.login;
 
 import com.ftx.authentication.rainshiro.model.AuthUser;
+import com.ftx.authentication.rainshiro.model.TreeNode;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
@@ -19,6 +20,10 @@ import java.util.List;
 @Repository
 @Mapper
 public interface ShiroDao {
+
+    @Select(value = "select * from tb_power where id in(select powerid from tb_role_power where roleid=(SELECT b.id from tb_user a left join tb_role b on a.roleid=b.id where a.account=#{account}))")
+    List<TreeNode> getTreeListByAccount(@Param("account")String account);
+
     @Select(value = "select * from tb_user where account=#{account}")
     List<AuthUser> getUser(@Param("account")String account);
 

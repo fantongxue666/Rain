@@ -1,0 +1,29 @@
+package com.ftx.authentication.rainshiro.model;
+
+/**
+ * @author FanJiangFeng
+ * @version 1.0.0
+ * @ClassName RoleQuery.java
+ * @Description TODO
+ * @createTime 2020年12月02日 17:30:00
+ */
+public class RoleQuery extends Query {
+    private String name;
+    private String status;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+}

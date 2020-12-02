@@ -9,6 +9,7 @@ import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author FanJiangFeng
@@ -21,16 +22,16 @@ import java.util.List;
 @Mapper
 public interface ShiroDao {
 
-    @Select(value = "select * from tb_power where id in(select powerid from tb_role_power where roleid=(SELECT b.id from tb_user a left join tb_role b on a.roleid=b.id where a.account=#{account}))")
+    @Select(value = "select * from tb_power where id in(select powerid from tb_role_power where roleid=(SELECT b.id from tb_user a left join tb_role b on a.roleid=b.id where b.wlbz='1' and b.yxbz='y' and a.account=#{account}))")
     List<TreeNode> getTreeListByAccount(@Param("account")String account);
 
     @Select(value = "select * from tb_user where account=#{account}")
     List<AuthUser> getUser(@Param("account")String account);
 
-    @Select(value = "select a.*,b.rolename from tb_user a left join tb_role b on a.roleid=b.id where account=#{account}")
+    @Select(value = "select a.*,b.rolename from tb_user a left join tb_role b on a.roleid=b.id where b.yxbz='y' and a.account=#{account}")
     List<AuthUser> getUserInfo(@Param("account")String account);
 
-    @Select(value = "select url from tb_power where id in(select powerid from tb_role_power where roleid=(SELECT b.id from tb_user a left join tb_role b on a.roleid=b.id where a.account=#{account}))")
+    @Select(value = "select url from tb_power where id in(select powerid from tb_role_power where roleid=(SELECT b.id from tb_user a left join tb_role b on a.roleid=b.id where b.wlbz='1' and b.yxbz='y' and a.account=#{account}))")
     List<String> getRolesByUsername(@Param("account")String account);
 
     @Insert(value = "insert into tb_user values(#{id},#{account},#{username},#{pwd},'df8s90g78sdf90gsdf09g67')")
@@ -38,4 +39,7 @@ public interface ShiroDao {
 
     @Select(value = "SELECT url from tb_power where id in (select powerid from tb_role_power where roleid=(SELECT roleid from tb_user WHERE account=#{account}))")
     List<String> getPowersByAccount(@Param("account")String account);
+
+    @Select(value = "select * from tb_role where yxbz='y'")
+    List<Map> getRoleList();
 }

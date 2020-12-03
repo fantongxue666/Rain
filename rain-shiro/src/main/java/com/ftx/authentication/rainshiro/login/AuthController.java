@@ -3,6 +3,7 @@ package com.ftx.authentication.rainshiro.login;
 import com.ftx.authentication.rainshiro.constant.APPEnums;
 import com.ftx.authentication.rainshiro.constant.JsonObject;
 import com.ftx.authentication.rainshiro.model.RoleQuery;
+import com.ftx.authentication.rainshiro.utils.UuidUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import io.swagger.annotations.Api;
@@ -44,8 +45,34 @@ public class AuthController {
     })
     public JsonObject<PageInfo<Map>> getRoleList(@RequestBody RoleQuery roleQuery){
         PageHelper.startPage(roleQuery.getPageNo(),roleQuery.getPageSize());
-        List<Map> roleList = shiroDao.getRoleList();
+        List<Map> roleList = shiroDao.getRoleList(roleQuery);
         PageInfo<Map> mapPageInfo = new PageInfo<>(roleList);
         return new JsonObject<>(mapPageInfo, APPEnums.OK);
     }
+
+    @PostMapping("/addRoleUser")
+    @ApiOperation("新增角色")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "name",value = "角色名称",required = true),
+            @ApiImplicitParam(name = "status",value = "角色状态",required = true)
+    })
+    public JsonObject addRoleUser(@RequestBody RoleQuery roleQuery){
+        String uuid = UuidUtil.getUuid();
+        roleQuery.setId(uuid);
+        int i = shiroDao.addUser(roleQuery);
+        return i>0?new JsonObject(APPEnums.OK):new JsonObject(APPEnums.ERROR);
+    }
+
+    @PostMapping("/updateRoleUser")
+    @ApiOperation("修改角色")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "id",value = "角色编号",required = true),
+            @ApiImplicitParam(name = "name",value = "角色名称",required = true),
+            @ApiImplicitParam(name = "status",value = "角色状态",required = true)
+    })
+    public JsonObject updateRoleUser(@RequestBody RoleQuery roleQuery){
+        int i = shiroDao.updateUser(roleQuery);
+        return i>0?new JsonObject(APPEnums.OK):new JsonObject(APPEnums.ERROR);
+    }
+
 }

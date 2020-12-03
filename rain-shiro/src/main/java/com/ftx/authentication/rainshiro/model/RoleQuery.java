@@ -8,8 +8,17 @@ package com.ftx.authentication.rainshiro.model;
  * @createTime 2020年12月02日 17:30:00
  */
 public class RoleQuery extends Query {
+    private String id;
     private String name;
     private String status;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;

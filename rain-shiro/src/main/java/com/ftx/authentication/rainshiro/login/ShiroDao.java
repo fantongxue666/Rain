@@ -1,11 +1,9 @@
 package com.ftx.authentication.rainshiro.login;
 
 import com.ftx.authentication.rainshiro.model.AuthUser;
+import com.ftx.authentication.rainshiro.model.RoleQuery;
 import com.ftx.authentication.rainshiro.model.TreeNode;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -21,6 +19,34 @@ import java.util.Map;
 @Repository
 @Mapper
 public interface ShiroDao {
+
+    /**
+     * 修改角色
+     */
+    @Update(value = "update tb_role set rolename=#{name},wlbz=#{status} where id=#{id}")
+    int updateUser(RoleQuery roleQuery);
+
+    /**
+     * 新增角色
+     */
+    @Insert(value = "insert into tb_role values(#{id},#{name},#{status},'y')")
+    int addUser(RoleQuery roleQuery);
+
+    /**
+     * 查询角色列表
+     * @param roleQuery
+     * @return
+     */
+    @Select({"<script>",
+            "select * from tb_role where yxbz='y'",
+            "<if test='name!=null and name != \"\"'>",
+                "and rolename like concat('%',#{name},'%')",
+            "</if>",
+            "<if test='status!=null and status != \"\"'>",
+            "and wlbz = #{status}",
+            "</if>",
+            "</script>"})
+    List<Map> getRoleList(RoleQuery roleQuery);
 
     @Select(value = "select * from tb_power where id in(select powerid from tb_role_power where roleid=(SELECT b.id from tb_user a left join tb_role b on a.roleid=b.id where b.wlbz='1' and b.yxbz='y' and a.account=#{account}))")
     List<TreeNode> getTreeListByAccount(@Param("account")String account);
@@ -40,6 +66,4 @@ public interface ShiroDao {
     @Select(value = "SELECT url from tb_power where id in (select powerid from tb_role_power where roleid=(SELECT roleid from tb_user WHERE account=#{account}))")
     List<String> getPowersByAccount(@Param("account")String account);
 
-    @Select(value = "select * from tb_role where yxbz='y'")
-    List<Map> getRoleList();
 }

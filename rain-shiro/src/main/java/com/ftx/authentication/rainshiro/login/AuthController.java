@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -59,6 +60,7 @@ public class AuthController {
     public JsonObject addRoleUser(@RequestBody RoleQuery roleQuery){
         String uuid = UuidUtil.getUuid();
         roleQuery.setId(uuid);
+        roleQuery.setCreatetime(new Date());
         int i = shiroDao.addUser(roleQuery);
         return i>0?new JsonObject(APPEnums.OK):new JsonObject(APPEnums.ERROR);
     }
@@ -72,6 +74,16 @@ public class AuthController {
     })
     public JsonObject updateRoleUser(@RequestBody RoleQuery roleQuery){
         int i = shiroDao.updateUser(roleQuery);
+        return i>0?new JsonObject(APPEnums.OK):new JsonObject(APPEnums.ERROR);
+    }
+
+    @GetMapping("/deleteRoleUser")
+    @ApiOperation("删除角色")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "id",value = "角色编号",required = true)
+    })
+    public JsonObject deleteRoleUser(String id){
+        int i = shiroDao.deleteUser(id);
         return i>0?new JsonObject(APPEnums.OK):new JsonObject(APPEnums.ERROR);
     }
 

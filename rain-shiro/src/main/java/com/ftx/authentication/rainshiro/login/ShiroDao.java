@@ -21,6 +21,12 @@ import java.util.Map;
 public interface ShiroDao {
 
     /**
+     * 删除角色
+     */
+    @Update(value = "update tb_role set yxbz='n' where id=#{id}")
+    int deleteUser(String id);
+
+    /**
      * 修改角色
      */
     @Update(value = "update tb_role set rolename=#{name},wlbz=#{status} where id=#{id}")
@@ -29,7 +35,7 @@ public interface ShiroDao {
     /**
      * 新增角色
      */
-    @Insert(value = "insert into tb_role values(#{id},#{name},#{status},'y')")
+    @Insert(value = "insert into tb_role values(#{id},#{name},#{status},'y',#{createtime})")
     int addUser(RoleQuery roleQuery);
 
     /**
@@ -45,6 +51,7 @@ public interface ShiroDao {
             "<if test='status!=null and status != \"\"'>",
             "and wlbz = #{status}",
             "</if>",
+            "order by createtime desc",
             "</script>"})
     List<Map> getRoleList(RoleQuery roleQuery);
 

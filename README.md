@@ -20,7 +20,13 @@
         <tr>
             <td>RAIN-SHIRO</td>
             <td>Rain平台安全模块，登录和认证授权，Token校验</td>
-            <td>1，构建shiro模块，初始化shiro模块工程，并集成token，实用redis存储token<br>2，集成log4j2日志框架，shiro过滤器，token工具类<br>3，shiro模块增加MD5算法加密<br>4，rain平台集成swagger接口文档</td>
+            <td>
+                1，构建shiro模块，初始化shiro模块工程，并集成token，实用redis存储token<br>
+                2，集成log4j2日志框架，shiro过滤器，token工具类<br>
+                3，shiro模块增加MD5算法加密<br>
+                4，rain平台集成swagger接口文档<br>
+                5，已支持多用户多角色，权限动态分配
+            </td>
         </tr>
         <tr>
             <td>RAIN-EXCEL</td>
@@ -38,4 +44,5 @@
         </tr>
     </tbody>
 </table>
-
+<a href="https://github.com/fantongxue666/rain-vue-elementui-admin">附属一：点我进入Rain平台的前端Vue-Cli脚手架项目地址</a>
+<br><a href="">附属二：vue-elementui-admin框架介绍- [作者: 阳哥]</a>

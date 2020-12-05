@@ -13,6 +13,15 @@ public class Label {
     private Integer id;
     private String label;
     private List<Label> children;
+    private List<Integer> ids;
+
+    public List<Integer> getIds() {
+        return ids;
+    }
+
+    public void setIds(List<Integer> ids) {
+        this.ids = ids;
+    }
 
     public Integer getId() {
         return id;

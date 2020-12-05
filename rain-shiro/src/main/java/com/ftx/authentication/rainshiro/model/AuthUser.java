@@ -13,7 +13,7 @@ import java.util.List;
  * @createTime 2020年10月19日 17:19:00
  */
 @ApiModel("用户类")
-public class AuthUser {
+public class AuthUser extends Query{
     @ApiModelProperty(name = "account",value = "账号")
     private String account;//账号
     @ApiModelProperty(name = "pwd",value = "密码")

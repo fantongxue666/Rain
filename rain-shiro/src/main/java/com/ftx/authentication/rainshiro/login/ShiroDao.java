@@ -1,6 +1,7 @@
 package com.ftx.authentication.rainshiro.login;
 
 import com.ftx.authentication.rainshiro.model.AuthUser;
+import com.ftx.authentication.rainshiro.model.Role;
 import com.ftx.authentication.rainshiro.model.RoleQuery;
 import com.ftx.authentication.rainshiro.model.TreeNode;
 import org.apache.ibatis.annotations.*;
@@ -19,6 +20,34 @@ import java.util.Map;
 @Repository
 @Mapper
 public interface ShiroDao {
+
+    /**
+     * 查询用户列表
+     * @param roleid
+     * @return
+     */
+    @Select({"<script>",
+            "select a.*,b.rolename from tb_user a left join tb_role b on a.roleid=b.id where 1=1",
+            "<if test='username!=null and username!=\"\"'>",
+            "and a.username like concat('%',#{username},'%')",
+            "</if>",
+            "<if test='account!=null and account!=\"\"'>",
+            "and a.account=#{account}",
+            "</if>",
+            "</script>"})
+    List<AuthUser> getAuthUserList(AuthUser authUser);
+
+    @Delete(value = "delete from tb_role_power where roleid=#{roleid}")
+    int delRole(String roleid);
+
+    @Insert(value = "insert into tb_role_power values(#{id},#{roleid},#{powerid})")
+    int insertRole(Role role);
+
+    @Select(value = "select * from tb_power")
+    List<TreeNode> getRole(String roleid);
+
+    @Select(value = "select powerid from tb_role_power where roleid=#{roleid}")
+    List<Integer> getPowerIdsByAccount(String roleid);
 
     /**
      * 删除角色
@@ -67,7 +96,7 @@ public interface ShiroDao {
     @Select(value = "select url from tb_power where id in(select powerid from tb_role_power where roleid=(SELECT b.id from tb_user a left join tb_role b on a.roleid=b.id where b.wlbz='1' and b.yxbz='y' and a.account=#{account}))")
     List<String> getRolesByUsername(@Param("account")String account);
 
-    @Insert(value = "insert into tb_user values(#{id},#{account},#{username},#{pwd},'df8s90g78sdf90gsdf09g67')")
+    @Insert(value = "insert into tb_user values(#{id},#{account},#{username},#{pwd},'h5ui123o45h324io5h23p4')")
     int registerUser(AuthUser authUser);
 
     @Select(value = "SELECT url from tb_power where id in (select powerid from tb_role_power where roleid=(SELECT roleid from tb_user WHERE account=#{account}))")

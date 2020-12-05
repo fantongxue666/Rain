@@ -41,7 +41,7 @@
         <dependency>
             <groupId>com.rain.shiro</groupId>
             <artifactId>rain-shiro</artifactId>
-            <version>2.3</version>
+            <version>2.6</version>
         </dependency>
         <!-- 集成rain-excel模块 -->
         <dependency>
@@ -63,6 +63,11 @@
             <groupId>org.freemarker</groupId>
             <artifactId>freemarker</artifactId>
             <version>2.3.28</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>1.2.5</version>
         </dependency>
         <!-- 集成shiro -->
         <dependency>

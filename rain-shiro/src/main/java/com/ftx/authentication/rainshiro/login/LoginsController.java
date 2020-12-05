@@ -4,6 +4,7 @@ import com.ftx.authentication.rainshiro.constant.APPEnums;
 import com.ftx.authentication.rainshiro.constant.JsonObject;
 import com.ftx.authentication.rainshiro.model.AuthUser;
 import com.ftx.authentication.rainshiro.model.Label;
+import com.ftx.authentication.rainshiro.model.Role;
 import com.ftx.authentication.rainshiro.model.TreeNode;
 import com.ftx.authentication.rainshiro.shiro.AuthenUrlConfig;
 import com.ftx.authentication.rainshiro.utils.*;
@@ -52,32 +53,66 @@ public class LoginsController {
     @Autowired
     AuthenUrlConfig authenUrlConfig;
 
+    @GetMapping("/saveRoles")
+    @ApiOperation("保存角色授权")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "roleid",value = "角色id",required = true),
+            @ApiImplicitParam(name = "powerids",value = "菜单节点id列表",required = true)
+    })
+    public JsonObject saveRoles(String roleid,String[] powerids){
+        int i = shiroDao.delRole(roleid);
+        for(String powerid:powerids){
+        Role role=new Role();
+        role.setId(UuidUtil.getUuid());
+        role.setRoleid(roleid);
+        role.setPowerid(Integer.parseInt(powerid));
+        shiroDao.insertRole(role);
+    }
+    return JsonObject.Success();
+    }
+
     @GetMapping("/getMenuByRole")
     @ApiOperation("获取角色对应的权限树")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "account",value = "账号",required = true)
+            @ApiImplicitParam(name = "roleid",value = "角色id",required = true)
     })
-    public JsonObject<List<TreeNode>> getMenuByRole(String account){
+    public JsonObject<List<Label>> getMenuByRole(String roleid){
+        List<Integer> powerIdsByAccount = shiroDao.getPowerIdsByAccount(roleid);
         List<Label> labelList=new ArrayList<>();
-        List<TreeNode> treeList = shiroDao.getTreeListByAccount(account);
+        List<TreeNode> treeList = shiroDao.getRole(roleid);
         if(treeList!=null){
             for(TreeNode treeNode:treeList){
-                Label label=new Label();
-                label.setId(treeNode.getId());
-                label.setLabel(treeNode.getName());
-                //递归绑定子节点
-                bindChildren(label,treeNode,treeList);
-                labelList.add(label);
+                if(treeNode.getParentid()==0){
+                    Label label=new Label();
+                    label.setId(treeNode.getId());
+                    label.setLabel(treeNode.getName());
+                    label.setIds(powerIdsByAccount);
+                    //递归绑定子节点
+                    bindChildren(label,treeNode,treeList);
+                    labelList.add(label);
+                }
             }
+
             return new JsonObject(labelList,APPEnums.OK);
         }else{
-            return new JsonObject(200);
+            return JsonObject.Error();
         }
 
     }
 
     private void bindChildren(Label label, TreeNode treeNode, List<TreeNode> treeList) {
-
+        List<Label> children=new ArrayList<>();
+        for(TreeNode tree:treeList){
+            if(tree.getParentid()==treeNode.getId()){
+                Label label1=new Label();
+                label1.setId(tree.getId());
+                label1.setLabel(tree.getName());
+                //递归绑定子节点
+                bindChildren(label1,tree,treeList);
+                children.add(label1);
+            }
+        }
+        label.setChildren(children);
     }
 
 

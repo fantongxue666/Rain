@@ -10,6 +10,11 @@ spring:
     host: 127.0.0.1 #redis主机ip
     port: 6379 #redis端口
     password:  #redis连接密码，默认为空
+# pagehelper分页配置
+pagehelper:
+  auto-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
 
 #    shiro自定义配置
 rain:

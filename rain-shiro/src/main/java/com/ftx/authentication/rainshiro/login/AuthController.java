@@ -2,6 +2,7 @@ package com.ftx.authentication.rainshiro.login;
 
 import com.ftx.authentication.rainshiro.constant.APPEnums;
 import com.ftx.authentication.rainshiro.constant.JsonObject;
+import com.ftx.authentication.rainshiro.model.AuthUser;
 import com.ftx.authentication.rainshiro.model.RoleQuery;
 import com.ftx.authentication.rainshiro.utils.UuidUtil;
 import com.github.pagehelper.PageHelper;
@@ -85,6 +86,21 @@ public class AuthController {
     public JsonObject deleteRoleUser(String id){
         int i = shiroDao.deleteUser(id);
         return i>0?new JsonObject(APPEnums.OK):new JsonObject(APPEnums.ERROR);
+    }
+
+    @PostMapping("/getAuthUserList")
+    @ApiOperation("获取用户列表")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "pageNo",value = "当前页",required = true),
+            @ApiImplicitParam(name = "pageSize",value = "页大小",required = true),
+            @ApiImplicitParam(name = "username",value = "用户名称",required = false),
+            @ApiImplicitParam(name = "account",value = "账号",required = false)
+    })
+    public JsonObject<PageInfo<AuthUser>> getAuthUserList(@RequestBody AuthUser authUser){
+        PageHelper.startPage(authUser.getPageNo(),authUser.getPageSize());
+        List<AuthUser> authUserList = shiroDao.getAuthUserList(authUser);
+        PageInfo<AuthUser> mapPageInfo = new PageInfo<>(authUserList);
+        return new JsonObject<>(mapPageInfo, APPEnums.OK);
     }
 
 }

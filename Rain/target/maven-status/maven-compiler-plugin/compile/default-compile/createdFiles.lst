@@ -1,1 +1,9 @@
+com\ftx\config\GlobalSwagger2.class
 com\ftx\RainApplication.class
+com\ftx\config\CorsConfig.class
+com\ftx\config\Generator.class
+com\ftx\config\JavaKind.class
+com\ftx\constant\APPEnums.class
+com\ftx\constant\JsonObject.class
+com\ftx\config\AutoCodeController.class
+com\ftx\config\Column.class

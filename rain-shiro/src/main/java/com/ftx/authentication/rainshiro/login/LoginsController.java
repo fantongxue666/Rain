@@ -3,6 +3,7 @@ package com.ftx.authentication.rainshiro.login;
 import com.ftx.authentication.rainshiro.constant.APPEnums;
 import com.ftx.authentication.rainshiro.constant.JsonObject;
 import com.ftx.authentication.rainshiro.model.AuthUser;
+import com.ftx.authentication.rainshiro.model.Label;
 import com.ftx.authentication.rainshiro.model.TreeNode;
 import com.ftx.authentication.rainshiro.shiro.AuthenUrlConfig;
 import com.ftx.authentication.rainshiro.utils.*;
@@ -26,6 +27,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -49,6 +51,34 @@ public class LoginsController {
     ShiroDao shiroDao;
     @Autowired
     AuthenUrlConfig authenUrlConfig;
+
+    @GetMapping("/getMenuByRole")
+    @ApiOperation("获取角色对应的权限树")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "account",value = "账号",required = true)
+    })
+    public JsonObject<List<TreeNode>> getMenuByRole(String account){
+        List<Label> labelList=new ArrayList<>();
+        List<TreeNode> treeList = shiroDao.getTreeListByAccount(account);
+        if(treeList!=null){
+            for(TreeNode treeNode:treeList){
+                Label label=new Label();
+                label.setId(treeNode.getId());
+                label.setLabel(treeNode.getName());
+                //递归绑定子节点
+                bindChildren(label,treeNode,treeList);
+                labelList.add(label);
+            }
+            return new JsonObject(labelList,APPEnums.OK);
+        }else{
+            return new JsonObject(200);
+        }
+
+    }
+
+    private void bindChildren(Label label, TreeNode treeNode, List<TreeNode> treeList) {
+
+    }
 
 
     @GetMapping("/getTreeList")

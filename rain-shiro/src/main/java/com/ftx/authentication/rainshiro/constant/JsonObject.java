@@ -28,6 +28,8 @@ public class JsonObject<T> {
         this(data, APPEnums.OK);
     }
 
+
+
     public JsonObject(T data, Integer code) {
         this(data, code, (String)null);
     }

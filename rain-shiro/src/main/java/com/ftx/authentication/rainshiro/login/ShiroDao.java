@@ -46,7 +46,7 @@ public interface ShiroDao {
     @Select(value = "select * from tb_power")
     List<TreeNode> getRole(String roleid);
 
-    @Select(value = "select powerid from tb_role_power where roleid=#{roleid}")
+    @Select(value = "select a.powerid from tb_role_power a,tb_power b where a.powerid=b.id and b.parentid!=0 and roleid=#{roleid}")
     List<Integer> getPowerIdsByAccount(String roleid);
 
     /**

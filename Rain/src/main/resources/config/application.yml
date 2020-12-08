@@ -45,4 +45,9 @@ rain:
     storePass: public_password1234
     licensePath: D:/license_demo/license.lic
     publicKeysStorePath: D:/license_demo/publicCerts.keystore
+# 指定文件上传地址（文件夹）的绝对路径
+file:
+  upload: D:\IdeaProjects\Rain平台\File
+# 下载地址示例 http://localhost:8080/download?fileName=D:/IdeaProjects/Rain平台/File/test.jpg&newFileName=test
+# 图片在线预览地址示例 http://localhost:8080/online?fileName=test.jpg 该地址可直接放在<img src="" />的src中进行展示
 

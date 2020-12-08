@@ -1,2 +1,19 @@
-10:20:34.822 [main] INFO  com.ftx.authentication.rainshiro.RainShiroApplication - Starting RainShiroApplication on LAPTOP-OI5LG6OU with PID 5968 (D:\IdeaProjects\Rain平台\rain-shiro\target\classes started by Administrator in D:\IdeaProjects\Rain平台)
-10:20:34.843 [main] INFO  com.ftx.authentication.rainshiro.RainShiroApplication - No active profile set, falling back to default profiles: default
+09:53:56.747 [main] INFO  com.ftx.RainApplication - Starting RainApplication on LAPTOP-OI5LG6OU with PID 26128 (D:\IdeaProjects\Rain平台\Rain\target\classes started by Administrator in D:\IdeaProjects\Rain平台)
+09:53:56.757 [main] INFO  com.ftx.RainApplication - No active profile set, falling back to default profiles: default
+09:53:59.082 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+09:53:59.083 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+09:53:59.083 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+09:53:59.206 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09:53:59.855 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+09:54:00.308 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+09:54:00.342 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+09:54:00.361 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+09:54:00.394 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+09:54:00.604 [main] WARN  springfox.documentation.spring.web.readers.parameter.ParameterDataTypeReader - Trying to infer dataType java.lang.String[]
+09:54:00.621 [main] INFO  cn.zifangsky.license.LicenseCheckListener - ++++++++ 开始安装证书 ++++++++
+09:54:02.856 [main] INFO  cn.zifangsky.license.LicenseVerify - 证书安装成功，证书有效期：2020-11-20 00:00:01 - 2021-06-06 23:59:59
+09:54:02.856 [main] INFO  cn.zifangsky.license.LicenseCheckListener - ++++++++ 证书安装结束 ++++++++
+09:54:02.861 [main] INFO  com.ftx.RainApplication - Started RainApplication in 6.772 seconds (JVM running for 12.379)
+09:54:14.115 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:54:14.143 [http-nio-8080-exec-1] INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager - Enabling session validation scheduler...
+09:54:38.591 [http-nio-8080-exec-5] INFO  com.ftx.authentication.rainshiro.shiro.ShiroLoginFilter - token有效，并更新延长token在redis中的存活时间【30分钟】

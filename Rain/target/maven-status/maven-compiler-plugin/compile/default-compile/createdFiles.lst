@@ -1,6 +1,5 @@
-com\ftx\config\GlobalSwagger2.class
+com\ftx\constant\GlobalSwagger.class
 com\ftx\RainApplication.class
-com\ftx\config\CorsConfig.class
 com\ftx\config\Generator.class
 com\ftx\config\JavaKind.class
 com\ftx\constant\APPEnums.class

@@ -11,7 +11,6 @@ com\ftx\authentication\rainshiro\shiro\ShiroSessionListener.class
 com\ftx\authentication\rainshiro\constant\APPEnums.class
 com\ftx\authentication\rainshiro\model\Label.class
 com\ftx\authentication\rainshiro\utils\TokenException.class
-com\ftx\authentication\rainshiro\redis\GlobalSwagger.class
 com\ftx\authentication\rainshiro\shiro\ShiroLoginFilter.class
 com\ftx\authentication\rainshiro\utils\RedisUtil.class
 com\ftx\authentication\rainshiro\utils\IPUtil.class

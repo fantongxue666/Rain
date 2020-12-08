@@ -1,0 +1,4 @@
+# 指定文件上传地址（文件夹）的绝对路径
+file:
+  upload: D:\IdeaProjects\Rain平台\File
+

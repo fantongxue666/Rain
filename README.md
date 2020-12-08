@@ -42,7 +42,34 @@
             <td>RAIN-LICENSE</td><td>服务器证书解析和校验模块 [单应用]</td>
             <td>已集成</td>
         </tr>
+        <tr>
+             <td>RAIN-FILESERVER</td><td>文件通用上传下载接口</td>
+             <td>文件上传接口<br>文件下载接口<br>图片在线预览接口（可直接拼装http请求地址放入<img src=""/>的src中进行图片的预览）
+             </td>
+                </tr>
     </tbody>
 </table>
 <a href="https://github.com/fantongxue666/rain-vue-elementui-admin">附属一：点我进入Rain平台的前端Vue-Cli脚手架项目地址</a>
 <br><a href="">附属二：vue-elementui-admin框架介绍- [作者: 阳哥]</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

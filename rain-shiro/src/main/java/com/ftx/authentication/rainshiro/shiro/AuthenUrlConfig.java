@@ -15,28 +15,17 @@ import org.springframework.stereotype.Component;
 @Component
 @ConfigurationProperties(prefix = "rain.shiro")
 public class AuthenUrlConfig {
-    private String loginUrl;//放开登录路径
-    private String registerUrl;//放开注册路径
-    private String logoutUrl;//放开登出路径
-    private String swaggerUrl;//放开接口文档地址
     private boolean isCheckToken;//是否校验token
     private String tokenName;//请求头token名字
     private Long tokenLiveTime;//token存活时间
+    private String[] freeUrls;//白名单
 
-    public String getSwaggerUrl() {
-        return swaggerUrl;
+    public String[] getFreeUrls() {
+        return freeUrls;
     }
 
-    public void setSwaggerUrl(String swaggerUrl) {
-        this.swaggerUrl = swaggerUrl;
-    }
-
-    public String getRegisterUrl() {
-        return registerUrl;
-    }
-
-    public void setRegisterUrl(String registerUrl) {
-        this.registerUrl = registerUrl;
+    public void setFreeUrls(String[] freeUrls) {
+        this.freeUrls = freeUrls;
     }
 
     public Long getTokenLiveTime() {
@@ -63,19 +52,5 @@ public class AuthenUrlConfig {
         isCheckToken = checkToken;
     }
 
-    public String getLoginUrl() {
-        return loginUrl;
-    }
 
-    public void setLoginUrl(String loginUrl) {
-        this.loginUrl = loginUrl;
-    }
-
-    public String getLogoutUrl() {
-        return logoutUrl;
-    }
-
-    public void setLogoutUrl(String logoutUrl) {
-        this.logoutUrl = logoutUrl;
-    }
 }

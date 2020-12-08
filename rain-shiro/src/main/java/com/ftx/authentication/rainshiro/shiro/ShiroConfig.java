@@ -170,10 +170,10 @@ public class ShiroConfig{
          */
         Map<String,String> filterMap=new LinkedHashMap<>();
         //设置必须认证才能访问
-        filterMap.put(authenUrlConfig.getLoginUrl(),"anon");
-        filterMap.put(authenUrlConfig.getLogoutUrl(),"anon");
-        filterMap.put(authenUrlConfig.getRegisterUrl(),"anon");
-        filterMap.put(authenUrlConfig.getSwaggerUrl(),"anon");
+        String[] freeUrls = authenUrlConfig.getFreeUrls();
+        for(String url:freeUrls){
+            filterMap.put(url,"anon");
+        }
         filterMap.put("/**", "authc");
         factoryBean.setFilterChainDefinitionMap(filterMap);
 

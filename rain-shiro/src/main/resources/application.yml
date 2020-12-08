@@ -16,13 +16,14 @@ pagehelper: # pagehelper分页配置
 #    shiro自定义配置
 rain:
   shiro:
-    login-url: /login # 放开登录路径
-    register-url: /register # 放开注册路径
-    swagger-url: /swagger-ui.html  # 放开接口文档地址
-    logout-url: /logout # 放开登出路径
     check-token: true # 是否校验token    true：正常返回token和登录校验token   false：无需携带和校验token，用于方便开发环境
     token-name: MY-TOKEN # 请求头token名字
     tokenLiveTime: 3600 # token过期时间
+    freeUrls: # 白名单（不给予拦截）
+    - /login # 放开登录路径
+    - /register # 放开注册路径
+    - /logout # 放开登出路径
+    - /swagger-ui.html # 放开接口文档地址
 #  证书配置
   license:
     subject: license_demo

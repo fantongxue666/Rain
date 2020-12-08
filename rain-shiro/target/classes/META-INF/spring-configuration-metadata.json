@@ -13,23 +13,8 @@
       "sourceType": "com.ftx.authentication.rainshiro.shiro.AuthenUrlConfig"
     },
     {
-      "name": "rain.shiro.login-url",
-      "type": "java.lang.String",
-      "sourceType": "com.ftx.authentication.rainshiro.shiro.AuthenUrlConfig"
-    },
-    {
-      "name": "rain.shiro.logout-url",
-      "type": "java.lang.String",
-      "sourceType": "com.ftx.authentication.rainshiro.shiro.AuthenUrlConfig"
-    },
-    {
-      "name": "rain.shiro.register-url",
-      "type": "java.lang.String",
-      "sourceType": "com.ftx.authentication.rainshiro.shiro.AuthenUrlConfig"
-    },
-    {
-      "name": "rain.shiro.swagger-url",
-      "type": "java.lang.String",
+      "name": "rain.shiro.free-urls",
+      "type": "java.lang.String[]",
       "sourceType": "com.ftx.authentication.rainshiro.shiro.AuthenUrlConfig"
     },
     {

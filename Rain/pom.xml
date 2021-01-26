@@ -43,6 +43,12 @@
             <artifactId>rain-shiro</artifactId>
             <version>2.9</version>
         </dependency>
+        <!--集成rain-platentity模块-->
+        <dependency>
+            <groupId>com.rain.platentity</groupId>
+            <artifactId>rain-platentity</artifactId>
+            <version>1.0</version>
+        </dependency>
         <!-- 集成rain-excel模块 -->
         <dependency>
             <groupId>com.rain.excel</groupId>

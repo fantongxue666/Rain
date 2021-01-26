@@ -49,7 +49,7 @@
          </tr>
          <tr>
                      <td>RAIN-PLATENTITY</td><td>用于实体类的属性加解密</td>
-                     <td>正在集成中。。。</td>
+                     <td>已集成</td>
          </tr>
     </tbody>
 </table>

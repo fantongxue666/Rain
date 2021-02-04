@@ -47,7 +47,7 @@
         <dependency>
             <groupId>com.rain.platentity</groupId>
             <artifactId>rain-platentity</artifactId>
-            <version>1.0</version>
+            <version>1.2</version>
         </dependency>
         <!-- 集成rain-excel模块 -->
         <dependency>

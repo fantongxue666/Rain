@@ -12,7 +12,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @EnableSwagger2
-@ComponentScan(basePackages = {"com.ftx.**","com.ftx.authentication.rainshiro.**"})
+@ComponentScan(basePackages = {"com.ftx.**","com.ftx.authentication.rainshiro.**","com.rain.platentity.**"})
 public class RainApplication{
     public static void main(String[] args) {
         SpringApplication.run(RainApplication.class, args);

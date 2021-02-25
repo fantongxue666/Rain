@@ -11,6 +11,8 @@
         <option value="$PROJECT_DIR$/Rain/pom.xml" />
         <option value="$PROJECT_DIR$/rain-autocode/pom.xml" />
         <option value="$PROJECT_DIR$/rain-license/pom.xml" />
+        <option value="$PROJECT_DIR$/rain-fileserver/pom.xml" />
+        <option value="$PROJECT_DIR$/rain-platentity/pom.xml" />
       </list>
     </option>
   </component>

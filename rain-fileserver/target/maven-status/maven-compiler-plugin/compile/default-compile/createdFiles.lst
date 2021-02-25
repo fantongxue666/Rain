@@ -1,0 +1,4 @@
+com\ftx\fileserver\constant\JsonObject.class
+com\ftx\fileserver\controller\FileController.class
+com\ftx\fileserver\constant\APPEnums.class
+com\ftx\fileserver\FileserverApplication.class

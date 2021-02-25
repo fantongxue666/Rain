@@ -2,45 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5ad688f-d2fe-481c-ac95-5cc7b464682a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/model/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Rain/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rain/src/main/java/com/ftx/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rain/src/main/java/com/ftx/config/CorsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rain/src/main/java/com/ftx/config/GlobalSwagger2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rain/src/main/java/com/ftx/config/GlobalSwagger2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rain/src/main/resources/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Rain/src/main/resources/config/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rain/target/classes/com/ftx/RainApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rain/target/classes/com/ftx/RainApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rain/target/classes/com/ftx/config/AutoCodeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rain/target/classes/com/ftx/config/AutoCodeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rain/target/classes/com/ftx/config/Column.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rain/target/classes/com/ftx/config/Column.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rain/target/classes/com/ftx/config/Generator.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rain/target/classes/com/ftx/config/Generator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rain/target/classes/com/ftx/config/GlobalSwagger2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rain/target/classes/com/ftx/constant/APPEnums.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rain/target/classes/com/ftx/constant/APPEnums.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rain/target/classes/com/ftx/constant/JsonObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rain/target/classes/com/ftx/constant/JsonObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rain/target/classes/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Rain/target/classes/config/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rain/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Rain/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Rain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Rain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rain/target/rain-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rain/target/rain-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/login/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/login/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/login/LoginsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/login/LoginsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/login/ShiroDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/login/ShiroDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/model/AuthUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/model/AuthUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/model/Label.java" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/model/Label.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rain-shiro/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rain-shiro/src/main/resources/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/src/main/resources/logs/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rain-shiro/src/main/resources/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/src/main/resources/logs/info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rain-shiro/src/main/resources/logs/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/src/main/resources/logs/test.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rain-shiro/src/main/resources/logs/warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/src/main/resources/logs/warn.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rain-shiro/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rain-shiro/target/classes/com/ftx/authentication/rainshiro/constant/JsonObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/target/classes/com/ftx/authentication/rainshiro/constant/JsonObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rain-shiro/target/classes/com/ftx/authentication/rainshiro/login/LoginsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/target/classes/com/ftx/authentication/rainshiro/login/LoginsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rain-shiro/target/classes/com/ftx/authentication/rainshiro/login/ShiroDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/target/classes/com/ftx/authentication/rainshiro/login/ShiroDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rain-shiro/target/classes/com/ftx/authentication/rainshiro/model/AuthUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/target/classes/com/ftx/authentication/rainshiro/model/AuthUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rain-shiro/target/classes/com/ftx/authentication/rainshiro/shiro/UserRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/target/classes/com/ftx/authentication/rainshiro/shiro/UserRealm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rain-shiro/target/classes/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/target/classes/logs/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rain-shiro/target/classes/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/target/classes/logs/info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rain-shiro/target/classes/logs/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/target/classes/logs/test.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rain-shiro/target/classes/logs/warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/target/classes/logs/warn.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rain-shiro/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rain-shiro/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rain-shiro/target/rain-shiro-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/rain-shiro/target/rain-shiro-0.0.1-SNAPSHOT.jar" afterDir="false" />
@@ -50,6 +11,8 @@
     <ignored path="$PROJECT_DIR$/rain-shiro/target/" />
     <ignored path="$PROJECT_DIR$/rain-autocode/target/" />
     <ignored path="$PROJECT_DIR$/rain-license/target/" />
+    <ignored path="$PROJECT_DIR$/rain-fileserver/target/" />
+    <ignored path="$PROJECT_DIR$/rain-platentity/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,63 +26,69 @@
     <session id="119916686">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="38" />
-          <entry key="project.open.time.0" value="15" />
-          <entry key="project.open.time.1" value="7" />
-          <entry key="project.open.time.10" value="2" />
+          <entry key="project.closed" value="46" />
+          <entry key="project.open.time.0" value="17" />
+          <entry key="project.open.time.1" value="10" />
+          <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.6" value="4" />
+          <entry key="project.open.time.6" value="6" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="7" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="39" />
+          <entry key="project.opened" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="72" />
+          <entry key="class" value="83" />
           <entry key="ftl" value="1" />
-          <entry key="java" value="420" />
-          <entry key="md" value="6" />
+          <entry key="html" value="1" />
+          <entry key="java" value="478" />
+          <entry key="jpg" value="2" />
+          <entry key="md" value="8" />
           <entry key="pom" value="2" />
           <entry key="properties" value="21" />
           <entry key="tld" value="1" />
-          <entry key="txt" value="6" />
-          <entry key="xml" value="89" />
-          <entry key="yml" value="61" />
+          <entry key="txt" value="7" />
+          <entry key="xml" value="116" />
+          <entry key="yml" value="76" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="72" />
+          <entry key="CLASS" value="83" />
           <entry key="FTL" value="1" />
-          <entry key="JAVA" value="420" />
-          <entry key="Markdown" value="6" />
-          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="HTML" value="1" />
+          <entry key="Image" value="2" />
+          <entry key="JAVA" value="478" />
+          <entry key="Markdown" value="8" />
+          <entry key="PLAIN_TEXT" value="7" />
           <entry key="Properties" value="21" />
-          <entry key="XML" value="92" />
-          <entry key="YAML" value="61" />
+          <entry key="XML" value="119" />
+          <entry key="YAML" value="76" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="10" />
-          <entry key="java" value="12836" />
-          <entry key="md" value="169" />
+          <entry key="html" value="74" />
+          <entry key="java" value="16039" />
+          <entry key="md" value="333" />
           <entry key="properties" value="5" />
-          <entry key="txt" value="84" />
-          <entry key="xml" value="506" />
-          <entry key="yml" value="538" />
+          <entry key="txt" value="163" />
+          <entry key="xml" value="600" />
+          <entry key="yml" value="908" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="12836" />
-          <entry key="Markdown" value="169" />
-          <entry key="PLAIN_TEXT" value="94" />
+          <entry key="HTML" value="74" />
+          <entry key="JAVA" value="16039" />
+          <entry key="Markdown" value="333" />
+          <entry key="PLAIN_TEXT" value="173" />
           <entry key="Properties" value="5" />
-          <entry key="XML" value="506" />
-          <entry key="YAML" value="538" />
+          <entry key="XML" value="600" />
+          <entry key="YAML" value="908" />
         </counts>
       </usages-collector>
     </session>
@@ -152,9 +121,66 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="558532524">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="9" />
+          <entry key="project.open.time.0" value="7" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.opened" value="9" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="5" />
+          <entry key="java" value="52" />
+          <entry key="md" value="1" />
+          <entry key="pom" value="1" />
+          <entry key="xml" value="12" />
+          <entry key="yml" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="5" />
+          <entry key="JAVA" value="52" />
+          <entry key="Markdown" value="1" />
+          <entry key="XML" value="13" />
+          <entry key="YAML" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="6" />
+          <entry key="java" value="2580" />
+          <entry key="md" value="7" />
+          <entry key="txt" value="4" />
+          <entry key="xml" value="65" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="2580" />
+          <entry key="Markdown" value="7" />
+          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="XML" value="65" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Rain/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1181">
+              <caret line="87" column="21" selection-start-line="87" selection-start-column="21" selection-end-line="87" selection-end-column="21" />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -162,13 +188,14 @@
         <option value="Tag Library Descriptor" />
         <option value="spring-beans.schema" />
         <option value="Interface" />
+        <option value="HTML File" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>TokenException()</find>
       <find>RunTimeException</find>
       <find>TokenException</find>
       <find>final</find>
@@ -193,6 +220,12 @@
       <find>证书安装失败</find>
       <find>getUser</find>
       <find>corsConfig</find>
+      <find>authenUrlConfig</find>
+      <find>web</find>
+      <find>ApplicationRunner</find>
+      <find>publicKey</find>
+      <find>1024</find>
+      <find>page</find>
     </findStrings>
     <replaceStrings>
       <replace>TokenException(&quot;token失效，请重新登录&quot;)</replace>
@@ -212,57 +245,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/rain-autocode/pom.xml" />
-        <option value="$PROJECT_DIR$/rain-autocode/src/main/java/com/ftx/autocode/generation/config/AutoCodeController.java" />
-        <option value="$PROJECT_DIR$/Rain/src/main/java/com/ftx/config/JavaKind.java" />
-        <option value="$PROJECT_DIR$/Rain/src/main/java/com/ftx/config/AutoCodeController.java" />
-        <option value="$PROJECT_DIR$/Rain/src/main/java/com/ftx/config/Generator.java" />
-        <option value="$PROJECT_DIR$/Rain/src/main/java/com/ftx/controller/Tb_userController.java" />
-        <option value="$PROJECT_DIR$/Rain/src/main/java/com/ftx/controller/ContentController.java" />
-        <option value="$PROJECT_DIR$/Rain/src/main/java/com/ftx/constant/JsonObject.java" />
-        <option value="$PROJECT_DIR$/Rain/src/main/resources/代码自动生成模板/controller/${tableName}Controller.java" />
-        <option value="$PROJECT_DIR$/rain-license/src/main/java/com/rain/license/rainlicense/license/LicenseCheckModel.java" />
-        <option value="$PROJECT_DIR$/rain-license/pom.xml" />
-        <option value="$PROJECT_DIR$/rain-license/src/main/java/com/rain/license/rainlicense/RainLicenseApplication.java" />
-        <option value="$PROJECT_DIR$/rain-license/src/main/java/com/rain/license/rainlicense/license/SpringContextUtil.java" />
-        <option value="$PROJECT_DIR$/rain-license/src/main/java/com/rain/license/rainlicense/license/SpringContextUtils.java" />
-        <option value="$PROJECT_DIR$/rain-license/src/main/java/com/rain/license/rainlicense/license/RestTemplateConfig.java" />
-        <option value="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/license/LicenseManagerHolder.java" />
-        <option value="$PROJECT_DIR$/rain-shiro/src/main/resources/license-config.properties" />
-        <option value="$PROJECT_DIR$/Rain/src/main/resources/config/license-config.properties" />
-        <option value="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/license/LicenseCheckInterceptor.java" />
-        <option value="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/license/LicenseCheckListener.java" />
-        <option value="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/license/CustomLicenseManager.java" />
-        <option value="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/license/LicenseCheckModel.java" />
-        <option value="$PROJECT_DIR$/rain-shiro/src/main/java/cn/zifangsky/license/CustomLicenseManager.java" />
-        <option value="$PROJECT_DIR$/rain-shiro/src/main/java/zifangsky/license/LicenseCheckModel.java" />
-        <option value="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/RainShiroApplication.java" />
-        <option value="$PROJECT_DIR$/rain-shiro/src/main/java/cn/zifangsky/license/LicenseCheckListener.java" />
-        <option value="$PROJECT_DIR$/Rain/src/main/java/com/ftx/RainApplication.java" />
-        <option value="$PROJECT_DIR$/rain-shiro/src/main/java/cn/zifangsky/license/LicenseVerify.java" />
-        <option value="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/constant/CorsConfig.java" />
-        <option value="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/model/Router.java" />
-        <option value="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/login/PowerController.java" />
-        <option value="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/model/TreeNode.java" />
-        <option value="$PROJECT_DIR$/rain-shiro/pom.xml" />
-        <option value="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/model/Query.java" />
-        <option value="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/model/RoleQuery.java" />
-        <option value="$PROJECT_DIR$/rain-excel/pom.xml" />
-        <option value="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/constant/JsonSuccessObject.java" />
-        <option value="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/constant/JsonObject.java" />
-        <option value="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/model/Label.java" />
         <option value="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/model/Role.java" />
         <option value="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/login/LoginsController.java" />
         <option value="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/model/AuthUser.java" />
         <option value="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/login/AuthController.java" />
-        <option value="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/login/ShiroDao.java" />
-        <option value="$PROJECT_DIR$/Rain/src/main/resources/config/application.yml" />
         <option value="$PROJECT_DIR$/Rain/src/main/java/com/ftx/config/CorsConfigs.java" />
-        <option value="$PROJECT_DIR$/Rain/pom.xml" />
         <option value="$PROJECT_DIR$/Rain/src/main/java/com/ftx/config/CorsConfig.java" />
         <option value="$PROJECT_DIR$/Rain/src/main/java/com/ftx/config/GlobalSwagger2.java" />
+        <option value="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/login/ShiroDao.java" />
+        <option value="$PROJECT_DIR$/rain-fileserver/src/main/java/com/ftx/fileserver/config/GlobalSwagger.java" />
+        <option value="$PROJECT_DIR$/rain-fileserver/src/main/resources/banner.txt" />
+        <option value="$PROJECT_DIR$/rain-fileserver/src/main/java/com/ftx/fileserver/constant/JsonObject.java" />
+        <option value="$PROJECT_DIR$/rain-fileserver/src/main/resources/test.html" />
+        <option value="$PROJECT_DIR$/rain-fileserver/src/main/java/com/ftx/fileserver/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/rain-fileserver/src/main/resources/templates/test.html" />
+        <option value="$PROJECT_DIR$/rain-fileserver/src/main/java/com/ftx/fileserver/controller/FileController.java" />
+        <option value="$PROJECT_DIR$/rain-fileserver/pom.xml" />
+        <option value="$PROJECT_DIR$/rain-fileserver/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/Rain/src/main/java/com/ftx/constant/GlobalSwagger.java" />
+        <option value="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/redis/GlobalSwagger.java" />
+        <option value="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/shiro/ShiroConfig.java" />
         <option value="$PROJECT_DIR$/rain-shiro/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/shiro/AuthenUrlConfig.java" />
+        <option value="$PROJECT_DIR$/Rain/src/main/resources/config/application.yml" />
+        <option value="$PROJECT_DIR$/rain-excel/src/main/java/com/ftx/exportexcel/rainexcel/config/GlobalSwagger.java" />
+        <option value="$PROJECT_DIR$/rain-excel/src/main/java/com/ftx/exportexcel/rainexcel/config/JsonObject.java" />
+        <option value="$PROJECT_DIR$/rain-excel/src/main/java/com/ftx/exportexcel/rainexcel/controller/ImportController.java" />
+        <option value="$PROJECT_DIR$/rain-excel/src/main/java/com/ftx/exportexcel/rainexcel/mapper/ExportMapper.java" />
+        <option value="$PROJECT_DIR$/rain-excel/src/main/java/com/ftx/exportexcel/rainexcel/model/ExcelMemo.java" />
+        <option value="$PROJECT_DIR$/rain-excel/src/main/java/com/ftx/exportexcel/rainexcel/model/ExcelMapping.java" />
+        <option value="$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/anotation/EncryptDecryptClass.java" />
+        <option value="$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/inteceptor/ParamInterceptor.java" />
+        <option value="$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/dao/TestDao.java" />
+        <option value="$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/advice/EncryptDecryptAdvice.java" />
+        <option value="$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/advice/CglibProxy.java" />
+        <option value="$PROJECT_DIR$/rain-excel/pom.xml" />
+        <option value="$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/advice/Runner.java" />
+        <option value="$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/anotation/EncryptDecryptField.java" />
+        <option value="$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/inteceptor/MybatisInteceptor.java" />
+        <option value="$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/Util/RSAUtil.java" />
+        <option value="$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/test/TestDao.java" />
+        <option value="$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/test/TestService.java" />
+        <option value="$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/test/TestServiceImpl.java" />
+        <option value="$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/test/TestController.java" />
+        <option value="$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/inteceptor/ParamsInteceptor.java" />
+        <option value="$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/inteceptor/ResultInterceptor.java" />
+        <option value="$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/test/Test.java" />
+        <option value="$PROJECT_DIR$/rain-platentity/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/rain-platentity/pom.xml" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Rain/pom.xml" />
+        <option value="$PROJECT_DIR$/Rain/src/main/java/com/ftx/RainApplication.java" />
       </list>
     </option>
   </component>
@@ -278,8 +311,14 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="localRepository" value="D:\maven-repository" />
         <option name="mavenHome" value="D:/apache-maven-3.3.9" />
       </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
@@ -287,11 +326,11 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="rain-shiro" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="platentity" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="rain-shiro" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="platentity" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
@@ -311,22 +350,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Rain平台" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rain平台" type="462c0819:PsiDirectoryNode" />
+              <item name="Rain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Rain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Rain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Rain" type="462c0819:PsiDirectoryNode" />
+              <item name="Rain" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -334,13 +379,13 @@
     <property name="SearchEverywhereHistoryKey" value="LicenseCheckListener&#9;FILE&#9;file://D:/IdeaProjects/Rain平台/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/license/LicenseCheckListener.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1607163128494" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springboot-license/springboot-trueLicense/ServerDemo" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1614217186667" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RebelAgentSelection">
@@ -348,21 +393,22 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\Rain平台\rain-fileserver\src\main\resources\templates" />
       <recent name="D:\IdeaProjects\Rain平台\Resource\test" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.ftx.authentication.rainshiro.constant" />
-      <recent name="com.ftx.config" />
-      <recent name="com.ftx.autocode.generation.config" />
-      <recent name="代码自动生成模板.service" />
+      <recent name="com.rain.platentity.advice" />
+      <recent name="com.ftx.exportexcel.rainexcel.config" />
       <recent name="com.ftx.authentication.rainshiro.redis" />
+      <recent name="com.ftx.constant" />
+      <recent name="com.ftx.fileserver.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\Rain平台\rain-excel\src\main\java\com\ftx\exportexcel\rainexcel\config" />
+      <recent name="D:\IdeaProjects\Rain平台\rain-fileserver\src\main\java\com\ftx\fileserver" />
+      <recent name="D:\IdeaProjects\Rain平台\rain-fileserver\src\main\resources" />
       <recent name="D:\IdeaProjects\Rain平台\rain-shiro\src\main\java" />
       <recent name="D:\IdeaProjects\Rain平台\rain-shiro\src\main\java\cn\zifangsky\license" />
-      <recent name="D:\IdeaProjects\Rain平台\rain-shiro\src\main\resources" />
-      <recent name="D:\IdeaProjects\Rain平台\rain-shiro\src\main\java\com\ftx\authentication\rainshiro" />
-      <recent name="D:\IdeaProjects\Rain平台\Rain\src\main\resources\config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -378,9 +424,26 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.RainApplication">
+    <configuration name="FileserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="fileserver" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ftx.fileserver.FileserverApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GenerationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="generation" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ftx.autocode.generation.GenerationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlatentityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="rain-platentity" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.rain.platentity.PlatentityApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -394,13 +457,6 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ftx.RainApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RainLicenseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="rain-license" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.rain.license.rainlicense.RainLicenseApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -433,7 +489,8 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.GenerationApplication" />
-      <item itemvalue="Spring Boot.RainLicenseApplication" />
+      <item itemvalue="Spring Boot.FileserverApplication" />
+      <item itemvalue="Spring Boot.PlatentityApplication" />
       <item itemvalue="Spring Boot.RainApplication" />
       <item itemvalue="Spring Boot.RainexcelApplication" />
       <item itemvalue="Spring Boot.RainShiroApplication" />
@@ -441,8 +498,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.RainApplication" />
-        <item itemvalue="Spring Boot.RainShiroApplication" />
         <item itemvalue="Spring Boot.RainexcelApplication" />
+        <item itemvalue="Spring Boot.RainShiroApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -495,7 +552,24 @@
       <workItem from="1607068703409" duration="2539000" />
       <workItem from="1607132915575" duration="4005000" />
       <workItem from="1607138816168" duration="424000" />
-      <workItem from="1607139265476" duration="14749000" />
+      <workItem from="1607139265476" duration="16075000" />
+      <workItem from="1607303663853" duration="8098000" />
+      <workItem from="1607322101491" duration="12148000" />
+      <workItem from="1607389197058" duration="9273000" />
+      <workItem from="1607421524969" duration="7082000" />
+      <workItem from="1607474762898" duration="244000" />
+      <workItem from="1611566298906" duration="2603000" />
+      <workItem from="1611623746523" duration="8387000" />
+      <workItem from="1611637188403" duration="2666000" />
+      <workItem from="1611639892012" duration="413000" />
+      <workItem from="1611640314211" duration="20196000" />
+      <workItem from="1611713058869" duration="319000" />
+      <workItem from="1611715162459" duration="18000" />
+      <workItem from="1612427116109" duration="125000" />
+      <workItem from="1612427329772" duration="107000" />
+      <workItem from="1614217121542" duration="74000" />
+      <workItem from="1614217314235" duration="1207000" />
+      <workItem from="1614221399112" duration="17000" />
     </task>
     <task id="LOCAL-00001" summary="更新日志">
       <created>1606441244305</created>
@@ -560,19 +634,69 @@
       <option name="project" value="LOCAL" />
       <updated>1607150233171</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="2020/12/7">
+      <created>1607308613364</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607308613364</updated>
+    </task>
+    <task id="LOCAL-00011" summary="集成rain-fileserver模块">
+      <created>1607393519101</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1607393519101</updated>
+    </task>
+    <task id="LOCAL-00012" summary="rain-shiro模块增加请求白名单">
+      <created>1607395861232</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1607395861232</updated>
+    </task>
+    <task id="LOCAL-00013" summary="rain-excel模块配置excel导入的准备">
+      <created>1607433355437</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1607433355438</updated>
+    </task>
+    <task id="LOCAL-00014" summary="2021/1/25">
+      <created>1611566885873</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1611566885873</updated>
+    </task>
+    <task id="LOCAL-00015" summary="2021/1/26">
+      <created>1611664344664</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1611664344664</updated>
+    </task>
+    <task id="LOCAL-00016" summary="2021/2/4">
+      <created>1612427378335</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1612427378335</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="212017000" />
+    <option name="totallyTimeSpent" value="286320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49858356" visible="true" weight="0.23123324" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49717513" visible="true" weight="0.22855228" />
+      <window_info id="Structure" order="1" sideWeight="0.50431037" side_tool="true" weight="0.21849866" />
       <window_info id="Designer" order="2" />
-      <window_info id="JRebel" order="3" sideWeight="0.50141644" side_tool="true" weight="0.22252011" />
+      <window_info id="JRebel" order="3" sideWeight="0.50282484" side_tool="true" weight="0.21849866" />
       <window_info id="Image Layers" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
@@ -580,21 +704,21 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" weight="0.27620396" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49798927" weight="0.31444758" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Spring" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.2917847" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5020107" side_tool="true" weight="0.3427762" />
       <window_info anchor="bottom" id="Statistic" order="9" />
       <window_info anchor="bottom" id="Problems" order="10" weight="0.3286119" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Debug" order="13" sideWeight="0.49865952" weight="0.3101983" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.5495751" />
+      <window_info anchor="bottom" id="Debug" order="13" sideWeight="0.49731904" weight="0.36685553" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.46175638" />
       <window_info anchor="bottom" id="JRebel Executor" order="15" weight="0.3286119" />
-      <window_info anchor="bottom" id="JRebel Console" order="16" sideWeight="0.5013405" side_tool="true" weight="0.27620396" />
+      <window_info anchor="bottom" id="JRebel Console" order="16" sideWeight="0.50268096" side_tool="true" weight="0.45042494" />
       <window_info anchor="bottom" id="Messages" order="17" weight="0.28470254" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -649,419 +773,346 @@
     <MESSAGE value="角色权限增删改查接口" />
     <MESSAGE value="2020/12/4" />
     <MESSAGE value="2020/12/5" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020/12/5" />
+    <MESSAGE value="2020/12/7" />
+    <MESSAGE value="集成rain-fileserver模块" />
+    <MESSAGE value="rain-shiro模块增加请求白名单" />
+    <MESSAGE value="rain-excel模块配置excel导入的准备" />
+    <MESSAGE value="2021/1/25" />
+    <MESSAGE value="2021/1/26" />
+    <MESSAGE value="2021/2/4" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021/2/4" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>s.getByte(obj)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>s.get(obj)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>s.get(name)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>tempClass</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>parameterObject instanceof Class</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>invocation.getTarget() instanceof ParameterHandler</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>invocation.getTarget()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>files.listFiles()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>shiroDao.getUserInfo(authUser.getAccount())</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>this.getTokenBefore(request)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>kindName+File.separator+templateFileName</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>one.substring(i)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>(String) result.get(m).get(stringCellValue1)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>result.get(m).get(stringCellValue1)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>result.get(0).size()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>result.get(j).get(stringCellValue1)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>(String) result.get(j).get(stringCellValue1)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/java/cn/zifangsky/license/CustomKeyStoreParam.java">
+    <entry file="file://$PROJECT_DIR$/Rain/src/main/java/com/ftx/constant/GlobalSwagger.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/java/cn/zifangsky/license/LicenseCheckModel.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/java/cn/zifangsky/license/WindowsServerInfos.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/fileserver/rain-fileserver/1.4/rain-fileserver-1.4.jar!/com/ftx/fileserver/controller/FileController.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="381">
+          <caret line="88" column="38" lean-forward="true" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/RainShiroApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="22" column="93" selection-start-line="22" selection-start-column="93" selection-end-line="22" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rain/src/main/resources/config/log4j2-spring.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/2.2/rain-shiro-2.2.jar!/application.yml" />
-    <entry file="file://$PROJECT_DIR$/Rain/src/main/java/com/ftx/RainApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/java/cn/zifangsky/license/LicenseCheckListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/java/cn/zifangsky/license/LicenseVerify.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/excel/rain-excel/1.2/rain-excel-1.2.jar!/com/ftx/exportexcel/rainexcel/controller/ResoveXmlUtil.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="43" column="19" lean-forward="true" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/excel/rain-excel/1.2/rain-excel-1.2.jar!/com/ftx/exportexcel/rainexcel/controller/ExcelController.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="106" column="29" selection-start-line="106" selection-start-column="29" selection-end-line="106" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rain/src/main/java/com/ftx/config/JavaKind.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rain/src/main/java/com/ftx/config/Generator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-197">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rain/src/main/java/com/ftx/config/Column.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rain/src/main/java/com/ftx/config/AutoCodeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.9.RELEASE/spring-web-5.2.9.RELEASE.jar!/org/springframework/web/cors/CorsConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3036">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/redis/GlobalSwagger.java" />
     <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/shiro/ShiroBeansUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        <state relative-caret-position="264">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/utils/TokenUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="84" column="62" lean-forward="true" selection-start-line="84" selection-start-column="39" selection-end-line="84" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/shiro/ShiroLoginFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="88" column="24" lean-forward="true" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/login/PowerController.java" />
-    <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/model/Query.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rain/src/main/resources/rebel.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.9.RELEASE/spring-web-5.2.9.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rain-excel/src/main/java/com/ftx/exportexcel/rainexcel/controller/ExcelController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="118" column="38" lean-forward="true" selection-start-line="118" selection-start-column="38" selection-end-line="118" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rain-excel/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/constant/JsonSuccessObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/constant/JsonObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#519#520#0" expanded="true" />
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#689#690#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/model/Label.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-          <folding>
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#363#364#0" expanded="true" />
-            <element signature="e#400#401#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/model/TreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="e#487#488#0" expanded="true" />
-            <element signature="e#518#519#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/model/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-          <folding>
-            <element signature="e#331#332#0" expanded="true" />
-            <element signature="e#367#368#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#501#502#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/shiro/UserRealm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="58" column="39" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/model/RoleQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-          </folding>
+          <caret line="28" column="24" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/login/LoginsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2310">
-          <caret line="135" column="53" selection-start-line="135" selection-start-column="53" selection-end-line="135" selection-end-column="53" />
+        <state relative-caret-position="330">
+          <caret line="48" column="14" lean-forward="true" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/redis/GlobalSwagger.java">
+    <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/shiro/AuthenUrlConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/shiro/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="173" column="33" selection-start-line="173" selection-start-column="33" selection-end-line="173" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rain-excel/src/main/java/com/ftx/exportexcel/rainexcel/config/ExcelConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rain-excel/src/main/java/com/ftx/exportexcel/rainexcel/config/GlobalSwagger.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rain-excel/src/main/java/com/ftx/exportexcel/rainexcel/config/JsonObject.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rain-excel/src/main/java/com/ftx/exportexcel/rainexcel/config/APPEnums.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rain-excel/src/main/java/com/ftx/exportexcel/rainexcel/mapper/ExportMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="26" column="144" selection-start-line="26" selection-start-column="144" selection-end-line="26" selection-end-column="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rain-excel/src/main/java/com/ftx/exportexcel/rainexcel/model/ExcelMemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rain-excel/src/main/java/com/ftx/exportexcel/rainexcel/model/ExcelMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/inteceptor/ParamInterceptor.java" />
+    <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjweaver/1.9.6/aspectjweaver-1.9.6.jar!/org/aspectj/lang/ProceedingJoinPoint.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/advice/EncryptDecryptAdvice.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.4.2/spring-boot-2.4.2.jar!/org/springframework/boot/SpringApplication.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="535" selection-start-line="535" selection-end-line="535" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rain-excel/src/main/java/com/ftx/exportexcel/rainexcel/controller/ExcelController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="119" column="31" lean-forward="true" selection-start-line="119" selection-start-column="31" selection-end-line="119" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rain-excel/src/main/java/com/ftx/exportexcel/rainexcel/controller/ImportController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rain-excel/src/main/java/com/ftx/exportexcel/rainexcel/controller/ResoveXmlUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/login/AuthController.java">
+    <entry file="file://$PROJECT_DIR$/rain-excel/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1533">
-          <caret line="98" column="75" selection-start-line="98" selection-start-column="75" selection-end-line="98" selection-end-column="75" />
+        <state relative-caret-position="308">
+          <caret line="29" column="45" lean-forward="true" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/PlatentityApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/login/ShiroDao.java">
+    <entry file="file://$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/advice/Runner.java" />
+    <entry file="file://$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/advice/CglibProxy.java" />
+    <entry file="file://$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/anotation/EncryptDecryptClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="96" column="17" selection-start-line="96" selection-start-column="17" selection-end-line="96" selection-end-column="17" />
+        <state relative-caret-position="110">
+          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/model/AuthUser.java">
+    <entry file="file://$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/Util/RSAUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+        <state relative-caret-position="-2266">
+          <caret line="38" column="263" selection-start-line="38" selection-start-column="263" selection-end-line="38" selection-end-column="263" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/2.4/rain-shiro-2.4.jar!/com/ftx/authentication/rainshiro/login/LoginsController.class">
+    <entry file="file://$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/test/TestService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3137">
-          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+        <state relative-caret-position="308">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/2.4/rain-shiro-2.4.jar!/com/ftx/authentication/rainshiro/login/AuthController.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/plugin/Plugin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        <state relative-caret-position="162">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/test/TestDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22">
+          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/anotation/EncryptDecryptField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/test/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/test/TestServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rain-shiro/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+        <state relative-caret-position="286">
+          <caret line="178" column="18" lean-forward="true" selection-start-line="178" selection-start-column="18" selection-end-line="178" selection-end-column="18" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/com/rain/platentity/rain-platentity/1.0/rain-platentity-1.0.pom" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/platentity/rain-platentity/1.0/rain-platentity-1.0.jar!/com/rain/platentity/Util/RSAUtil.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/platentity/rain-platentity/1.0/rain-platentity-1.0.jar!/com/rain/platentity/inteceptor/ParamsInteceptor.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/platentity/rain-platentity/1.0/rain-platentity-1.0.jar!/com/rain/platentity/inteceptor/ResultInterceptor.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/platentity/rain-platentity/1.0/rain-platentity-1.0.jar!/com/rain/platentity/anotation/EncryptDecryptField.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/platentity/rain-platentity/1.0/rain-platentity-1.0.jar!/com/rain/platentity/anotation/EncryptDecryptClass.class" />
+    <entry file="file://$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/test/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/2.5/rain-shiro-2.5.pom">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/java/com/ftx/authentication/rainshiro/constant/CorsConfig.java">
+    <entry file="file://$PROJECT_DIR$/rain-platentity/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-176">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="110">
+          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rain-platentity/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="484">
+            <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/inteceptor/ResultInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="68" column="38" lean-forward="true" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rain-platentity/src/main/java/com/rain/platentity/inteceptor/ParamsInteceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1386">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rain/src/main/java/com/ftx/RainApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rain/src/main/resources/config/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="49" column="61" lean-forward="true" selection-start-line="43" selection-end-line="49" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Rain/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+        <state relative-caret-position="1181">
+          <caret line="87" column="21" selection-start-line="87" selection-start-column="21" selection-end-line="87" selection-end-column="21" />
         </state>
       </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/2.6/rain-shiro-2.6.jar!/com/ftx/authentication/rainshiro/redis/RedisConfig.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-420">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rain/shiro/rain-shiro/2.6/rain-shiro-2.6.jar!/com/ftx/authentication/rainshiro/redis/GlobalExceptionHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rain/src/main/java/com/ftx/config/CorsConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rain/src/main/java/com/ftx/config/GlobalSwagger2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="33" column="2" lean-forward="true" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/resources/log4j2-spring.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rain/src/main/resources/config/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rain-shiro/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="506">
-            <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
   </component>
   <component name="masterDetails">
@@ -1115,12 +1166,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>rain</last-edited>
+          <last-edited>JRebel|generation</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

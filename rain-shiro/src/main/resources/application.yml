@@ -24,10 +24,4 @@ rain:
     - /register # 放开注册路径
     - /logout # 放开登出路径
     - /swagger-ui.html # 放开接口文档地址
-#  证书配置
-  license:
-    subject: license_demo
-    publicAlias: publicCert
-    storePass: public_password1234
-    licensePath: D:/license_demo/license.lic
-    publicKeysStorePath: D:/license_demo/publicCerts.keystore
+

@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/rain?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    username: root
+    password: 1234
+  redis:
+    host: 127.0.0.1 #redis主机ip
+    port: 6379 #redis端口
+    password:  #redis连接密码，默认为空
+pagehelper: # pagehelper分页配置
+  auto-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+
+#    shiro自定义配置
+rain:
+  shiro:
+    check-token: true # 是否校验token    true：正常返回token和登录校验token   false：无需携带和校验token，用于方便开发环境
+    token-name: MY-TOKEN # 请求头token名字
+    tokenLiveTime: 3600 # token过期时间
+    freeUrls: # 白名单（不给予拦截）
+    - /login # 放开登录路径
+    - /register # 放开注册路径
+    - /logout # 放开登出路径
+    - /swagger-ui.html # 放开接口文档地址
+

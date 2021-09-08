@@ -1,0 +1,6 @@
+<querySql>
+    <sql id="role">
+        select id as id,author as author,content as content from content
+    </sql>
+
+</querySql>

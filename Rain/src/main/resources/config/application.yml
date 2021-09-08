@@ -1,0 +1,56 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/rain?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    username: root
+    password: 1234
+  redis:
+    host: 127.0.0.1 #redis主机ip
+    port: 6379 #redis端口
+    password:  #redis连接密码，默认为空
+# pagehelper分页配置
+pagehelper:
+  auto-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+
+#    shiro自定义配置
+rain:
+  shiro:
+    check-token: true # 是否校验token    true：正常返回token和登录校验token   false：无需携带和校验token，用于方便开发环境
+    token-name: MY-TOKEN # 请求头token名字
+    tokenLiveTime: 3600 # token过期时间
+    freeUrls: # 白名单（不给予拦截）
+    - /login # 放开登录路径
+    - /register # 放开注册路径
+    - /logout # 放开登出路径
+    - /swagger-ui.html # 放开接口文档地址
+    - /download # 放开文件下载地址
+    - /online # 放开图片在线预览地址
+  excel:
+#    导出地址
+#    http://localhost:8080/exportExcel
+#    ?fileUrl=test/测试Excel导出模板.xlsx&exportName=导出excel的名字
+#    &参数键1=参数值2&参数键2=参数值2
+    resource: D:\IdeaProjects\Rain平台\Resource # 存储excel模板和excel查询xml文件的文件夹位置 导出excel使用
+  autocode:
+    # 代码生成路径 例如：D:\IdeaProjects\rain-autocode\src\main\java\com\ftx\autocode\generation\
+    # 直到当前包名 com.ftx.autocode.generation
+    out-path: D:\IdeaProjects\Rain平台\Rain\src\main\java\com\ftx\
+    # 该包名为当前项目的全包名，且须保证该包下包含四个文件夹 dao  model  service  controller
+    package-name: com.ftx  # 所在包名 例如：com.ftx.autocode.generation
+  #  证书配置
+  license:
+    subject: license_demo
+    publicAlias: publicCert
+    storePass: public_password1234
+    licensePath: D:/license_demo/license.lic
+    publicKeysStorePath: D:/license_demo/publicCerts.keystore
+# 指定文件上传地址（文件夹）的绝对路径
+file:
+  upload: D:\IdeaProjects\Rain平台\File
+# 下载地址示例 http://localhost:8080/download?fileName=D:/IdeaProjects/Rain平台/File/test.jpg&newFileName=test
+# 图片在线预览地址示例 http://localhost:8080/online?fileName=test.jpg 该地址可直接放在<img src="" />的src中进行展示
+

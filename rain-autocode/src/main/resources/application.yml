@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/rain?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    username: root
+    password: 1234
+rain:
+  autocode:
+    # 代码生成路径 例如：D:\IdeaProjects\rain-autocode\src\main\java\com\ftx\autocode\generation\
+    # 直到当前包名 com.ftx.autocode.generation
+    out-path: D:\IdeaProjects\Rain平台\rain-autocode\src\main\java\com\ftx\autocode\generation\
+    # 该包名为当前项目的全包名，且须保证该包下包含四个文件夹 dao  model  service  controller
+    package-name: com.ftx.autocode.generation  # 所在包名 例如：com.ftx.autocode.generation
+

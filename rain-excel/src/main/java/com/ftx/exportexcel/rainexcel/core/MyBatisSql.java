@@ -1,4 +1,4 @@
-package com.ftx.exportexcel.rainexcel.util;
+package com.ftx.exportexcel.rainexcel.core;
 
 import org.apache.ibatis.mapping.BoundSql;
 import org.apache.ibatis.mapping.MappedStatement;
@@ -18,7 +18,7 @@ import java.util.Map;
  * @author FanJiangFeng
  * @createTime 2021年09月07日 09:57:00
  */
-public class MyBatisSqlUtil {
+public class MyBatisSql {
     /**
      * 运行期获取MyBatis执行的SQL及参数
      *

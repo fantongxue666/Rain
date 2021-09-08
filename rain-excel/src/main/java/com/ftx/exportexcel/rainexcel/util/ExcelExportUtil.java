@@ -1,19 +1,13 @@
 package com.ftx.exportexcel.rainexcel.util;
 
+import com.ftx.exportexcel.rainexcel.core.ServletContextUtil;
+import com.ftx.exportexcel.rainexcel.core.SqlHandler;
 import com.ftx.exportexcel.rainexcel.mapper.ExportMapper;
 import com.ftx.exportexcel.rainexcel.model.ParamsModel;
-import org.apache.poi.hssf.usermodel.HSSFRow;
-import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.poifs.filesystem.POIFSFileSystem;
 import org.apache.poi.ss.usermodel.*;
-import org.springframework.web.context.WebApplicationContext;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
-import org.springframework.web.context.support.WebApplicationContextUtils;
 
-import javax.servlet.ServletContext;
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.net.URLEncoder;
@@ -25,7 +19,6 @@ public class ExcelExportUtil {
     /**
      * 导出excel入口
      * TODO 不支持时间格式的参数
-     * TODO 不支持 #{对象.参数}
      *
      * @param: fileUrl  test/test.xlsx
      * @param: exportName 导出文件名字 不带后缀名
@@ -38,7 +31,7 @@ public class ExcelExportUtil {
         String xmlPackageUrl = "D:\\IdeaProjects\\Rain\\Resource";
         //xlsx.xml文件全路径
         String fileAllUrl = xmlPackageUrl + File.separator + fileUrl;
-        String sql = SqlUtil.getSql(id, paramsModel);
+        String sql = SqlHandler.getSql(id, paramsModel);
         //执行sql
         ExportMapper exportMapper = ServletContextUtil.getBean(ExportMapper.class);
         List<Map> data = exportMapper.getData(sql);
@@ -96,38 +89,96 @@ public class ExcelExportUtil {
                     //开始单元格的标记 执行哪个sql
                     //查询结果，准备渲染excel
                     int m = 0;
-                    for (int i = beginCell_Row; i < (beginCell_Row + result.size()); i++) {
-                        Row row1 = sheet.createRow(i + 1);
-                        for (int j = beginCell_column; j < (beginCell_column + result.get(0).size()); j++) {
-                            Cell cell1 = sheet.getRow(beginCell_Row).getCell(j);
-                            String stringCellValue1 = cell1.getStringCellValue();
-                            if (stringCellValue1.contains("{")) {
-                                stringCellValue1 = stringCellValue1.replace("{", "");
-                            }
-                            if (stringCellValue1.contains("}")) {
-                                stringCellValue1 = stringCellValue1.replace("}", "");
-                            }
-                            if (stringCellValue1.contains("end:")) {
-                                stringCellValue1 = stringCellValue1.replace("end:", "");
-                            }
-                            if (stringCellValue1.contains("begin:")) {
-                                stringCellValue1 = stringCellValue1.replace("begin:", "");
-                            }
+                    //如果数据为空，则导出一个空的Excel
+                    if(result == null || result.size() < 1){
+                        sheet.removeRow(row);
+                        removeRow(sheet, beginCell_Row);
+                    }else{
+                        //对所有数据行进行遍历
+                        for (int i = beginCell_Row; i < (beginCell_Row + result.size()); i++) {
+                            //创建新的行
+                            Row row1 = sheet.createRow(i + 1);
+                            //给新的行 遍历每个列，进行数据渲染
+                            for (int j = beginCell_column; j < (beginCell_column + result.get(0).size()); j++) {
+                                Cell cell1 = sheet.getRow(beginCell_Row).getCell(j);
+                                String stringCellValue1 = cell1.getStringCellValue();
+                                if (stringCellValue1.contains("{")) {
+                                    stringCellValue1 = stringCellValue1.replace("{", "");
+                                }
+                                if (stringCellValue1.contains("}")) {
+                                    stringCellValue1 = stringCellValue1.replace("}", "");
+                                }
+                                if (stringCellValue1.contains("end:")) {
+                                    stringCellValue1 = stringCellValue1.replace("end:", "");
+                                }
+                                if (stringCellValue1.contains("begin:")) {
+                                    stringCellValue1 = stringCellValue1.replace("begin:", "");
+                                }
 
-                            Cell cell2 = row1.createCell(j);
-                            cell2.setCellValue((String) result.get(m).get(stringCellValue1));
-                        }
-                        m++;
-                        if (i == ((beginCell_Row + result.size()) - 1)) {
-                            //删除占位符所在的行
-                            sheet.removeRow(row);
-                            removeRow(sheet, beginCell_Row);
+                                //创建单元格
+                                Cell cell2 = row1.createCell(j);
+                                // # 号开头的为数据值转换，例如 {sex#1=男,2=女,3=未知}
+                                if(stringCellValue1.indexOf("#") != -1){
+                                    //截取映射规则
+                                    String mappedString = stringCellValue1.substring(stringCellValue1.indexOf("#")+1,stringCellValue1.length());
+                                    //字段值
+                                    String fieldName = stringCellValue1.substring(0,stringCellValue1.indexOf("#"));
+                                    String fieldValue = result.get(m).get(fieldName).toString();
+                                    //得到字段值对应关系的映射值
+                                    String value = revertValue(mappedString,fieldValue);//赋值
+                                    cell2.setCellValue(value);
+                                }else{
+                                    //赋值
+                                    cell2.setCellValue((String) result.get(m).get(stringCellValue1));
+                                }
+                            }
+                            m++;
+                            if (i == ((beginCell_Row + result.size()) - 1)) {
+                                //删除占位符所在的行
+                                sheet.removeRow(row);
+                                removeRow(sheet, beginCell_Row);
+                            }
                         }
                     }
                 }
             }
         }
-        exportExcelByDownload(wbs, null, response, exportName);
+        //导出下载
+        exportFileByDownload(wbs, null, response, exportName);
+    }
+
+    /**
+     * 数据值转换 得到映射对应的值
+     * @param mappedString 例如：1=男,2=女,3=未知
+     * @param fieldValue 例如：2
+     * @return
+     */
+    private static String revertValue(String mappedString, String fieldValue) {
+        /**
+         * 1，字符串转数组
+         * 2，对数组遍历，拿到等号左边和右边的值
+         * 3，匹配，返回
+         */String result = null;
+        try {
+            //转数组
+            String[] arr = mappedString.split(",");
+            //返回结果
+            result = null;
+            //对数组遍历
+            for(String str : arr) {
+                String[] split = str.split("=");
+                String key = split[0];
+                String value = split[1];
+                //如果匹配到，赋值返回
+                if(key.equals(fieldValue)){
+                    result = value;
+                    break;
+                }
+            }
+        } catch (Exception e) {
+            throw new RuntimeException("数据值转换失败",e);
+        }
+        return result;
     }
 
 
@@ -140,7 +191,7 @@ public class ExcelExportUtil {
      * @param fileName            下载文件名
      * @throws Exception
      */
-    public static void exportExcelByDownload(Workbook wbs, HSSFWorkbook wb, HttpServletResponse httpServletResponse, String fileName) throws Exception {
+    public static void exportFileByDownload(Workbook wbs, HSSFWorkbook wb, HttpServletResponse httpServletResponse, String fileName) throws Exception {
         //响应类型为application/octet- stream情况下使用了这个头信息的话，那就意味着不想直接显示内容
         //httpServletResponse.setContentType(MediaType.APPLICATION_OCTET_STREAM_VALUE);
         //attachment为以附件方式下载

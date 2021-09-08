@@ -1,31 +1,19 @@
-package com.ftx.exportexcel.rainexcel.util;
+package com.ftx.exportexcel.rainexcel.core;
 
 import com.ftx.exportexcel.rainexcel.model.ParamsModel;
-import org.apache.ibatis.mapping.BoundSql;
-import org.apache.ibatis.mapping.MappedStatement;
-import org.apache.ibatis.mapping.ParameterMapping;
 import org.apache.ibatis.session.Configuration;
 import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.poi.ss.formula.functions.T;
-import org.springframework.web.context.WebApplicationContext;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
-import org.springframework.web.context.support.WebApplicationContextUtils;
 
-import javax.servlet.ServletContext;
-import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.math.BigDecimal;
 import java.util.*;
 
 /**
  * @author FanJiangFeng
  * @createTime 2021年08月30日 12:27:00
  */
-public class SqlUtil {
+public class SqlHandler {
     private static SqlSessionFactory sqlSessionFactory;
 
     /**
@@ -47,7 +35,7 @@ public class SqlUtil {
             map = createMapParams(paramsModel);
         }
         //得到替换掉占位符的sql
-        String sql = MyBatisSqlUtil.getMyBatisSql(id, map, sqlSessionFactory);
+        String sql = MyBatisSql.getMyBatisSql(id, map, sqlSessionFactory);
         return sql;
     }
 

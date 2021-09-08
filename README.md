@@ -1,3 +1,4 @@
+[TOC]
 <h1>Rain</h1>
 <p>
     <a href="https://img.shields.io/badge/version-V1.0.1-brightgreen">
@@ -8,18 +9,12 @@
     </a>
 </p>
 
-<a href="##">RAIN-SHIRO模块</a><br>
-<a href="##">RAIN-EXCEL模块</a><br>
-<a href="##">RAIN-AUTOCODE模块</a><br>
-<a href="##">RAIN-LICENSE模块</a><br>
-<a href="##">RAIN-FILESERVER模块</a><br>
-<a href="##">RAIN-PLATENTITY模块</a><br>
+## Rain-Shiro模块
 
-<table><tr><td bgcolor=#7FFFD4>
-Rain-Shiro
+<table style="width:100%;"><tr><td bgcolor=#7FFFD4>
+内容：Rain平台安全模块，登录和认证授权，Token校验
 </td></tr></table>
 
-内容：Rain平台安全模块，登录和认证授权，Token校验
 版本更新说明：
 				1，构建shiro模块，初始化shiro模块工程，并集成token，实用redis存储token<br>
                 2，集成log4j2日志框架，shiro过滤器，token工具类<br>
@@ -27,13 +22,11 @@ Rain-Shiro
                 4，rain平台集成swagger接口文档<br>
                 5，已支持多用户多角色，权限动态分配
 
+## Rain-Excel模块
 
-
-<table><tr><td bgcolor=#7FFFD4>
-Rain-Excel
-</td></tr></table>
-
+<table style="width:100%;"><tr><td bgcolor=#7FFFD4>
 内容：Rain平台Excel导出模块，使业务调用方快速开发一套导出Excel的接口
+</td></tr></table>
 
 该模块作为一个starter自动配置存在
 
@@ -118,41 +111,39 @@ public class ParamsModel {
 
 
 
+## Rain-AutoCode模块
+
 <table><tr><td bgcolor=#7FFFD4>
-Rain-AutoCode
+内容：集成了开发者工具-代码自动生成
 </td></tr></table>
 
-内容：集成了开发者工具-代码自动生成
 版本更新说明：
 				该模块暂时无法和rain平台进行集成，可作为单应用，代码自动生成已内置到了Rain平台中
 
-
+## Rain-License模块
 
 <table><tr><td bgcolor=#7FFFD4>
-Rain-License
+内容：服务器证书解析和校验模块 [单应用]
 </td></tr></table>
 
-内容：服务器证书解析和校验模块 [单应用]
 版本更新说明：
 				已集成
 
-
+## Rain-FileServer模块
 
 <table><tr><td bgcolor=#7FFFD4>
-Rain-FileServer
+内容：文件通用上传下载接口
 </td></tr></table>
 
-内容：文件通用上传下载接口
 版本更新说明：
 				1，文件上传接口<br>				2，文件下载接口<br>				3，图片在线预览接口（可直接拼装http请求地址放入\<img src=""/\>的src中进行图片的预览）
 
-
+## Rain-PlatEntity模块
 
 <table><tr><td bgcolor=#7FFFD4>
-Rain-PlatEntity
+内容：用于实体类的属性加解密
 </td></tr></table>
 
-内容：用于实体类的属性加解密
 版本更新说明：
 				已集成
 

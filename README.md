@@ -138,6 +138,14 @@ public class ParamsModel {
         map.put("study", study);
         map.put("address", address);
         map.put("phone", phone);
+	
+	//添加图片（上面的示例模板截图没有添加图片的，和普通数据一样，在需要加入图片的地方添加${img}即可，表格同理，区别是value变成了map而已 ）
+        Map<String,String> picMap = new HashMap<>();
+        picMap.put("width","100");
+        picMap.put("height","100");
+        picMap.put("type","test");
+        picMap.put("path","https://img-bss.csdnimg.cn/1642646104245.png");
+        map.put("img",picMap);
 
         //3.表格数据
         List<Map<String,String>> excelMapList = new ArrayList<Map<String,String>>();
